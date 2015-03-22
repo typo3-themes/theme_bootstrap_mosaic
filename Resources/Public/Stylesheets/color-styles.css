@@ -1,0 +1,230 @@
+/*------------------------------------------------------------------
+Project:    Mosaic
+Author:     Yevgeny S.
+URL:        http://simpleqode.com/
+            https://twitter.com/YevSim
+Version:    1.3.0
+Created:        20/01/2014
+Last change:    25/02/2015
+-------------------------------------------------------------------*/
+
+/* ===== Body Style Toggle ===== */
+
+.style-toggle-body .colors {
+  margin: 0;
+}
+.style-toggle-body .colors > li {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.style-toggle-body .colors > .green {
+  background-color: #94BA65;
+}
+.style-toggle-body .colors > .blue {
+  background-color: #2790B0;
+}
+.style-toggle-body .colors > .orange {
+  background-color: #D26C22;
+}
+.style-toggle-body .colors > .red {
+  background-color: #E35E54;
+}
+
+/* ===== Link and Font Colors ===== */
+
+.body-green a,
+.body-green .text-color {
+  color: #94BA65;
+}
+.body-blue a,
+.body-blue .text-color {
+  color: #2790B0;
+}
+.body-orange a,
+.body-orange .text-color {
+  color: #D26C22;
+}
+.body-red a,
+.body-red .text-color {
+  color: #E35E54;
+}
+
+
+/* ===== Border Colors ===== */
+
+.body-green .border-color {
+  border-color: #94BA65;
+}
+.body-blue .border-color {
+  border-color: #2790B0;
+}
+.body-orange .border-color {
+  border-color: #D26C22;
+}
+.body-red .border-color {
+  border-color: #E35E54;
+}
+
+/* ===== Background Colors ===== */
+
+.body-green .bg-color {
+  background-color: #94BA65;
+}
+.body-blue .bg-color {
+  background-color: #2790B0;
+}
+.body-orange .bg-color {
+  background-color: #D26C22;
+}
+.body-red .bg-color {
+  background-color: #E35E54;
+}
+.body-green .bg-hover-color:hover,
+.body-green .open > .bg-hover-color {
+  background-color: #94BA65 !important;
+}
+.body-blue .bg-hover-color:hover,
+.body-blue .open > .bg-hover-color {
+  background-color: #2790B0 !important;
+}
+.body-orange .bg-hover-color:hover,
+.body-orange .open > .bg-hover-color {
+  background-color: #D26C22 !important;
+}
+.body-red .bg-hover-color:hover,
+.body-red .open > .bg-hover-color {
+  background-color: #E35E54 !important;
+}
+.body-green .dropdown-menu > .active > a,
+.body-green .dropdown-menu > .active > a:hover,
+.body-green .dropdown-menu > .active > a:focus {
+  background-color: #94BA65;
+}
+.body-blue .dropdown-menu > .active > a,
+.body-blue .dropdown-menu > .active > a:hover,
+.body-blue .dropdown-menu > .active > a:focus {
+  background-color: #2790B0;
+}
+.body-orange .dropdown-menu > .active > a,
+.body-orange .dropdown-menu > .active > a:hover,
+.body-orange .dropdown-menu > .active > a:focus {
+  background-color: #D26C22;
+}
+.body-red .dropdown-menu > .active > a,
+.body-red .dropdown-menu > .active > a:hover,
+.body-red .dropdown-menu > .active > a:focus {
+  background-color: #E35E54;
+}
+
+/* ===== Buttons Colors ===== */
+
+.btn-color,
+.btn-color:hover,
+.btn-green,
+.btn-green:hover,
+.btn-blue,
+.btn-blue:hover,
+.btn-orange,
+.btn-orange:hover,
+.btn-red,
+.btn-red:hover{
+  color: #fff !important;
+  -webkit-transition: background-color 300ms, border-color 300ms;
+      transition: background-color 300ms, border-color 300ms;
+}
+
+/* Button Green */
+
+.body-green .btn-color,
+.btn-green {
+  background-color: #94BA65;
+  border-color: #749B46;
+}
+.body-green .btn-color:hover,
+.body-green .btn-color:focus,
+.body-green .btn-color:active,
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active{
+  background-color: #749B46;
+  border-color: #5F7F39;
+}
+
+/* Button Blue */
+
+.body-blue .btn-color,
+.btn-blue {
+  background-color: #2790B0;
+  border-color: #217B97;
+}
+.body-blue .btn-color:hover,
+.body-blue .btn-color:focus,
+.body-blue .btn-color:active,
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+  background-color: #217B97;
+  border-color: #1A6075;
+}
+
+/* Button Orange */
+
+.body-orange .btn-color,
+.btn-orange {
+  background-color: #D26C22;
+  border-color: #C1631F;
+}
+.body-orange .btn-color:hover,
+.body-orange .btn-color:focus,
+.body-orange .btn-color:active,
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active {
+  background-color: #C1631F;
+  border-color: #9E511A;
+}
+
+/* Button Orange */
+
+.body-red .btn-color,
+.btn-red {
+  background-color: #E35E54;
+  border-color: #E0493E;
+}
+.body-red .btn-color:hover,
+.body-red .btn-color:focus,
+.body-red .btn-color:active,
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active {
+  background-color: #E0493E;
+  border-color: #DD382C;
+}
+
+/* ===== Page Not Found ===== */
+
+.body-green .not-found-p,
+.body-green .alt-p,
+.body-green .color-jumbotron{
+  background: #94BA65;
+  background-image: radial-gradient(#A6C680, #749B46);
+}
+.body-blue .not-found-p,
+.body-blue .alt-p,
+.body-blue .color-jumbotron {
+  background: #2790B0;
+  background-image: radial-gradient(#79C9E2, #2790B0);
+}
+.body-orange .not-found-p,
+.body-orange .alt-p,
+.body-orange .color-jumbotron {
+  background: #D26C22;
+  background-image: radial-gradient(#E28D50, #D26C22);
+}
+.body-red .not-found-p,
+.body-red .alt-p,
+.body-red .color-jumbotron {
+  background: #E35E54;
+  background-image: radial-gradient(#EE9C96, #E35E54);
+}
