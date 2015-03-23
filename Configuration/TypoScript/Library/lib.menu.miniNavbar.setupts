@@ -1,5 +1,5 @@
-lib.extraBar = COA
-lib.extraBar {
+lib.menu.miniNavbar = COA
+lib.menu.miniNavbar {
 	10 = TEXT
 	10 {
 	typolink.parameter = {$themes.configuration.header.email}
