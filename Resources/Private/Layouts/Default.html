@@ -5,10 +5,7 @@
     <div class="mini-navbar mini-navbar-dark hidden-xs">
         <div class="container">
             <div class="col-sm-12">
-                <a href="#" class="first-child"><i class="fa fa-envelope"></i> Email<span class="hidden-sm">: contact@example.com</span></a>
-          <span class="phone">
-            <i class="fa fa-phone-square"></i> Tel.: +0 (000) 000-00-00
-          </span>
+                <f:cObject typoscriptObjectPath="lib.extraBar"/>
                 <a href="sign-up.html" class="pull-right"><i class="fa fa-arrow-circle-down"></i> Sign Up</a>
                 <a href="sign-in.html" class="pull-right"><i class="fa fa-sign-in"></i> Sign In</a>
                 <a href="#" class="pull-right" id="nav-search"><i class="fa fa-search"></i> Search</a>
@@ -58,16 +55,25 @@
     </div>
 </div>
 <div class="wrapper">
-    <div class="container">
-        <section id="areaFeature" class="page-header">
-            <f:cObject typoscriptObjectPath="lib.content.feature"/>
-        </section>
-
-        <main id="areaMain" class="row">
-            <div id="menuBreadcrumbWrapper">
-                <span><f:translate key="breadcrumb_label"/></span>
-                <f:cObject typoscriptObjectPath="lib.menu.breadcrumb"/>
+    <!-- Topic Header -->
+    <div class="topic">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3 class="primary-font">
+                        <f:cObject typoscriptObjectPath="lib.page.title"/>
+                    </h3>
+                </div>
+                <div class="col-sm-8">
+                    <f:cObject typoscriptObjectPath="lib.menu.breadcrumb"/>
+                </div>
             </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <main id="areaMain" class="row">
             <f:render section="Default"/>
         </main>
 
