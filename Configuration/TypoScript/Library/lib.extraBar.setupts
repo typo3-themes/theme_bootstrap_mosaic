@@ -1,0 +1,15 @@
+lib.extraBar = COA
+lib.extraBar {
+	10 = TEXT
+	10 {
+	typolink.parameter = {$themes.configuration.header.email}
+	typolink.ATagParams = class="first-child"
+	typolink.ATagBeforeWrap = 1
+	typolink.wrap = <i class="fa fa-envelope"></i> <span class="hidden-sm">|</span>
+	}
+	20 = TEXT
+	20 {
+	value = {$themes.configuration.header.phone}
+	noTrimWrap = |<span class="phone"><i class="fa fa-phone-square"></i> |</span>|
+	}
+}
