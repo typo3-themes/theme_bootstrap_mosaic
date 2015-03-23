@@ -2,12 +2,12 @@
 <div xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns="http://www.w3.org/1999/xhtml"
      lang="en">
     <f:section name="Default">
-        <!-- theme_bootstrap: Partials/Area/ExtraBar.html [begin] -->
+        <!-- theme_bootstrap: Partials/Area/MiniNavbar.html [begin] -->
 
     <div class="mini-navbar mini-navbar-dark hidden-xs">
         <div class="container">
             <div class="col-sm-12">
-                <f:cObject typoscriptObjectPath="lib.extraBar"/>
+                <f:cObject typoscriptObjectPath="lib.menu.miniNavbar"/>
                 <div class="menu-language-wrapper pull-right">
                     <theme:widget.languageMenu
                             availableLanguages="{theme:constant(constant: 'themes.languages.available')}"
