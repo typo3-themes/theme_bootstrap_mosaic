@@ -157,10 +157,14 @@ h6,
   margin-bottom: 0 !important;
 }
 @media (min-width: 768px) {
-  .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  }
+    .navbar-nav > li > a {
+        padding-top: 27.5px;
+        padding-bottom: 27.5px;
+    }
+    #menuLanguage.navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 .navbar-form {
   margin-top: 20.5px;
