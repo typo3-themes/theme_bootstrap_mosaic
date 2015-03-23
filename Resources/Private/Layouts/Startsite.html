@@ -1,30 +1,7 @@
 {namespace theme=KayStrobach\Themes\ViewHelpers}
-<!-- theme_bootstrap: Layouts/Startsite.html [begin] -->
+<!-- theme_bootstrap_mosaic: Layouts/Startsite.html [begin] -->
 <div id="layoutStartsite">
-    <!-- Extra Bar -->
-    <div class="mini-navbar mini-navbar-dark hidden-xs">
-        <div class="container">
-            <div class="col-sm-12">
-                <a href="#" class="first-child"><i class="fa fa-envelope"></i> Email<span class="hidden-sm">: contact@example.com</span></a>
-          <span class="phone">
-            <i class="fa fa-phone-square"></i> Tel.: +0 (000) 000-00-00
-          </span>
-                <a href="sign-up.html" class="pull-right"><i class="fa fa-arrow-circle-down"></i> Sign Up</a>
-                <a href="sign-in.html" class="pull-right"><i class="fa fa-sign-in"></i> Sign In</a>
-                <a href="#" class="pull-right" id="nav-search"><i class="fa fa-search"></i> Search</a>
-                <a href="#" class="pull-right hidden" id="nav-search-close"><i class="fa fa-times"></i></a>
-                <!-- Search Form -->
-                <form class="pull-right hidden" role="search" id="nav-search-form">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-              <span class="input-group-btn">
-                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-              </span>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+    <f:render partial="Area/ExtraBar" section="Default" arguments="{_all}"/>
     <div id="menuMain" class="navbar navbar-dark navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -39,20 +16,6 @@
             </div>
             <div id="navbar-main" class="navbar-collapse collapse">
                 <f:cObject typoscriptObjectPath="lib.menu.main" />
-                <div class="menu-language-wrapper pull-right">
-                    <theme:widget.languageMenu
-                            availableLanguages="{theme:constant(constant: 'themes.languages.available')}"
-                            currentLanguageUid="{theme:constant(constant: 'themes.languages.current.uid')}"
-                            defaultLanguageIsoCodeShort="{theme:constant(constant: 'themes.languages.default.isoCodeShort')}"
-                            defaultLanguageLabel="{theme:constant(constant: 'themes.languages.default.label')}"
-                            defaultLanguageFlag="{theme:constant(constant: 'themes.languages.default.flag')}"
-                            />
-                    <f:if condition="{theme:constant(constant: 'themes.languages.available')}">
-						<span>
-							<f:translate key="languageMenu_label" />
-						</span>
-                    </f:if>
-                </div>
             </div>
         </div>
     </div>

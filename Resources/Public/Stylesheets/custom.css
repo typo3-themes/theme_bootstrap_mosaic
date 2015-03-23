@@ -158,8 +158,8 @@ h6,
 }
 @media (min-width: 768px) {
   .navbar-nav > li > a {
-  padding-top: 27.5px;
-  padding-bottom: 27.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   }
 }
 .navbar-form {

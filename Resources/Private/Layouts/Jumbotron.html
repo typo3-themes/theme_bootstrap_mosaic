@@ -21,25 +21,16 @@
     </div>
 </div>
 <div class="wrapper">
-    <!-- Topic Header -->
-    <div class="topic">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3 class="primary-font">
-                        <f:cObject typoscriptObjectPath="lib.page.title"/>
-                    </h3>
-                </div>
-                <div class="col-sm-8">
-                    <f:cObject typoscriptObjectPath="lib.menu.breadcrumb"/>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <div class="container">
+        <section id="areaFeature" class="page-header">
+            <f:cObject typoscriptObjectPath="lib.content.feature"/>
+        </section>
+
         <main id="areaMain" class="row">
+            <div id="menuBreadcrumbWrapper">
+                <span><f:translate key="breadcrumb_label"/></span>
+                <f:cObject typoscriptObjectPath="lib.menu.breadcrumb"/>
+            </div>
             <f:render section="Default"/>
         </main>
 
