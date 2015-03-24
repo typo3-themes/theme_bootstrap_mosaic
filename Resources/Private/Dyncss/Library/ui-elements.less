@@ -21,17 +21,15 @@ Last change:    25/02/2015
     margin-top: 20px !important;
   }
 }
+
 .delay-1 {
-  animation-delay: 0.3s;
-  -webkit-animation-delay: 0.3s;
+  .delay(0.3s);
 }
 .delay-2 {
-  animation-delay: 0.6s;
-  -webkit-animation-delay: 0.6s;
+  .delay(0.6s);
 }
 .delay-3 {
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
+  .delay(1s);
 }
 .tab-1 {
   margin-right: 15px;
@@ -108,7 +106,7 @@ hr {
     }
   }
 
-  /* ===== Pagination ===== */
+
   /* ===== Pagination ===== */
   .body-green {
     .pagination(#94BA65, #94BA65);
@@ -123,101 +121,117 @@ hr {
     .pagination(#D26C22, #D26C22);
   }
 
-  .pagination > li > a,
-  .pagination > li > span {
-    color: #999;
+  .pagination {
+    > li {
+      > a, span {
+        color: #999;
+      }
+      > a:hover, span:hover, a:focus, span:focus {
+        color: #666;
+      }
+    }
   }
-  .pagination > li > a:hover,
-  .pagination > li > span:hover,
-  .pagination > li > a:focus,
-  .pagination > li > span:focus {
-    color: #666;
-  }
+
 
   /* ===== Panels ===== */
 
   /* 1. Panel Green */
-
+  @panel-green-color: #94BA65;
   .panel-green {
-    border-color: #94BA65;
-  }
-  .panel-green > .panel-heading {
-    color: #fff;
-    background-color: #94BA65;
-    border-color: #94BA65;
-  }
-  .panel-green > .panel-heading + .panel-collapse .panel-body {
-    border-top-color: #94BA65;
-  }
-  .panel-green > .panel-footer + .panel-collapse .panel-body {
-    border-bottom-color: #94BA65;
-  }
-  .panel-green > .panel-footer {
-    background-color: #94BA65;
-    border-top: 1px solid #94BA65;
+    border-color: @panel-green-color;
+
+    > .panel-heading {
+      color: #fff;
+      background-color: @panel-green-color;
+      border-color: @panel-green-color;
+
+      & + .panel-collapse .panel-body {
+        border-top-color: @panel-green-color;
+      }
+
+    }
+    > .panel-footer {
+      background-color: @panel-green-color;
+      border-top: 1px solid @panel-green-color;
+
+      & + .panel-collapse .panel-body {
+        border-bottom-color: @panel-green-color;
+      }
+    }
   }
 
   /* 2. Panel Blue */
 
+  @panel-blue-color: #2790B0;
   .panel-blue {
-    border-color: #2790B0;
-  }
-  .panel-blue > .panel-heading {
-    color: #fff;
-    background-color: #2790B0;
-    border-color: #2790B0;
-  }
-  .panel-blue > .panel-heading + .panel-collapse .panel-body {
-    border-top-color: #2790B0;
-  }
-  .panel-blue > .panel-footer + .panel-collapse .panel-body {
-    border-bottom-color: #2790B0;
-  }
-  .panel-blue > .panel-footer {
-    background-color: #2790B0;
-    border-top: 1px solid #2790B0;
+    border-color: @panel-blue-color;
+
+    > .panel-heading {
+      color: #fff;
+      background-color: @panel-blue-color;
+      border-color: @panel-blue-color;
+
+      & + .panel-collapse .panel-body {
+        border-top-color: @panel-blue-color;
+      }
+    }
+
+    > .panel-footer {
+      background-color: @panel-blue-color;
+      border-top: 1px solid @panel-blue-color;
+
+      & + .panel-collapse .panel-body {
+        border-bottom-color: @panel-blue-color;
+      }
+    }
   }
 
   /* 3. Panel Red */
-
+  @panel-red-color: #E35E54;
   .panel-red {
-    border-color: #E35E54;
+    border-color: @panel-red-color;
+    > .panel-heading {
+      color: #fff;
+      background-color: @panel-red-color;
+      border-color: @panel-red-color;
+
+      & + .panel-collapse .panel-body {
+        border-top-color: @panel-red-color;
+      }
+    }
+    > .panel-footer {
+      background-color: @panel-red-color;
+      border-top: 1px solid @panel-red-color;
+
+      & + .panel-collapse .panel-body {
+        border-bottom-color: @panel-red-color;
+      }
+    }
   }
-  .panel-red > .panel-heading {
-    color: #fff;
-    background-color: #E35E54;
-    border-color: #E35E54;
-  }
-  .panel-red > .panel-heading + .panel-collapse .panel-body {
-    border-top-color: #E35E54;
-  }
-  .panel-red > .panel-footer + .panel-collapse .panel-body {
-    border-bottom-color: #E35E54;
-  }
-  .panel-red > .panel-footer {
-    background-color: #E35E54;
-    border-top: 1px solid #E35E54;
-  }
+
 
   /* 4. Panel Orange */
-
+  @panel-orange-color: #D26C22;
   .panel-orange {
-    border-color: #D26C22;
-  }
-  .panel-orange > .panel-heading {
-    color: #fff;
-    background-color: #D26C22;
-    border-color: #D26C22;
-  }
-  .panel-orange > .panel-heading + .panel-collapse .panel-body {
-    border-top-color: #D26C22;
-  }
-  .panel-orange > .panel-footer + .panel-collapse .panel-body {
-    border-bottom-color: #D26C22;
-  }
-  .panel-orange > .panel-footer {
-    background-color: #D26C22;
-    border-top: 1px solid #D26C22;
+    border-color: @panel-orange-color;
+    > .panel-heading {
+      color: #fff;
+      background-color: @panel-orange-color;
+      border-color: @panel-orange-color;
+
+      & + .panel-collapse .panel-body {
+        border-top-color: @panel-orange-color;
+      }
+    }
+
+    > .panel-footer {
+      background-color: @panel-orange-color;
+      border-top: 1px solid @panel-orange-color;
+
+      & + .panel-collapse .panel-body {
+        border-bottom-color: @panel-orange-color;
+      }
+    }
   }
 
   /* ===== Info Boards ==== */
@@ -226,13 +240,14 @@ hr {
     margin: 20px 0;
     padding: 15px 30px 15px 15px;
     border-left: 5px solid #eee;
-  }
-  .info-board h4 {
-    margin-top: 0;
-    font-family: 'Roboto', sans-serif;
-  }
-  .info-board p:last-child {
-    margin-bottom: 0;
+
+    h4 {
+      margin-top: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 
   /* 1. Info board green */
@@ -269,48 +284,56 @@ hr {
 
   .nav-tabs {
     margin-bottom: 15px;
+
+    > li {
+      > a {
+        border-bottom: 1px solid #dedede;
+        border-radius: 0;
+        background: #fff;
+        color: #999;
+        -webkit-transition: color 200ms;
+        transition: color 200ms;
+
+        &:hover {
+          text-decoration: none;
+          background-color: #fff;
+          border-color: #fff #fff #dedede;
+          color: #515151;
+        }
+      }
+      &.active {
+        > a, a:hover, a:focus {
+          color: #515151;
+          cursor: default;
+          background-color: #fff;
+          border: 1px solid transparent;
+        }
+      }
+    }
   }
-  .nav-tabs > li > a {
-    border-bottom: 1px solid #dedede;
-    border-radius: 0;
-    background: #fff;
-    color: #999;
-    -webkit-transition: color 200ms;
-    transition: color 200ms;
-  }
-  .nav-tabs > li > a:hover, .nav > li > a:focus {
+
+  .nav > li > a:focus {
     text-decoration: none;
     background-color: #fff;
     border-color: #fff #fff #dedede;
     color: #515151;
   }
-  .nav-tabs > li.active > a,
-  .nav-tabs > li.active > a:hover,
-  .nav-tabs > li.active > a:focus {
-    color: #515151;
-    cursor: default;
-    background-color: #fff;
-    border: 1px solid transparent;
+
+  .body-green  {
+    .nav-tabs(#94BA65);
+
   }
-  .body-green .nav-tabs > li.active > a,
-  .body-green .nav-tabs > li.active > a:hover,
-  .body-green .nav-tabs > li.active > a:focus {
-    border-bottom-color: #94BA65;
+  .body-blue  {
+    .nav-tabs(#2790B0);
+
   }
-  .body-blue .nav-tabs > li.active > a,
-  .body-blue .nav-tabs > li.active > a:hover,
-  .body-blue .nav-tabs > li.active > a:focus {
-    border-bottom-color: #2790B0;
+  .body-orange  {
+    .nav-tabs(#D26C22);
+
   }
-  .body-orange .nav-tabs > li.active > a,
-  .body-orange .nav-tabs > li.active > a:hover,
-  .body-orange .nav-tabs > li.active > a:focus {
-    border-bottom-color: #D26C22;
-  }
-  .body-red .nav-tabs > li.active > a,
-  .body-red .nav-tabs > li.active > a:hover,
-  .body-red .nav-tabs > li.active > a:focus {
-    border-bottom-color: #E35E54;
+  .body-red  {
+    .nav-tabs(#E35E54);
+
   }
   .nav-tabs.nav-justified > li > a {
     margin-right: 0;
