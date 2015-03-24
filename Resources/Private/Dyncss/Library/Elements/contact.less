@@ -1,0 +1,46 @@
+
+
+/* ===== Contact Us ===== */
+
+/* Alert Message */
+
+#form_message {
+  display: none;
+}
+#form_message.alert-success {
+  display: block;
+}
+
+/* Help Block (error messages) */
+
+#form_sendemail .help-block {
+  color: #ff5722 !important;
+  display: none;
+}
+#form_sendemail .has-error .help-block,
+#form_sendemail .has-error.help-block {
+  display: block;
+}
+/* reCaptcha */
+#recaptcha_image {
+  margin-bottom: 15px;
+}
+#recaptcha_image > img {
+  border: 1px solid #FFF;
+}
+#recaptcha_image,
+#recaptcha_image > img {
+  width: 100% !important;
+  max-width: 300px;
+  height: auto !important;
+}
+#recaptcha_audio_play_again {
+  cursor: pointer;
+}
+
+/* reCaptcha iframe bug fix (causing an emptly line just before
+  the closing </body> tag */
+  
+iframe[src="about:blank"] {
+  display: none !important;
+}

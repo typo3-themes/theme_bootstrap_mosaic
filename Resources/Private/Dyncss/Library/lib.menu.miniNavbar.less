@@ -1,0 +1,90 @@
+/* ===== Mini Navbar ===== */
+
+.mini-navbar {
+  width: 100%;
+  height: 40px;
+  font-size: 0.9em;
+  z-index: 9999;
+  position: relative;
+}
+.mini-navbar .hidden-sm {
+  display: inline-block !important;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .mini-navbar .hidden-sm {
+    display: none !important;
+  }
+}
+.mini-navbar .phone {
+  display: inline-block;
+  padding: 10px;
+}
+.mini-navbar a {
+  display: inline-block;
+  padding: 10px 10px 11px 10px;
+  -webkit-transition: background 500ms;
+      transition: background 500ms;
+}
+.mini-navbar a.first-child {
+  margin-left: -25px; /* To align with logo and container */
+}
+.mini-navbar a:hover {
+  text-decoration: none;
+}
+
+/* Mini Navbar Dark */
+
+.mini-navbar-dark {
+  background: #353432;
+  color: #ecf0f1;
+  border-bottom: 1px solid #666;
+}
+.mini-navbar-dark a {
+  color: #ecf0f1;
+}
+.mini-navbar-dark a:hover {
+  background: #242424;
+}
+
+/* Mini Navbar White */
+
+.mini-navbar-white {
+  background: #fff;
+  color: #505050;
+  border-bottom: 1px solid #ecf0f1;
+}
+.mini-navbar-white a {
+  color: #505050;
+}
+.mini-navbar-white a:hover {
+  background: #f5f5f5;
+}
+
+/* Search Form */
+
+.mini-navbar form {
+  width: 250px;
+}
+.mini-navbar form .form-control{
+  height: 26px;
+  margin: 7px 0;
+  border: 0;
+  -webkit-box-shadow: none;
+      box-shadow: none;
+}
+.mini-navbar form button {
+  height: 26px;
+  margin: 7px 0;
+  padding: 2px 7px;
+  background: #ecf0f1;
+}
+.mini-navbar-dark form .form-control {
+  background: #484848;
+  color: #ccc;
+}
+.mini-navbar-white form .form-control {
+  background: #fff;
+  border: 1px solid #dedede;
+  color: #505050;
+}
+

@@ -1,0 +1,104 @@
+
+
+/* Portfolio */
+
+.portfolio {
+  margin-bottom: 30px;
+}
+.portfolio__nav {
+  margin-bottom: 20px;
+}
+.portfolio-item {
+  margin-bottom: 20px;
+}
+.portfolio-item > a {
+  position: relative;
+  display: block;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.portfolio-item > a > .mask {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  padding: 10px;
+  background: #4E4D4A;
+  color: #fff;
+  -webkit-transition: bottom 500ms;
+      transition: bottom 500ms;
+}
+.col-sm-3 > .portfolio-item > a > .mask,
+.col-md-3 > .portfolio-item > a > .mask,
+.col-lg-3 > .portfolio-item > a > .mask {
+  font-size: 0.9em;
+}
+.portfolio-item > a:hover > .mask {
+  bottom: 0;
+}
+.portfolio-desc {
+  padding: 0 5px;
+  margin-bottom: 20px;
+}
+.portfolio-desc > h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+
+
+/* ===== Portfolio Item ===== */
+
+.port-slideshow-p {
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/* Slideshow controls */
+
+a.port-arrow-p  {
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 50px;
+  top: 50%;
+  margin-top: -50px;
+  background: transparent;
+  color: transparent;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 100px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: background 500ms, color 500ms;
+      transition: background 500ms, color 500ms;
+}
+.port-slideshow-p:hover a.port-arrow-p  {
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+}
+a.port-arrow-p:hover,
+a.port-arrow-p:active {
+  text-decoration: none;
+}
+a.port-arrow-prev {
+  left: 0;
+  right: auto;
+  padding-right: 5px;
+}
+a.port-arrow-next {
+  right: 0;
+  left: auto;
+  padding-left: 5px;
+}
+
+/* !Slideshow controls */
+
+.port-item-p h3 {
+  line-height: 1.5;
+}
+.port-item-p p {
+  line-height: 1.7;
+}

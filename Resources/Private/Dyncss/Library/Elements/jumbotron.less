@@ -1,0 +1,75 @@
+
+/* ===== Jumbotron ===== */
+
+.main-slideshow {
+  position: relative;
+  margin-top: -20px;
+}
+.jumbotron.first {
+  background: url(../img/slide-1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.jumbotron.second {
+  background: url(../img/slide-2.jpg) no-repeat center center;
+  background-size: cover;
+}
+.jumbotron.third {
+  background: url(../img/slide-3.jpg) no-repeat center center;
+  background-size: cover;
+}
+.jumbotron {
+  width: 100%;
+  height: 470px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #FFF;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.jumbotron h1 {
+  font-size: 36px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+.jumbotron.first img {
+  width: 90%;
+  margin: 50px auto 0;
+}
+.jumbotron.second img {
+  position: absolute;
+  bottom: -600px;
+  left: 50%;
+  margin-left: -300px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0,0,0,0.8);
+  transition: bottom 0.3s;
+  -webkit-transition: bottom 0.3s;
+}
+.jumbotron.second img:hover {
+  bottom: -590px;
+}
+.jumbotron.third .video {
+  width: 80%;
+  margin: 50px auto 0 auto;
+}
+.jumbotron.first h1,
+.jumbotron.third h1 {
+  margin-top: 50px;
+}
+@media (max-width: 767px) { /* Adjusting for mobile */
+  .jumbotron.first h1,
+  .jumbotron.third h1 {
+    margin-top: 20px;
+  }
+}
+.jumbotron .lead {
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+.jumbotron .btn {
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}

@@ -1,9 +1,11 @@
 page {
 	includeCSS {
-		animate = EXT:theme_bootstrap_mosaic/Resources/Public/Stylesheets/animate.css
-		color-styles = EXT:theme_bootstrap_mosaic/Resources/Public/Stylesheets/color-styles.css
-		lightbox = EXT:theme_bootstrap_mosaic/Resources/Public/Stylesheets/lightbox.css
-		ui-elements = EXT:theme_bootstrap_mosaic/Resources/Public/Stylesheets/ui-elements.css
-		custom = EXT:theme_bootstrap_mosaic/Resources/Public/Stylesheets/custom.css
+		#animate = EXT:theme_bootstrap_mosaic/Resources/Public/Stylesheets/animate.css
+		#color-styles = EXT:theme_bootstrap_mosaic/Resources/Public/Stylesheets/color-styles.css
+		#lightbox = EXT:theme_bootstrap_mosaic/Resources/Public/Stylesheets/lightbox.css
+		#ui-elements = EXT:theme_bootstrap_mosaic/Resources/Public/Stylesheets/ui-elements.css
+		#custom = EXT:theme_bootstrap_mosaic/Resources/Public/Stylesheets/custom.css
 	}
 }
+
+page.includeCSS.mosaic = EXT:theme_bootstrap_mosaic/Resources/Private/Dyncss/import.less

@@ -1,0 +1,88 @@
+
+
+/* ===== Pricing Table ===== */
+
+.pricing-p .item {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-transition: margin-top 500ms;
+      transition: margin-top 500ms;
+}
+.pricing-p .item:hover {
+  margin-top: -10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.pricing-p .head {
+  position: relative;
+  margin-bottom: 50px;
+  padding: 30px 10px 10px;
+  border-radius: 3px;
+}
+.pricing-p .head h4 {
+  color: #FFF;
+  text-transform: uppercase;
+}
+.pricing-p .head .arrow {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  border-top-width: 30px;
+  border-top-style: solid;
+  border-right: 99px solid white;
+  border-left: 99px solid white;
+}
+.pricing-p .sceleton h5 {
+  font-size: 30px;
+}
+.pricing-p .sceleton span {
+  font-size: 24px;
+}
+.pricing-p .sceleton ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+.pricing-p .sceleton li {
+  list-style-type: none;
+  padding: 10px 0;
+  border-top: 1px dotted #ccc;
+}
+.pricing-p .sceleton li:hover {
+  border-top: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+}
+@media (max-width: 1199px) { /* Adjusting for large devices */
+  .pricing-p .head .arrow {
+    border-right-width: 95px;
+    border-left-width: 95px;
+  }
+}
+@media (max-width: 991px) { /* Adjusting for small devices */
+  .pricing-p .head .arrow {
+    border-right-width: 68px;
+    border-left-width: 68px;
+    border-top-width: 20px;
+  }
+}
+@media (max-width: 767px) { /* Adjusting for mobile */
+  .pricing-p .head {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .pricing-p .head .arrow {
+    border: 0;
+  }
+  .pricing-p .item {
+    margin: 20px 0;
+  }
+  .pricing-p .item:hover {
+    margin: 20px 0;
+  }
+}

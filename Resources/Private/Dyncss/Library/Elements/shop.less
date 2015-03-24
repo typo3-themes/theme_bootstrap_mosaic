@@ -1,0 +1,165 @@
+
+
+/* ===== Shop ===== */
+
+.color-jumbotron {
+  margin-top: -20px;
+  margin-bottom: 30px;
+  padding: 50px 0;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+.color-jumbotron form {
+  margin-top: 50px;
+}
+.shop-product {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.shop-product:hover {
+  border-color: #ddd;
+}
+.shop-product img {
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.shop-product a {
+  color: #515151;
+}
+.shop-product.featured:before {
+  content: "Featured";
+  position: absolute;
+  top: 0;
+  right: 15px;
+  padding: 3px 8px;
+  border-radius: 0 3px 0 3px;
+  background: #E35E54;
+  color: white;
+}
+.shop-product.featured .price .old {
+  color: red;
+  text-decoration: line-through;
+}
+.shop-product.featured .price .new {
+  font-weight: bold;
+}
+.shop-category {
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border-bottom: 1px solid #eee;
+}
+.shop-search {
+  margin-bottom: 20px;
+}
+
+/* Shop Item */
+
+.shop-item .product-img {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+}
+.shop-item .product-img img {
+  border-radius: 3px;
+  opacity: 0.5;
+}
+.shop-item .product-img img:hover {
+  opacity: 1;
+}
+.shop-item .product-img img.main {
+  margin-bottom: 5px;
+  opacity: 1;
+}
+.shop-item .product-img .row {
+  padding: 0 12px;
+}
+.shop-item .product-img .col-xs-4 {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.rating {
+  display: inline-block;
+  margin-left: 0px;
+}
+.rating li {
+  margin: 0;
+  padding: 0;
+  color: #F7C41F;
+  font-size: 14px;
+}
+.shop-item .reviews {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.shop-item .price-block {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #eee;
+  border-radius: 3px;
+}
+.shop-item .price-block .form-control {
+  display: inline-block;
+  width: 60px;
+}
+.shop-item .price-block .price {
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+/* Shopping Cart */
+
+.shopping-cart table > thead > tr > th {
+  border-bottom-width: 1px;
+}
+.shopping-cart table > tbody > tr > td {
+  vertical-align: middle;
+}
+.shopping-cart table img {
+  float: left;
+  width: 100px;
+  margin: 0 10px 10px 0;
+  border-radius: 3px;
+}
+.shopping-cart table .item {
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .shopping-cart table img {
+    float: none;
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .shopping-cart table .item {
+    overflow: visible;
+  }
+}
+.shopping-cart .form-control {
+  width: 60px; 
+}
+.shopping-cart .checkout {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.shopping-cart .checkout > li {
+  margin: 10px 0;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.03.2015, 11:34:15
+    Author     : kerstin
+*/
+
