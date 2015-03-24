@@ -1,3 +1,5 @@
+
+/*Less Mixin to set the background color and border color depending on the theme colors */
 .pagination (@bgcolor, @border-color) {
   .pagination {
     > .active {
@@ -7,4 +9,21 @@
       }
     }
   }
+}
+
+/*Less Mixin to set the color of the nav tabs  depending on the theme color*/
+.nav-tabs(@color) {
+  .nav-tabs {
+    > li.active {
+      > a, a:hover, a:focus {
+        border-bottom-color: @color;
+      }
+    }
+  }
+}
+
+/*Prefix free Less Mixin: animation delay*/
+.delay(@delay) {
+  animation-delay: @delay;
+  -webkit-animation-delay: @delay;
 }
