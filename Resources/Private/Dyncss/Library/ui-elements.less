@@ -75,12 +75,14 @@ hr {
     border-bottom: 1px solid #eee;
     margin-bottom: 30px;
     line-height: 50px;
+
+    span {
+      padding-bottom: 4px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
   }
-  .headline span {
-    padding-bottom: 4px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-  }
+
   h3.headline span {
     padding-bottom: 8px;
   }
@@ -91,58 +93,36 @@ hr {
     margin-top: -20px;
     margin-bottom: 40px;
     border-bottom: 1px solid #eee;
-  }
-  .topic h3 {
-    display: inline-block;
-    padding: 20px 0 20px;
-    margin: 0 0 -1px 0;
-    font-size: 20px;
-  }
-  .topic .breadcrumb {
-    margin-bottom: 0;
-    padding: 21px 0;
-    background: transparent;
-  }
 
+    h3 {
+      display: inline-block;
+      padding: 20px 0 20px;
+      margin: 0 0 -1px 0;
+      font-size: 20px;
+    }
+
+    .breadcrumb {
+      margin-bottom: 0;
+      padding: 21px 0;
+      background: transparent;
+    }
+  }
 
   /* ===== Pagination ===== */
+  /* ===== Pagination ===== */
+  .body-green {
+    .pagination(#94BA65, #94BA65);
+  }
+  .body-blue {
+    .pagination(#2790B0, #2790B0);
+  }
+  .body-red {
+    .pagination(#E35E54, #E53E54);
+  }
+  .body-orange {
+    .pagination(#D26C22, #D26C22);
+  }
 
-  .body-green .pagination > .active > a,
-  .body-green .pagination > .active > span,
-  .body-green .pagination > .active > a:hover,
-  .body-green .pagination > .active > span:hover,
-  .body-green .pagination > .active > a:focus,
-  .body-green .pagination > .active > span:focus {
-    background-color: #94BA65;
-    border-color: #94BA65;
-  }
-  .body-blue .pagination > .active > a,
-  .body-blue .pagination > .active > span,
-  .body-blue .pagination > .active > a:hover,
-  .body-blue .pagination > .active > span:hover,
-  .body-blue .pagination > .active > a:focus,
-  .body-blue .pagination > .active > span:focus {
-    background-color: #2790B0;
-    border-color: #2790B0;
-  }
-  .body-red .pagination > .active > a,
-  .body-red .pagination > .active > span,
-  .body-red .pagination > .active > a:hover,
-  .body-red .pagination > .active > span:hover,
-  .body-red .pagination > .active > a:focus,
-  .body-red .pagination > .active > span:focus {
-    background-color: #E35E54;
-    border-color: #E35E54;
-  }
-  .body-orange .pagination > .active > a,
-  .body-orange .pagination > .active > span,
-  .body-orange .pagination > .active > a:hover,
-  .body-orange .pagination > .active > span:hover,
-  .body-orange .pagination > .active > a:focus,
-  .body-orange .pagination > .active > span:focus {
-    background-color: #D26C22;
-    border-color: #D26C22;
-  }
   .pagination > li > a,
   .pagination > li > span {
     color: #999;
