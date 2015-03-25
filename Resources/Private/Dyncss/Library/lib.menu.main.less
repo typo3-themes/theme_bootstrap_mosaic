@@ -408,40 +408,60 @@
 /* Navbar White Mobile */
 
 @media (max-width: 767px) {
-  .navbar-white .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #ecf0f1;
+  .navbar-white {
+    .navbar-nav {
+      .open {
+        .dropdown-menu {
+          > .dropdown-header {
+            border-color: #ecf0f1;
+          }
+          > li {
+            > a {
+              color: #505050;
+              padding: 10px 20px;
+              border: 0;
+
+              &:hover, &:focus {
+                color: #fff;
+              }
+            }
+          }
+          > .active {
+            > a {
+              &, &:hover, &:focus {
+                color: #505050;
+                background-color: transparent;
+              }
+            }
+          }
+          > .disabled {
+            a {
+              &, &:hover, &:focus {
+                color: #ccc;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+      > .open {
+        a {
+          &, &:hover, &:focus {
+            color: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-width: 0;
+          }
+        }
+      }
+    }
   }
-  .navbar-white .navbar-nav .open .dropdown-menu > li > a {
-    color: #505050;
-    padding: 10px 20px;
-    border: 0;
-  }
-  .navbar-white .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-white .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #fff;
-  }
-  .navbar-white .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-white .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-white .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #505050;
-    background-color: transparent;
-  }
-  .navbar-white .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-white .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-white .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #ccc;
-    background-color: transparent;
-  }
+
+
+
   /* .navbar-white .navbar-nav > li > a:hover,
   .navbar-white .navbar-nav > li > a:focus {
     color: #fff;
   } */
-  .navbar-white .navbar-nav > .open > a,
-  .navbar-white .navbar-nav > .open > a:hover,
-  .navbar-white .navbar-nav > .open > a:focus {
-    color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-width: 0;
-  }
+
 }
