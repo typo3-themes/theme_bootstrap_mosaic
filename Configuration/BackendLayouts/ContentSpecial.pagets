@@ -1,0 +1,4 @@
+backendlayouts {
+    ContentSpecial {
+        icon = EXT:theme_bootstrap_mosaic/Resources/Public/Icons/BackendLayouts/ContentSpecial.jpg
+}
