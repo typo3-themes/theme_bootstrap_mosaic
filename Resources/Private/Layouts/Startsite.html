@@ -21,22 +21,19 @@
     </div>
 
     <div class="wrapper">
-        <div class="container">
-            <section id="areaFeature" class="page-header">
-                <f:cObject typoscriptObjectPath="lib.content.feature" />
-            </section>
+        <div class="main-slideshow">
+            <!--<div data-ride="carousel" class="carousel slide" id="main-slideshow">
+                <section id="areaFeature" class="page-header">-->
+                    <f:cObject typoscriptObjectPath="lib.content.feature" />
+                <!--</section>
+            </div>-->
+        </div>
+        <div class="container intro">
+            
 
             <main id="areaMain" class="row">
-                <div id="menuBreadcrumbWrapper">
-                    <span><f:translate key="breadcrumb_label" /></span>
-                    <f:cObject typoscriptObjectPath="lib.menu.breadcrumb" />
-                </div>
                 <f:render section="Default" />
             </main>
-
-            <section id="areaExtended" class="row">
-                <f:cObject typoscriptObjectPath="lib.content.extended" />
-            </section>
 
         </div>
     </div>
