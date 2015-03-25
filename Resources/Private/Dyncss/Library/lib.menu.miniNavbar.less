@@ -1,3 +1,24 @@
+/* ===== Variables =====*/
+@mini-navbar-default-button-bgcolor: #ecf0f1;
+
+@mini-navbar-dark-bgcolor: #353432;
+@mini-navbar-dark-font-color: #ecf0f1;
+@mini-navbar-dark-border-bottom: 1px solid #666;
+@mini-navbar-dark-link-color: @mini-navbar-dark-font-color;
+@mini-navbar-dark-link-color-hover: #242424;
+@mini-navbar-dark-form-control-bgcolor:#484848;
+@mini-navbar-dark-form-control-font-color: #ccc;
+
+@mini-navbar-white-bgcolor: #fff;
+@mini-navbar-white-font-color: #505050;
+@mini-navbar-white-border-bottom: 1px solid #ecf0f1;
+@mini-navbar-white-link-color: @mini-navbar-white-font-color;
+@mini-navbar-white-link-color-hover: #f5f5f5;
+@mini-navbar-white-form-control-bgcolor: #fff;
+@mini-navbar-white-form-control-border: 1px solid #dedede;
+@mini-navbar-white-form-control-font-color: #505050;
+
+
 /* ===== Mini Navbar ===== */
 
 .mini-navbar {
@@ -6,85 +27,102 @@
   font-size: 0.9em;
   z-index: 9999;
   position: relative;
-}
-.mini-navbar .hidden-sm {
-  display: inline-block !important;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .mini-navbar .hidden-sm {
-    display: none !important;
+
+  .hidden-sm {
+    display: inline-block !important;
+    @media (min-width: 768px) and (max-width: 991px) {
+      .mini-navbar .hidden-sm {
+        display: none !important;
+      }
+    }
+  }
+  .phone {
+    display: inline-block;
+    padding: 10px;
+  }
+  a {
+    display: inline-block;
+    padding: 10px 10px 11px 10px;
+    -webkit-transition: background 500ms;
+    transition: background 500ms;
+
+    &.first-child {
+      margin-left: -25px; /* To align with logo and container */
+    }
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
-.mini-navbar .phone {
-  display: inline-block;
-  padding: 10px;
-}
-.mini-navbar a {
-  display: inline-block;
-  padding: 10px 10px 11px 10px;
-  -webkit-transition: background 500ms;
-      transition: background 500ms;
-}
-.mini-navbar a.first-child {
-  margin-left: -25px; /* To align with logo and container */
-}
-.mini-navbar a:hover {
-  text-decoration: none;
-}
+
 
 /* Mini Navbar Dark */
 
+
 .mini-navbar-dark {
-  background: #353432;
-  color: #ecf0f1;
-  border-bottom: 1px solid #666;
-}
-.mini-navbar-dark a {
-  color: #ecf0f1;
-}
-.mini-navbar-dark a:hover {
-  background: #242424;
+  background: @mini-navbar-dark-bgcolor;
+  color: @mini-navbar-dark-font-color;
+  border-bottom: @mini-navbar-dark-border-bottom;
+  a {
+    color: @mini-navbar-dark-link-color;
+
+    &:hover {
+      background: @mini-navbar-dark-link-color-hover;
+    }
+  }
 }
 
 /* Mini Navbar White */
-
 .mini-navbar-white {
-  background: #fff;
-  color: #505050;
-  border-bottom: 1px solid #ecf0f1;
-}
-.mini-navbar-white a {
-  color: #505050;
-}
-.mini-navbar-white a:hover {
-  background: #f5f5f5;
+  background: @mini-navbar-white-bgcolor;
+  color: @mini-navbar-white-font-color;
+  border-bottom: @mini-navbar-white-border-bottom;
+
+  a {
+    color: @mini-navbar-white-link-color;
+
+    &:hover {
+      background: @mini-navbar-white-link-color-hover;
+    }
+  }
 }
 
 /* Search Form */
+.mini-navbar {
+  form {
+    width: 250px;
 
-.mini-navbar form {
-  width: 250px;
-}
-.mini-navbar form .form-control{
-  height: 26px;
-  margin: 7px 0;
-  border: 0;
-  -webkit-box-shadow: none;
+    .form-control{
+      height: 26px;
+      margin: 7px 0;
+      border: 0;
+      -webkit-box-shadow: none;
       box-shadow: none;
+    }
+    button {
+      height: 26px;
+      margin: 7px 0;
+      padding: 2px 7px;
+      background: @mini-navbar-default-button-bgcolor;
+    }
+  }
 }
-.mini-navbar form button {
-  height: 26px;
-  margin: 7px 0;
-  padding: 2px 7px;
-  background: #ecf0f1;
+
+.mini-navbar-dark {
+  form {
+    .form-control {
+      background: @mini-navbar-dark-form-control-bgcolor;
+      color: @mini-navbar-dark-form-control-font-color;
+    }
+  }
 }
-.mini-navbar-dark form .form-control {
-  background: #484848;
-  color: #ccc;
-}
-.mini-navbar-white form .form-control {
-  background: #fff;
-  border: 1px solid #dedede;
-  color: #505050;
+.mini-navbar-white {
+  form {
+    .form-control {
+      background: @mini-navbar-white-form-control-bgcolor;
+      border: @mini-navbar-white-form-control-border;
+      color: @mini-navbar-white-form-control-font-color;
+    }
+  }
 }
 
