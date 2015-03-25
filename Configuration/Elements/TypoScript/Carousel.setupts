@@ -1,0 +1,18 @@
+lib.gridelements {
+	carousel {
+		columns.0.renderObj {
+			key.field = CType
+                        gridelements_pi1 = COA
+                        gridelements_pi1 {
+                            10 =< tt_content.gridelements_pi1
+                            if {
+                                value.field = tx_gridelements_backend_layout
+                                isInList = 2ColumnGrid
+                            }
+                        }
+                        
+		}
+	}
+}
+
+tt_content.gridelements_pi1.20.10.setup.carousel < lib.gridelements.carousel
