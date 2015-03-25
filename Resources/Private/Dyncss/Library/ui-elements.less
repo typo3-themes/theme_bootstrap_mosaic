@@ -310,6 +310,19 @@ hr {
         }
       }
     }
+    &.nav-justified {
+      > li {
+        > a {
+          margin-right: 0;
+          border-radius: 0;
+        }
+      }
+      .active {
+        > a, a:focus, a:hover {
+          border: 1px solid transparent;
+        }
+      }
+    }
   }
 
   .nav > li > a:focus {
@@ -334,15 +347,6 @@ hr {
   .body-red  {
     .nav-tabs(#E35E54);
 
-  }
-  .nav-tabs.nav-justified > li > a {
-    margin-right: 0;
-    border-radius: 0;
-  }
-  .nav-tabs.nav-justified > .active > a,
-  .nav-tabs.nav-justified > .active > a:hover,
-  .nav-tabs.nav-justified > .active > a:focus {
-    border: 1px solid transparent;
   }
 
   /* 2. Nav pills */
