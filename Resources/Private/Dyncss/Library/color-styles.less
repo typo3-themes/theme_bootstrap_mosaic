@@ -7,47 +7,58 @@ Version:    1.3.0
 Created:        20/01/2014
 Last change:    25/02/2015
 -------------------------------------------------------------------*/
+/* ===== Variables =====*/
+@green: #94BA65;
+@blue: #2790B0;
+@orange: #D26C22;
+@red: #E35E54;
 
 /* ===== Body Style Toggle ===== */
+.style-toogle-body {
+  .colors {
+    margin: 0;
 
-.style-toggle-body .colors {
-  margin: 0;
-}
-.style-toggle-body .colors > li {
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-}
-.style-toggle-body .colors > .green {
-  background-color: #94BA65;
-}
-.style-toggle-body .colors > .blue {
-  background-color: #2790B0;
-}
-.style-toggle-body .colors > .orange {
-  background-color: #D26C22;
-}
-.style-toggle-body .colors > .red {
-  background-color: #E35E54;
+    > li {
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+    }
+
+    > .green {
+      background-color: @green;
+    }
+
+    > .blue {
+      background-color: @blue;
+    }
+
+    > .orange {
+      background-color: @orange;
+    }
+
+    > .red {
+      background-color: @red;
+    }
+  }
 }
 
 /* ===== Link and Font Colors ===== */
 
 .body-green a,
 .body-green .text-color {
-  color: #94BA65;
+  color: @green;
 }
 .body-blue a,
 .body-blue .text-color {
-  color: #2790B0;
+  color: @blue;
 }
 .body-orange a,
 .body-orange .text-color {
-  color: #D26C22;
+  color: @orange;
 }
 .body-red a,
 .body-red .text-color {
-  color: #E35E54;
+  color: @red;
 }
 
 

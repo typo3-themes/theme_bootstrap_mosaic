@@ -2,42 +2,42 @@
 <!-- theme_bootstrap_mosaic: Layouts/Special.html [begin] -->
 <div id="layoutDefault">
     <f:render partial="Area/MiniNavbar" section="Default" arguments="{_all}"/>
-	<div id="menuMain" class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<div id="logoWrapper" class="navbar-brand">
-					<f:cObject typoscriptObjectPath="lib.header.logo.main" />
-				</div>
-				<button data-target="#navbar-main" data-toggle="collapse" type="button" class="navbar-toggle">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div id="navbar-main" class="navbar-collapse collapse">
-				<f:cObject typoscriptObjectPath="lib.menu.main" />
-			</div>
-		</div>
-	</div>
-	
-	<div class="container">
-		<section id="areaFeature" class="page-header">
-			<f:cObject typoscriptObjectPath="lib.content.feature" />
-		</section>
-
-		<main id="areaMain" class="row">
-			<div id="menuBreadcrumbWrapper">
-				<span><f:translate key="breadcrumb_label" /></span>
-				<f:cObject typoscriptObjectPath="lib.menu.breadcrumb" />
-			</div>
-			<f:render section="Default" />
-		</main>
-
-		<section id="areaExtended" class="row">
-			<f:cObject typoscriptObjectPath="lib.content.extended" />
-		</section>
-	</div>
-
-	<f:render partial="Area/Footer" section="Default" arguments="{_all}" />
+    <div id="menuMain" class="navbar navbar-dark navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div id="logoWrapper" class="navbar-brand">
+                    <f:cObject typoscriptObjectPath="lib.header.logo.main"/>
+                </div>
+                <button data-target="#navbar-main" data-toggle="collapse" type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar-main" class="navbar-collapse collapse">
+                <f:cObject typoscriptObjectPath="lib.menu.main"/>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- theme_bootstrap: Layouts/Special.html [end] -->
+<div class="wrapper">
+    <div class="color-jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <section id="areaFeature">
+                        <f:cObject typoscriptObjectPath="lib.content.feature" />
+                    </section>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </div> <!-- / .color-jumbotron -->
+    <div class="container">
+        <main id="areaMain" class="row">
+            <f:render section="Default" />
+        </main>
+    </div>
+</div>
+<f:render partial="Area/Footer" section="Default" arguments="{_all}" />
+</div>
+<!-- theme_bootstrap_mosaic: Layouts/Special.html [end] -->
