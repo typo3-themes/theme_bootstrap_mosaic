@@ -7,11 +7,75 @@ Version:    1.3.0
 Created:        20/01/2014
 Last change:    25/02/2015
 -------------------------------------------------------------------*/
+@nav-pills-green-color: #94BA65;
+@nav-pills-blue-color: #2790B0;
+@nav-pills-orange-color: #D26C22;
+@nav-pills-red-color: #E35E54;
+@nav-pills-focus-general-color: #f0f0f0;
+
+@primary-font-family: 'Roboto', sans-serif;
+
+/*headline settings*/
+@headline-padding-bottom: 1px;
+@headline-border-bottom: 1px solid #eee;
+@headline-margin-bottom: 30px;
+@headline-line-height: 50px;
+@headline-h3-padding-bottom: 8px;
+
+/*info board settings*/
+@info-board-margin: 20px 0;
+@info-board-padding: 15px 30px 15px 15px;
+@info-board-border-left: 5px solid #eee;
+
+/*info board caption settings*/
+@info-board-caption-margin-top: 0;
+@info-board-caption-font-family: 'Roboto', sans-serif;
+
+/*info board color settings*/
+@info-board-green-background: #F5F9F1;
+@info-board-green-border-color: #94BA65;
+@info-board-blue-background: #EEF8FB;
+@info-board-blue-border-color: #2790B0;
+@info-board-orange-background: #FCF4ED;
+@info-board-orange-border-color: #D26C22;
+@info-board-red-background: #FCEEED;
+@info-board-red-border-color: #E35E54;
+
+/*pageination colors*/
+@pagination-green: @green;
+@pagination-blue: @blue;
+@pagination-red: @red;
+@pagination-orange: @orange;
+
+/*pageination general settings*/
+@pagination-general-link-color: #999;
+@pagination-general-link-color-hover: #666;
+
+/*Breadcrumbs Outher Settings*/
+@breadcrumbs-topic-margin-top: -20px;
+@breadcrumbs-topic-margin-bottom: 40px;
+@breadcrumbs-topic-border-bottom: 1px solid #eee;
+
+/*Breadcrumbs Caption Settings*/
+@breadcrumbs-caption-paddings: 20px 0 20px;
+@breadcrumbs-caption-margins: 0 0 -1px 0;
+@breadcrumbs-caption-font-size: 20px;
+
+/*Breadcrumbs Inner Settings*/
+@breadcrumbs-inner-margin-bottom: 0;
+@breadcrumbs-inner-paddings: 21px 0;
+@breadcrumbs-inner-background: transparent;
+
+/*panel color settings*/
+@panel-green-color: #94BA65;
+@panel-blue-color: #2790B0;
+@panel-red-color: #E35E54;
+@panel-orange-color: #D26C22;
 
 /* ===== Helper Classes ===== */
 
 .primary-font {
-  font-family: 'Roboto', sans-serif;
+  font-family: @primary-font-family;
 }
 .first-child {
   margin-top: 0 !important;
@@ -61,18 +125,20 @@ hr {
 
 
   /* ===== Buttons ===== */
-
+  @button-border-radius: 3px;
   .btn {
-    border-radius: 3px;
+    border-radius: @button-border-radius;
   }
 
   /* ===== Headlines ===== */
 
+
+
   .headline {
-    padding-bottom: 1px;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 30px;
-    line-height: 50px;
+    padding-bottom: @headline-padding-bottom;
+    border-bottom: @headline-border-bottom;
+    margin-bottom: @headline-margin-bottom;
+    line-height: @headline-line-height;
 
     span {
       padding-bottom: 4px;
@@ -82,52 +148,56 @@ hr {
   }
 
   h3.headline span {
-    padding-bottom: 8px;
+    padding-bottom: @headline-h3-padding-bottom;
   }
 
   /* ===== Breadcrumbs ===== */
 
+
+
   .topic {
-    margin-top: -20px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #eee;
+    margin-top: @breadcrumbs-topic-margin-top;
+    margin-bottom: @breadcrumbs-topic-margin-bottom;
+    border-bottom: @breadcrumbs-topic-border-bottom;
 
     h3 {
       display: inline-block;
-      padding: 20px 0 20px;
-      margin: 0 0 -1px 0;
-      font-size: 20px;
+      padding: @headline-h3-padding-bottom;
+      margin: @breadcrumbs-caption-margins;
+      font-size: @breadcrumbs-caption-font-size;
     }
 
     .breadcrumb {
-      margin-bottom: 0;
-      padding: 21px 0;
-      background: transparent;
+      margin-bottom: @breadcrumbs-inner-margin-bottom;
+      padding: @breadcrumbs-inner-paddings;
+      background: @breadcrumbs-inner-background;
     }
   }
 
 
   /* ===== Pagination ===== */
+
+
   .body-green {
-    .pagination(#94BA65, #94BA65);
+    .pagination(@pagination-green, @pagination-green);
   }
   .body-blue {
-    .pagination(#2790B0, #2790B0);
+    .pagination(@pagination-blue, @pagination-blue);
   }
   .body-red {
-    .pagination(#E35E54, #E53E54);
+    .pagination(@pagination-red, @pagination-red);
   }
   .body-orange {
-    .pagination(#D26C22, #D26C22);
+    .pagination(@pagination-orange, @pagination-orange);
   }
 
   .pagination {
     > li {
       > a, span {
-        color: #999;
+        color: @pagination-general-link-color;
       }
       > a:hover, span:hover, a:focus, span:focus {
-        color: #666;
+        color: @pagination-general-link-color-hover;
       }
     }
   }
@@ -136,7 +206,8 @@ hr {
   /* ===== Panels ===== */
 
   /* 1. Panel Green */
-  @panel-green-color: #94BA65;
+
+
   .panel-green {
     border-color: @panel-green-color;
 
@@ -162,7 +233,7 @@ hr {
 
   /* 2. Panel Blue */
 
-  @panel-blue-color: #2790B0;
+
   .panel-blue {
     border-color: @panel-blue-color;
 
@@ -187,7 +258,7 @@ hr {
   }
 
   /* 3. Panel Red */
-  @panel-red-color: #E35E54;
+
   .panel-red {
     border-color: @panel-red-color;
     > .panel-heading {
@@ -211,7 +282,7 @@ hr {
 
 
   /* 4. Panel Orange */
-  @panel-orange-color: #D26C22;
+
   .panel-orange {
     border-color: @panel-orange-color;
     > .panel-heading {
@@ -236,6 +307,7 @@ hr {
 
   /* ===== Info Boards ==== */
 
+
   .info-board {
     margin: 20px 0;
     padding: 15px 30px 15px 15px;
@@ -253,29 +325,29 @@ hr {
   /* 1. Info board green */
 
   .info-board-green {
-    background-color: #F5F9F1;
-    border-color: #94BA65;
+    background-color: @info-board-green-background;
+    border-color: @info-board-green-border-color;
   }
 
   /* 2. Info board blue */
 
   .info-board-blue {
-    background-color: #EEF8FB;
-    border-color: #2790B0;
+    background-color: @info-board-blue-background;
+    border-color: @info-board-blue-border-color;
   }
 
   /* 3. Info board orange */
 
   .info-board-orange {
-    background-color: #FCF4ED;
-    border-color: #D26C22;
+    background-color: @info-board-orange-background;
+    border-color: @info-board-orange-border-color;
   }
 
   /* 4. Info board red */
 
   .info-board-red {
-    background-color: #FCEEED;
-    border-color: #E35E54;
+    background-color: @info-board-red-background;
+    border-color: @info-board-red-border-color;
   }
 
   /* ===== Navs ===== */
@@ -371,10 +443,8 @@ hr {
     }
   }
 }
-  @nav-pills-green-color: #94BA65;
-  @nav-pills-blue-color: #2790B0;
-  @nav-pills-orange-color: #D26C22;
-  @nav-pills-red-color: #E35E54;
+
+
   .body-green {
     .nav-pills(@nav-pills-green-color)
   }
@@ -390,7 +460,7 @@ hr {
 
   .nav.nav-pills > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: #f0f0f0;
+    background-color: @nav-pills-focus-general-color;
   }
   .nav-pills-green {
     > li.active {
