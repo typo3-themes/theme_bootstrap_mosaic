@@ -36,9 +36,11 @@ Inherit from: theme_bootstrap
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
+			'php' => '5.2.0-0.0.0',
 			'typo3' => '6.2.0-6.2.99',
-			'themes' => '1.0.1-2.99.99',
-			'theme_bootstrap' => '1.0.0-9.99.99',
+			'themes' => '2.1.0-2.3.99',
+			'theme_bootstrap' => '0.1.0-0.0.0',
+			'themes_gridelements' => '0.1.0-1.0.0',
 		),
 		'conflicts' => array(
 		),
