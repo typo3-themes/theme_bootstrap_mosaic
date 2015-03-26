@@ -13,6 +13,44 @@ Last change:    25/02/2015
 @orange: #D26C22;
 @red: #E35E54;
 
+@link-font-colors-green: @green;
+@link-font-colors-blue: @blue;
+@link-font-colors-orange: @orange;
+@link-font-colors-red: @red;
+
+@border-color-green: @green;
+@border-color-blue: @blue;
+@border-color-orange: @orange;
+@border-color-red: @red;
+
+@bg-color-green: @green;
+@bg-color-green-hover: @green;
+@bg-color-blue: @blue;
+@bg-color-blue-hover: @blue;
+@bg-color-orange: @orange;
+@bg-color-orange-hover: @orange;
+@bg-color-red: @red;
+@bg-color-red-hover: @red;
+
+@dropdown-menu-active-green-color: @green;
+@dropdown-menu-active-blue-color: @blue;
+@dropdown-menu-active-orange-color: @orange;
+@dropdown-menu-active-red-color: @red;
+
+@button-green-color: @green;
+@button-green-border-color: #749B46;
+@button-green-action-color: #749B46;
+@button-green-action-border-color: #5F7F39;
+
+@not-found-green-bg: @green;
+@not-found-green-bg-image: radial-gradient(#A6C680, #749B46);
+@not-found-blue-bg: @blue;
+@not-found-blue-bg-image: radial-gradient(#79C9E2, #2790B0);
+@not-found-orange-bg: @orange;
+@not-found-orange-bg-image: radial-gradient(#E28D50, #D26C22);
+@not-found-red-bg: @red;
+@not-found-red-bg-image: radial-gradient(#EE9C96, #E35E54);
+
 /* ===== Body Style Toggle ===== */
 .style-toogle-body {
   .colors {
@@ -44,88 +82,96 @@ Last change:    25/02/2015
 
 /* ===== Link and Font Colors ===== */
 
+
+
 .body-green a,
 .body-green .text-color {
-  color: @green;
+  color: @link-font-colors-green;
 }
 .body-blue a,
 .body-blue .text-color {
-  color: @blue;
+  color: @link-font-colors-blue;
 }
 .body-orange a,
 .body-orange .text-color {
-  color: @orange;
+  color: @link-font-colors-orange;
 }
 .body-red a,
 .body-red .text-color {
-  color: @red;
+  color: @link-font-colors-red;
 }
 
 
 /* ===== Border Colors ===== */
 
+
+
 .body-green .border-color {
-  border-color: #94BA65;
+  border-color: @border-color-green;
 }
 .body-blue .border-color {
-  border-color: #2790B0;
+  border-color: @border-color-blue;
 }
 .body-orange .border-color {
-  border-color: #D26C22;
+  border-color: @border-color-orange;
 }
 .body-red .border-color {
-  border-color: #E35E54;
+  border-color: @border-color-red;
 }
 
 /* ===== Background Colors ===== */
 
+
 .body-green .bg-color {
-  background-color: #94BA65;
+  background-color: @bg-color-green;
 }
 .body-blue .bg-color {
-  background-color: #2790B0;
+  background-color: @bg-color-blue;
 }
 .body-orange .bg-color {
-  background-color: #D26C22;
+  background-color: @bg-color-orange;
 }
 .body-red .bg-color {
-  background-color: #E35E54;
+  background-color: @bg-color-red;
 }
 .body-green .bg-hover-color:hover,
 .body-green .open > .bg-hover-color {
-  background-color: #94BA65 !important;
+  background-color: @bg-color-green-hover !important;
 }
 .body-blue .bg-hover-color:hover,
 .body-blue .open > .bg-hover-color {
-  background-color: #2790B0 !important;
+  background-color: @bg-color-blue-hover !important;
 }
 .body-orange .bg-hover-color:hover,
 .body-orange .open > .bg-hover-color {
-  background-color: #D26C22 !important;
+  background-color: @bg-color-orange-hover !important;
 }
 .body-red .bg-hover-color:hover,
 .body-red .open > .bg-hover-color {
-  background-color: #E35E54 !important;
+  background-color: @bg-color-red-hover !important;
 }
+
+
+
 .body-green .dropdown-menu > .active > a,
 .body-green .dropdown-menu > .active > a:hover,
 .body-green .dropdown-menu > .active > a:focus {
-  background-color: #94BA65;
+  background-color: @dropdown-menu-active-green-color;
 }
 .body-blue .dropdown-menu > .active > a,
 .body-blue .dropdown-menu > .active > a:hover,
 .body-blue .dropdown-menu > .active > a:focus {
-  background-color: #2790B0;
+  background-color: @dropdown-menu-active-blue-color;
 }
 .body-orange .dropdown-menu > .active > a,
 .body-orange .dropdown-menu > .active > a:hover,
 .body-orange .dropdown-menu > .active > a:focus {
-  background-color: #D26C22;
+  background-color: @dropdown-menu-active-orange-color;
 }
 .body-red .dropdown-menu > .active > a,
 .body-red .dropdown-menu > .active > a:hover,
 .body-red .dropdown-menu > .active > a:focus {
-  background-color: #E35E54;
+  background-color: @dropdown-menu-active-red-color;
 }
 
 /* ===== Buttons Colors ===== */
@@ -147,10 +193,11 @@ Last change:    25/02/2015
 
 /* Button Green */
 
+
 .body-green .btn-color,
 .btn-green {
-  background-color: #94BA65;
-  border-color: #749B46;
+  background-color: @button-green-color;
+  border-color: @button-green-border-color;
 }
 .body-green .btn-color:hover,
 .body-green .btn-color:focus,
@@ -158,16 +205,20 @@ Last change:    25/02/2015
 .btn-green:hover,
 .btn-green:focus,
 .btn-green:active{
-  background-color: #749B46;
-  border-color: #5F7F39;
+  background-color: @button-green-action-color;
+  border-color: @button-green-action-border-color;
 }
 
 /* Button Blue */
+@button-blue-color: @blue;
+@button-blue-border-color: #217B97;
+@button-blue-action-color: #217B97;
+@button-blue-action-border-color: #1A6075;
 
 .body-blue .btn-color,
 .btn-blue {
-  background-color: #2790B0;
-  border-color: #217B97;
+  background-color: @button-blue-color;
+  border-color: @button-blue-border-color;
 }
 .body-blue .btn-color:hover,
 .body-blue .btn-color:focus,
@@ -175,16 +226,20 @@ Last change:    25/02/2015
 .btn-blue:hover,
 .btn-blue:focus,
 .btn-blue:active {
-  background-color: #217B97;
-  border-color: #1A6075;
+  background-color: @button-blue-action-color;
+  border-color: @button-blue-action-border-color;
 }
 
 /* Button Orange */
+@button-orange-color: @orange;
+@button-orange-border-color: #C1631F;
+@button-orange-action-color: #C1631F;
+@button-orange-action-border-color: #9E511A;
 
 .body-orange .btn-color,
 .btn-orange {
-  background-color: #D26C22;
-  border-color: #C1631F;
+  background-color: @button-orange-color;
+  border-color: @button-orange-border-color;
 }
 .body-orange .btn-color:hover,
 .body-orange .btn-color:focus,
@@ -192,16 +247,20 @@ Last change:    25/02/2015
 .btn-orange:hover,
 .btn-orange:focus,
 .btn-orange:active {
-  background-color: #C1631F;
-  border-color: #9E511A;
+  background-color: @button-orange-action-color;
+  border-color: @button-orange-action-border-color;
 }
 
-/* Button Orange */
+/* Button Red */
+@button-red-color: @orange;
+@button-red-border-color: #E0493E;
+@button-red-action-color: #E0493E;
+@button-red-action-border-color: #DD382C;
 
 .body-red .btn-color,
 .btn-red {
-  background-color: #E35E54;
-  border-color: #E0493E;
+  background-color: @button-red-color;
+  border-color: @button-red-border-color;
 }
 .body-red .btn-color:hover,
 .body-red .btn-color:focus,
@@ -209,33 +268,34 @@ Last change:    25/02/2015
 .btn-red:hover,
 .btn-red:focus,
 .btn-red:active {
-  background-color: #E0493E;
-  border-color: #DD382C;
+  background-color: @button-red-action-color;
+  border-color: @button-red-action-border-color;
 }
 
 /* ===== Page Not Found ===== */
 
+
 .body-green .not-found-p,
 .body-green .alt-p,
 .body-green .color-jumbotron{
-  background: #94BA65;
-  background-image: radial-gradient(#A6C680, #749B46);
+  background: @not-found-green-bg;
+  background-image: @not-found-green-bg-image;
 }
 .body-blue .not-found-p,
 .body-blue .alt-p,
 .body-blue .color-jumbotron {
-  background: #2790B0;
-  background-image: radial-gradient(#79C9E2, #2790B0);
+  background: @not-found-blue-bg;
+  background-image: @not-found-blue-bg-image;
 }
 .body-orange .not-found-p,
 .body-orange .alt-p,
 .body-orange .color-jumbotron {
-  background: #D26C22;
-  background-image: radial-gradient(#E28D50, #D26C22);
+  background: @not-found-orange-bg;
+  background-image: @not-found-orange-bg-image;
 }
 .body-red .not-found-p,
 .body-red .alt-p,
 .body-red .color-jumbotron {
-  background: #E35E54;
-  background-image: radial-gradient(#EE9C96, #E35E54);
+  background: @not-found-red-bg;
+  background-image: @not-found-red-bg-image;
 }
