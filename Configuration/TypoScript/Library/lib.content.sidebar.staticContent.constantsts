@@ -1,0 +1,9 @@
+#############################################
+# Header: Header constants
+#############################################
+
+# cat=content; type=string; label= Static content before sidebar-column content (multiple tt_content-uid must be comma separated)
+themes.configuration.content.sidebar.before = 
+
+# cat=content; type=string; label= Static content after sidebar-column content (multiple tt_content-uid must be comma separated)
+themes.configuration.content.sidebar.after = 

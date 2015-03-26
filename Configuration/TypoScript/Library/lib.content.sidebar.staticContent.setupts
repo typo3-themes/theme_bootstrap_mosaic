@@ -1,0 +1,37 @@
+
+# Content before custom sidebar content
+lib.content.sidebar.contentBefore = RECORDS
+lib.content.sidebar.contentBefore {
+source = {$themes.configuration.content.sidebar.before}
+  tables = tt_content
+  select {
+    where = colPos > 0
+    orderBy = sorting DESC
+    languageField = sys_language_uid
+  }
+  stdWrap.wrap = <div>|</div>
+}
+
+# Content after custom sidebar content
+lib.content.sidebar.contentAfter = RECORDS
+lib.content.sidebar.contentAfter {
+  source = {$themes.configuration.content.sidebar.after}
+  tables = tt_content
+  select {
+    where = colPos > 0
+    orderBy = sorting DESC
+    languageField = sys_language_uid
+  }
+  stdWrap.wrap = <div>|</div>
+}
+
+lib.content.sidebar = COA
+lib.content.sidebar {
+  stdWrap.prefixComment = 2|Output of lib.content.sidebar
+  stdWrap.outerWrap = |
+  10 =< lib.content.sidebar.contentBefore
+  50 < styles.content.get
+  50.select.where = colPos=2
+  90 =< lib.content.sidebar.contentAfter
+}
+
