@@ -1,0 +1,5 @@
+lib.footer.content = RECORDS
+lib.footer.content {
+	tables = tt_content
+	source = {$themes.configuration.menu.footer.gridContainerUid}
+}
