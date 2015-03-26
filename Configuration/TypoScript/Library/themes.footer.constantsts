@@ -1,0 +1,5 @@
+#############################################
+# Footer: Footer constants
+#############################################
+
+themes.configuration.footer.logo.main.file = EXT:theme_bootstrap_mosaic/Resources/Public/Images/logo.png

@@ -2,7 +2,7 @@ page {
 	includeJSlibs {
 		#modernizr = https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js
 		modernizr = typo3conf/ext/theme_bootstrap_mosaic/Resources/Public/JavaScript/modernizr.min.js
-                modernizr {
+            modernizr {
 			external = 0
 			forceOnTop = 1
 			disableCompression = 1

@@ -1,0 +1,13 @@
+######################################################
+# Menu: Menu constants special theme_bootstrap_mosaic
+######################################################
+
+# cat=menu,advanced/menu_footer/; type=int+; label= Content footer: Grid-Elements-Container uid where the content items are located
+themes.configuration.menu.footer.gridContainerUid = 0
+
+themes.configuration.menu.breadcrumb.cssClasses = breadcrumb pull-right hidden-xs
+themes.configuration.menu.sub.cssClasses = nav nav-pills nav-stacked bs-sidebar
+
+
+themes.configuration.menu.footer.cssClasses = list-inline inline-block
+themes.configuration.menu.footer.divider = <span> &#124; </span>

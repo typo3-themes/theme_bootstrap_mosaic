@@ -6,38 +6,23 @@
 
         <footer id="areaFooter" class="footer-dark">
             <div class="container">
-                <section id="areaExtended" class="row">
-                    <f:cObject typoscriptObjectPath="lib.content.extended" />
-                </section>
-                <div class="col-sm-4">
-                    <div id="footerLogo">
-                        <f:cObject typoscriptObjectPath="lib.footer.logo.main" />
+                <f:cObject typoscriptObjectPath="lib.footer.content" />
+                <div class="row">
+                    <div class="col-sm-12">
+                        <hr>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="menu-footer-wrapper">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="inline-block">
+                            <f:cObject typoscriptObjectPath="lib.footer.copyright" />
+                            {theme:constant(constant: 'themes.configuration.menu.footer.divider')}
+                            <span class="ftext"><f:format.htmlentitiesDecode>{theme:constant(constant: 'themes.configuration.footer.address')}</f:format.htmlentitiesDecode></span>
+                            {theme:constant(constant: 'themes.configuration.menu.footer.divider')}
+                            <span class="ftext"><f:link.email email="{theme:constant(constant: 'themes.configuration.footer.email')}">{theme:constant(constant: 'themes.configuration.footer.email')}</f:link.email></span>
+                        </p>
                         <f:cObject typoscriptObjectPath="lib.menu.footer" />
                     </div>
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="socialmedia-list-wrapper">
-                        <f:render partial="Socialmedia/List" section="Default" />
-                    </div>
-                </div>
-
-                <div class="footer-line-wrapper col-md-12">
-                    <ul class="footer-line list-inline">
-                        <li class="address">
-                            <span><f:format.htmlentitiesDecode>{theme:constant(constant: 'themes.configuration.footer.address')}</f:format.htmlentitiesDecode></span>
-                        </li>
-                        <li>|</li>
-                        <li class="email">
-                            <f:link.email email="{theme:constant(constant: 'themes.configuration.footer.email')}">{theme:constant(constant: 'themes.configuration.footer.email')}</f:link.email></li>
-                        <li>|</li>
-                        <f:cObject typoscriptObjectPath="lib.footer.copyright" />
-                    </ul>
                 </div>
             </div>
         </footer>
