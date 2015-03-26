@@ -1,5 +1,9 @@
-lib.footer.content = RECORDS
+lib.footer.content = CONTENT
 lib.footer.content {
-	tables = tt_content
-	source = {$themes.configuration.menu.footer.gridContainerUid}
+	table = tt_content
+	select {
+		pidInList = 100
+		uidInList = {$themes.configuration.menu.footer.gridContainerUid}
+	}
+
 }

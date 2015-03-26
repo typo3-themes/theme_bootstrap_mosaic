@@ -23,10 +23,10 @@ page {
 			disableCompression = 1
 			excludeFromConcatenation = 1
 		}
-                #JS Plugins
-                scrolltopcontrol = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/scrolltopcontrol.js
-                sticky = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/sticky.js
-                #JS Custom
-                custom = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/custom.js
+		#JS Plugins
+		scrolltopcontrol = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/scrolltopcontrol.js
+		sticky = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/sticky.js
+		#JS Custom
+		custom = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/custom.js
 	}
 }
