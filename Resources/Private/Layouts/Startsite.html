@@ -22,11 +22,11 @@
 
     <div class="wrapper">
         <div class="main-slideshow">
-            <!--<div data-ride="carousel" class="carousel slide" id="main-slideshow">
-                <section id="areaFeature" class="page-header">-->
+            <div data-ride="carousel" class="carousel slide" id="main-slideshow">
+                <!--<section id="areaFeature" class="page-header">-->
                     <f:cObject typoscriptObjectPath="lib.content.feature" />
-                <!--</section>
-            </div>-->
+                <!--</section>-->
+            </div>
         </div>
         <div class="container intro">
             
@@ -34,6 +34,10 @@
             <main id="areaMain" class="row">
                 <f:render section="Default" />
             </main>
+
+            <section id="areaExtended" class="row">
+                <f:cObject typoscriptObjectPath="lib.content.extended" />
+            </section>
 
         </div>
     </div>

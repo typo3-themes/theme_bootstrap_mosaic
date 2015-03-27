@@ -1,0 +1,25 @@
+themes {
+	content {
+		# Behaviour for content elements
+		behaviour {
+			gridelements_pi1 {
+				
+				default {
+					navigation-pills = Pills navigation
+					navigation-tabs = Tabs navigation
+                                        services = Services
+				}
+				accordion {
+					accordion-first-open = Open first accordion panel
+				}
+				carousel {
+					
+				}
+				tabs {
+					
+				}
+				
+			}
+		}
+	}
+}
