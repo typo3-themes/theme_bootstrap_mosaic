@@ -1,0 +1,4 @@
+tx_news.templateLayouts {
+    1 = Portfolio list
+    99 = LLL:EXT:theme_bootstrap_mosaic\Resources\Public\Extensions\News\Language\locallang.xlf:portfolio_list
+}

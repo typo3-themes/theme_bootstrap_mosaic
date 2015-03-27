@@ -2,3 +2,4 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap_mosaic/Configuration/PageTS/Library/" extensions="pagets">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap_mosaic/Configuration/BackendLayouts/" extensions="pagets">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap_mosaic/Configuration/Elements/PageTS/" extensions="pagets">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/News/PageTS/" extensions="pagets">
