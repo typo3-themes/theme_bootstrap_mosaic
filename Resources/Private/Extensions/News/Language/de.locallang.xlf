@@ -6,6 +6,9 @@
 			<trans-unit id="portfolio-list" xml:space="preserve">
 				<source>Portfolio Liste</source>
 			</trans-unit>
+			<trans-unit id="portfolioIsotope-menu" xml:space="preserve">
+            	<source>Portfolio Isotope Menü</source>
+             </trans-unit>
 		</body>
     </file>
 </xliff>
