@@ -1,5 +1,5 @@
 {namespace n=Tx_News_ViewHelpers}
-<f:layout name="General" />
+<f:layout name="General"/>
 <!--
 	=====================
 		Templates/News/List.html
@@ -8,16 +8,16 @@
 <f:section name="content">
     <f:if condition="{news}">
         <f:then>
-            <f:if condition="{settings.templateLayout} == 99">
+            <f:if condition="{settings.templateLayout} == 1">
                 <f:then>
-                    <div class="news row news-portfolio">TEST1
+                    <div class="news row" id="isotope-container">
                         <f:for each="{news}" as="newsItem">
-                            <f:render partial="List/Item-portfolio" arguments="{newsItem: newsItem, settings:settings}"/>
+                            <f:render partial="List/ItemPortfolio" arguments="{newsItem: newsItem, settings:settings}"/>
                         </f:for>
                     </div>
                 </f:then>
                 <f:else>
-                    <div class="news news-list-view"> TEST2
+                    <div class="news news-list-view">
                         <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}">
                             <f:for each="{paginatedNews}" as="newsItem">
                                 <f:render partial="List/Item" arguments="{newsItem: newsItem, settings:settings}"/>
@@ -28,7 +28,9 @@
             </f:if>
         </f:then>
         <f:else>
-            <div class="no-news-found"><f:translate key="list_nonewsfound" /></div>
+            <div class="no-news-found">
+                <f:translate key="list_nonewsfound"/>
+            </div>
         </f:else>
     </f:if>
 </f:section>
