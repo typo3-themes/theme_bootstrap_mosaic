@@ -10,8 +10,8 @@ Last change:    25/02/2015
 
 /* ===== Sticky Navbar ===== */
 
-$(window).load(function(){
-  $(".navbar").sticky({ topSpacing: 0 });
+jQuery(window).load(function(){
+ jQuery(".navbar").sticky({ topSpacing: 0 });
 });
 
 /* ====== Search box toggle ===== */
