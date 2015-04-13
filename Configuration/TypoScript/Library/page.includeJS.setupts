@@ -26,7 +26,10 @@ page {
 		#JS Plugins
 		scrolltopcontrol = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/scrolltopcontrol.js
 		sticky = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/sticky.js
+		imagesloaded = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/imagesloaded.pkgd.min.js
+		isotope-pkgd = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/isotope.pkgd.min.js
 		#JS Custom
 		custom = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/custom.js
+		isotope-custom = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/isotope-custom.js
 	}
 }
