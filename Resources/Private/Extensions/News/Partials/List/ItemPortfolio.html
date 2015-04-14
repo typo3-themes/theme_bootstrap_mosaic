@@ -2,7 +2,14 @@
 	=====================
 		Partials/List/Item.html
 -->
-<div class="isotope-item col-sm-4 col-md-3">
+<div class="isotope-item col-sm-4 col-md-3 <f:for each='{newsItem.categories}' as='category'>{category.title} </f:for>">
+   <f:comment> <f:for each="{newsItem.categories}" as="category">
+        <f:debug>{category}</f:debug>
+        <f:if condition="{0:category.uid} == {0:'2'}">
+            <f:then><p>bar</p></f:then>
+            <f:else><p>foo</p></f:else>
+        </f:if>
+    </f:for></f:comment>
 <div class="portfolio-item {f:if(condition: newsItem.istopnews, then: ' topnews')}">
     <n:excludeDisplayedNews newsItem="{newsItem}"/>
 
@@ -88,7 +95,9 @@
                     </f:else>
                 </f:if>
                 <div class="mask">
-                    {newsItem.title} <span class="pull-right"><i class="fa fa-heart"></i> 12 <i class="fa fa-comments-o"></i> 24</span>
+
+
+                    {newsItem.title}<span class="pull-right"><i class="fa fa-heart"></i> 12 <i class="fa fa-comments-o"></i> 24</span>
                 </div>
             </n:link>
 
