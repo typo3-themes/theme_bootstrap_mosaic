@@ -2,7 +2,9 @@
 	=====================
 		Partials/List/Item.html
 -->
-<div class="isotope-item col-sm-4 col-md-3 <f:for each='{newsItem.categories}' as='category'>{category.title} </f:for>">
+<div class="isotope-item col-sm-4 col-md-3
+        <f:for each='{newsItem.categories}' as='category'> {category.title}</f:for>
+        ">
    <f:comment> <f:for each="{newsItem.categories}" as="category">
         <f:debug>{category}</f:debug>
         <f:if condition="{0:category.uid} == {0:'2'}">
@@ -95,9 +97,7 @@
                     </f:else>
                 </f:if>
                 <div class="mask">
-
-
-                    {newsItem.title}<span class="pull-right"><i class="fa fa-heart"></i> 12 <i class="fa fa-comments-o"></i> 24</span>
+                    {newsItem.title} <span class="pull-right"><i class="fa fa-heart"></i> 12 <i class="fa fa-comments-o"></i> 24</span>
                 </div>
             </n:link>
 
