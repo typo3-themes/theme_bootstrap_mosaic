@@ -1,19 +1,9 @@
-/*------------------------------------------------------------------
-Project:    Mosaic
-Author:     Yevgeny S.
-URL:        http://simpleqode.com/
-            https://twitter.com/YevSim
-Version:    1.3.0
-Created:        20/01/2014
-Last change:    25/02/2015
--------------------------------------------------------------------*/
 var jQuery = $;
 
 
 /* ===== Sticky Navbar ===== */
 
 jQuery(window).load(function(){
-   // alert('test');
  jQuery(".navbar").sticky({ topSpacing: 0 });
 });
 
