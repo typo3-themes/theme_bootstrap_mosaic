@@ -37,10 +37,10 @@
                 <f:for each="{categories}" as="category">
                     <f:if condition="{category.item.uid} == {overwriteDemand.categories}">
                         <f:then>
-                            <a href="#" class="btn btn-color" data-filter=".{category.item.title}">{category.item.title}</a>
+                            <a href="#" class="btn btn-color" data-filter=".cat-{category.item.uid}">{category.item.title}</a>
                         </f:then>
                         <f:else>
-                            <a href="#" class="btn btn-color" data-filter=".{category.item.title}">{category.item.title}</a>
+                            <a href="#" class="btn btn-color" data-filter=".cat-{category.item.uid}">{category.item.title}</a>
                         </f:else>
                     </f:if>
                     <f:if condition="{category.children}">
