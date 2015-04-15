@@ -1,12 +1,12 @@
 // Isotop Gallery
 // ==============
 
-/* Requires isotope.pkgd.min.js & imagesloaded.pkgd.min.js */
 
+/* Requires isotope.pkgd.min.js & imagesloaded.pkgd.min.js */
+var jQuery = $;
 /**
  * Isotope filtering
  */
-
 // init Isotope
 var $container = jQuery('#isotope-container').imagesLoaded( function() {
   $container.isotope({
@@ -14,10 +14,13 @@ var $container = jQuery('#isotope-container').imagesLoaded( function() {
     layoutMode: 'fitRows'
   });
 });
+
 // filter items on button click
-jQuery('#filters a').on('click', function() {
-    alert('test');
-  var filterValue = $(this).attr('data-filter');
-  $container.isotope({ filter: filterValue });
-  return false;
+
+jQuery(document).ready(function() {
+    jQuery('#filters a').on('click', function() {
+        var filterValue = jQuery(this).attr('data-filter');
+        $container.isotope({filter: filterValue});
+        return false;
+    });
 });
