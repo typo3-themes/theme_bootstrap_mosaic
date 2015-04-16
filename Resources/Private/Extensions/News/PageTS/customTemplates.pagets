@@ -3,4 +3,6 @@ tx_news.templateLayouts {
     #1 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf:portfolio-list
     2 = Portfolio Isotope Menu
     #2 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf.xlf:portfolioIsotope-menu
+    3 = Portfolio Isotope Item
+    #3 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf.xlf:portfolioIsotope-item
 }

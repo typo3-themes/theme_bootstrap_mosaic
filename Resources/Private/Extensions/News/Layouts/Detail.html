@@ -4,8 +4,21 @@
 	<n:includeFile path="{settings.cssFile}" />
 </f:if>
 
-<div class="news news-single">
-	<div class="article">
-		<f:render section="content" />
-	</div>
-</div>
+
+<f:comment>
+    TemplateLayout 1 is Isotope Layout instead of default-news-Layout
+</f:comment>
+<f:if condition="{settings.templateLayout} == 1">
+    <f:then>
+        <div class="row port-item-p">
+            <f:render section="content" />
+        </div>
+    </f:then>
+    <f:else>
+        <div class="news news-single">
+            <div class="article">
+                <f:render section="content" />
+            </div>
+        </div>
+    </f:else>
+</f:if>
