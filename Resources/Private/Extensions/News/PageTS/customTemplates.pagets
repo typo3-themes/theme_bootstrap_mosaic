@@ -1,8 +1,8 @@
 tx_news.templateLayouts {
-    1 = Portfolio list
+    1 = Portfolio Listen- und Detailansicht
     #1 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf:portfolio-list
-    2 = Portfolio Isotope Menu
-    #2 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf.xlf:portfolioIsotope-menu
-    3 = Portfolio Isotope Item
-    #3 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf.xlf:portfolioIsotope-item
+    2 = Portfolio Isotop Listenansicht
+    #2 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf:portfolioIsotope
+    3 = Portfolio Isotope Menu
+    #3 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf.xlf:portfolioIsotope-menu
 }

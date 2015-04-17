@@ -8,13 +8,22 @@
 <f:section name="content">
     <f:if condition="{news}">
         <f:then>
-            <f:if condition="{settings.templateLayout} == 1">
+            <f:if condition="{settings.templateLayout} > 0">
                 <f:then>
-                    <div class="news row" id="isotope-container">
-                        <f:for each="{news}" as="newsItem">
-                            <f:render partial="List/ItemPortfolio" arguments="{newsItem: newsItem, settings:settings}"/>
-                        </f:for>
-                    </div>
+                    <f:if condition="{settings.templateLayout} == 1">
+                        <div class="row">
+                            <f:for each="{news}" as="newsItem">
+                                <f:render partial="List/ItemPortfolio" arguments="{newsItem: newsItem, settings:settings}"/>
+                            </f:for>
+                        </div>
+                    </f:if>
+                    <f:if condition="{settings.templateLayout} == 2">
+                        <div class="row" id="isotope-container">
+                            <f:for each="{news}" as="newsItem">
+                                <f:render partial="List/ItemPortfolio" arguments="{newsItem: newsItem, settings:settings}"/>
+                            </f:for>
+                        </div>
+                    </f:if>
                 </f:then>
                 <f:else>
                     <div class="news news-list-view">
