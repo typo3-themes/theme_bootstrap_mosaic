@@ -1,0 +1,94 @@
+<xliff version="1.0">
+	<file source-language="en"
+		target-language="de"
+		datatype="plaintext"
+		original="messages"
+		date="2014-04-13T18:20:51Z"
+		product-name="theme_bootstrap_mosaic">
+		<header/>
+		<body>
+			<trans-unit id="content.variants.social" xml:space="preserve">
+				<source>Social Media Icons</source>
+				<target>Icons für soziale Medien</target>
+			</trans-unit>
+
+			<trans-unit id="content.variants.alert_dismissable" xml:space="preserve">
+				<source>Alert dismissable</source>
+				<target>Meldung ausblendbar</target>
+			</trans-unit>
+
+			<trans-unit id="content.variants.infoboard_success" xml:space="preserve">
+				<source>Infoboard-Success</source>
+				<target>Infoboard-Erfolg</target>
+			</trans-unit>
+			<trans-unit id="content.variants.infoboard_info" xml:space="preserve">
+				<source>Infoboard-Info</source>
+				<target>Infoboard-Info</target>
+			</trans-unit>
+			<trans-unit id="content.variants.infoboard_warning" xml:space="preserve">
+				<source>Infoboard-Warning</source>
+				<target>Infoboard-Warnung</target>
+			</trans-unit>
+			<trans-unit id="content.variants.infoboard_danger" xml:space="preserve">
+				<source>Infoboard-Error</source>
+				<target>Infoboard-Fehler</target>
+			</trans-unit>
+
+			<trans-unit id="content.variants.panel_green" xml:space="preserve">
+				<source>Panel Green</source>
+				<target>Paneel Grün</target>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_blue" xml:space="preserve">
+				<source>Panel Blue</source>
+				<target>Paneel Blau</target>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_dark" xml:space="preserve">
+				<source>Panel Dark</source>
+				<target>Paneel Dunkel</target>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_red" xml:space="preserve">
+				<source>Panel Red</source>
+				<target>Paneel Rot</target>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_turquoise" xml:space="preserve">
+				<source>Panel Turquoise</source>
+				<target>Paneel Türkis</target>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_amethyst" xml:space="preserve">
+				<source>Panel Amethyst</source>
+				<target>Paneel Violett</target>
+			</trans-unit>
+
+			<trans-unit id="content.variants.navigation_pills_green" xml:space="preserve">
+				<source>Green Pills</source>
+				<target>Grüne Schaltflächen</target>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_pills_blue" xml:space="preserve">
+				<source>Blue Pills</source>
+				<target>Blaue Schaltflächen</target>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_pills_dark" xml:space="preserve">
+				<source>Dark Pills</source>
+				<target>Dunkle Schaltflächen</target>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_pills_red" xml:space="preserve">
+				<source>Red Pills</source>
+				<target>Rote Schaltflächen</target>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_pills_turquoise" xml:space="preserve">
+				<source>Turquoise Pills</source>
+				<target>Türkise Schaltflächen</target>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_pills_amethyst" xml:space="preserve">
+				<source>Amethyst Pills</source>
+				<target>Violette Schaltflächen</target>
+			</trans-unit>
+
+			<trans-unit id="content.behaviour.team_listing" xml:space="preserve">
+				<source>Team listing</source>
+				<target>Team-Liste</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

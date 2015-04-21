@@ -1,0 +1,57 @@
+themes {
+	content {
+		# Variants for content elements
+		variants {
+			default {
+				social = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.social
+			}
+
+			# Special variant for Header
+			# Used by ctype header
+			# Will be merged with default
+			header {
+				alert-dismissable = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.alert_dismissable
+				infoboard-success = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_success
+				infoboard-info = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_info
+				infoboard-warning = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_warning
+				infoboard-danger = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_danger
+			}
+
+			# ctype: text
+			text {
+				alert-dismissable = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.alert_dismissable
+				infoboard-success = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_success
+				infoboard-info = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_info
+				infoboard-warning = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_warning
+				infoboard-danger = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_danger
+			}
+
+			# ctype: gridelements_pi1
+			gridelements_pi1 {
+				tabs {
+					navigation-pills-color1 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_green
+					navigation-pills-color2 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_blue
+					navigation-pills-color3 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_dark
+					navigation-pills-color4 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_red
+					navigation-pills-color5 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_turquoise
+					navigation-pills-color6 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_amethyst
+				}
+				container {
+					alert-dismissable = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.alert_dismissable
+					infoboard-success = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_success
+					infoboard-info = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_info
+					infoboard-warning = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_warning
+					infoboard-danger = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_danger
+				}
+				singleColumnHeaderFooter {
+					panel-color1 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_green
+					panel-color2 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_blue
+					panel-color3 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_dark
+					panel-color4 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_red
+					panel-color5 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_turquoise
+					panel-color6 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_amethyst
+				}
+			}
+		}
+	}
+}

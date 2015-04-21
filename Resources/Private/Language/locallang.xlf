@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.0">
+	<file source-language="en"
+		datatype="plaintext"
+		original="messages"
+		date="2014-04-13T18:20:51Z"
+		product-name="theme_bootstrap_mosaic">
+		<header/>
+		<body>
+			<!-- Variants labels -->
+			<trans-unit id="content.variants.social" xml:space="preserve">
+				<source>Social Media Icons</source>
+			</trans-unit>
+
+			<trans-unit id="content.variants.alert_dismissable" xml:space="preserve">
+				<source>Alert dismissable</source>
+			</trans-unit>
+
+			<trans-unit id="content.variants.infoboard_success" xml:space="preserve">
+				<source>Infoboard-Success</source>
+			</trans-unit>
+			<trans-unit id="content.variants.infoboard_info" xml:space="preserve">
+				<source>Infoboard-Info</source>
+			</trans-unit>
+			<trans-unit id="content.variants.infoboard_warning" xml:space="preserve">
+				<source>Infoboard-Warning</source>
+			</trans-unit>
+			<trans-unit id="content.variants.infoboard_danger" xml:space="preserve">
+				<source>Infoboard-Error</source>
+			</trans-unit>
+
+			<trans-unit id="content.variants.panel_green" xml:space="preserve">
+				<source>Panel Green</source>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_blue" xml:space="preserve">
+				<source>Panel Blue</source>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_dark" xml:space="preserve">
+				<source>Panel Dark</source>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_red" xml:space="preserve">
+				<source>Panel Red</source>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_turquoise" xml:space="preserve">
+				<source>Panel Turquoise</source>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_amethyst" xml:space="preserve">
+				<source>Panel Amethyst</source>
+			</trans-unit>
+
+			<trans-unit id="content.variants.navigation_pills_green" xml:space="preserve">
+				<source>Green Pills</source>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_pills_blue" xml:space="preserve">
+				<source>Blue Pills</source>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_pills_dark" xml:space="preserve">
+				<source>Dark Pills</source>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_pills_red" xml:space="preserve">
+				<source>Red Pills</source>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_pills_turquoise" xml:space="preserve">
+				<source>Turquoise Pills</source>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_pills_amethyst" xml:space="preserve">
+				<source>Amethyst Pills</source>
+			</trans-unit>
+
+			<trans-unit id="content.behaviour.team_listing" xml:space="preserve">
+				<source>Team listing</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

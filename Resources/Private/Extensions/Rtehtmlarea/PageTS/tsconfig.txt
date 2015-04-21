@@ -3,53 +3,53 @@ RTE.classes {
   ## Typography
   ### Headings
   h1 {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h1_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h1_label
   }
   h2 {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h2_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h2_label
   }
   h3 {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h3_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h3_label
   }
   h4 {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h4_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h4_label
   }
   h5 {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h5_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h5_label
   }
   h6 {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h6_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h6_label
   }
   small {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.small_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.small_label
   }
   lead {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.lead_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.lead_label
   }
   ### Alignment classes
   text-nowrap {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-nowrap_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-nowrap_label
   }
   ### Boostrap Transformation classes
   text-lowercase {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-lowercase_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-lowercase_label
     value = text-transform: lowercase;
   }
   text-uppercase {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-uppercase_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-uppercase_label
     value = text-transform: uppercase;
   }
   text-capitalize {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-capitalize_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-capitalize_label
     value = text-transform: capitalize;
   }
   ### Abbreviations 
   initialism {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.abbr-initialism_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.abbr-initialism_label
   }
   ### Blockquotes
   blockquote-reverse {
-    name = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.blockquote-reverse_label
+    name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.blockquote-reverse_label
   }
 }
 
@@ -58,8 +58,8 @@ RTE.classes {
 RTE.default {
   
   # BE Style File
-  #contentCSS = typo3conf/ext/theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Dyncss/backend.less
-  contentCSS = typo3conf/ext/theme_bootstrap_highland/Resources/Public/Extensions/Rtehtmlarea/Stylesheets/backend.css
+  #contentCSS = typo3conf/ext/theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Dyncss/backend.less
+  contentCSS = typo3conf/ext/theme_bootstrap_mosaic/Resources/Public/Extensions/Rtehtmlarea/Stylesheets/backend.css
   
   # Show buttons 
   ## wildcard is * 
@@ -96,10 +96,10 @@ RTE.default {
           20.mode = wrap
           20.content = <blockquote class="blockquote-reverse"><p>|</p><footer>Someone famous in <cite title="Source Title">Source Title</cite></footer></blockquote>
       }
-      20 = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.category-mark_label
+      20 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.category-mark_label
       20 {
-          10 = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.name-mark_label
-          10.description = LLL:EXT:theme_bootstrap_highland/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.description-mark_label
+          10 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.name-mark_label
+          10.description = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.description-mark_label
           10.mode = wrap
           10.content = <mark>|</mark>
       }
