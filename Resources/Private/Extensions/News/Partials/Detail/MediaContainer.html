@@ -1,0 +1,45 @@
+<f:if condition="{media}">
+    <!-- Portfolio Layout -->
+    <f:if condition="{settings.templateLayout} == 1">
+        <f:then>
+            <div class="port-slideshow-p">
+                <!-- Image Carousel -->
+                <div data-ride="carousel" class="carousel slide" id="port-slideshow-p">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <f:for each="{media}" as="mediaElement" iteration="iterator">
+                            <f:if condition="{mediaElement.originalResource.type} == 2">
+                                <f:render partial="Detail/MediaImage" arguments="{mediaElement: mediaElement, settings:settings,iterator:iterator}"/>
+                            </f:if>
+                            <f:if condition="{mediaElement.originalResource.type} == 4">
+                                <f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement, settings:settings}"/>
+                            </f:if>
+                        </f:for>
+                    </div>
+                    <!-- Controls -->
+                    <a class="port-arrow-p port-arrow-prev bg-hover-color" href="#port-slideshow-p" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="port-arrow-p port-arrow-next bg-hover-color" href="#port-slideshow-p" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </f:then>
+        <f:else>
+            <!-- media files -->
+            <div class="news-img-wrap">
+                <f:for each="{media}" as="mediaElement">
+                    <div class="outer">
+                        <f:if condition="{mediaElement.type} == 0">
+                            <f:render partial="Detail/MediaImage" arguments="{mediaElement: mediaElement, settings:settings}" />
+                        </f:if>
+                        <f:if condition="{mediaElement.type} == 1">
+                            <f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement, settings:settings}" />
+                        </f:if>
+                    </div>
+                </f:for>
+            </div>
+        </f:else>
+    </f:if>
+</f:if>
