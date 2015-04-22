@@ -7,7 +7,7 @@ themes {
 				default {
 					navigation-pills = Pills navigation
 					navigation-tabs = Tabs navigation
-                                        services = Services
+                    services = Services
 				}
 				accordion {
 					accordion-first-open = Open first accordion panel

@@ -1,17 +1,30 @@
 lib.gridelements {
 	carousel {
-		columns.0.renderObj {
-			key.field = CType
-                        gridelements_pi1 = COA
-                        gridelements_pi1 {
-                            10 =< tt_content.gridelements_pi1
-                            if {
-                                value.field = tx_gridelements_backend_layout
-                                isInList = 2ColumnGrid
-                            }
-                        }
-                        
+		setCurrent {
+			dataWrap = {field:tx_themes_behaviour},{field:tx_themes_variants}
+			postUserFunc = KayStrobach\Themes\Frontend\CssClassMapper->mapGenericToFramework
+			postUserFunc {
+				behaviourMapping =< lib.content.cssMap.behaviour
+				variantMapping =< lib.content.cssMap.variants
+			}
 		}
+
+		setCurrent {
+			dataWrap = {field:tx_themes_behaviour},{field:tx_themes_variants}
+			postUserFunc = KayStrobach\Themes\Frontend\CssClassMapper->mapGenericToFramework
+			postUserFunc {
+				behaviourMapping =< lib.content.cssMap.behaviour
+				variantMapping =< lib.content.cssMap.variants
+			}
+		}
+
+		cObject = FLUIDTEMPLATE
+		cObject {
+			file = EXT:theme_bootstrap_mosaic/Resources/Private/Templates/Elements/Carousel.html
+		}
+
+		columns.0.renderObj >
+		columns.0.renderObj =< tt_content
 	}
 }
 
