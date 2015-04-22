@@ -2,7 +2,7 @@ lib.footer.content = CONTENT
 lib.footer.content {
 	table = tt_content
 	select {
-		pidInList = 100
+		pidInList = 112
 		uidInList = {$themes.configuration.menu.footer.gridContainerUid}
 	}
 

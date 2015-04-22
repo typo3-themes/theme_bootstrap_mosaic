@@ -42,21 +42,13 @@
 				<source>Panel Blue</source>
 				<target>Paneel Blau</target>
 			</trans-unit>
-			<trans-unit id="content.variants.panel_dark" xml:space="preserve">
-				<source>Panel Dark</source>
-				<target>Paneel Dunkel</target>
+			<trans-unit id="content.variants.panel_orange" xml:space="preserve">
+				<source>Panel Orange</source>
+				<target>Paneel Orange</target>
 			</trans-unit>
 			<trans-unit id="content.variants.panel_red" xml:space="preserve">
 				<source>Panel Red</source>
 				<target>Paneel Rot</target>
-			</trans-unit>
-			<trans-unit id="content.variants.panel_turquoise" xml:space="preserve">
-				<source>Panel Turquoise</source>
-				<target>Paneel Türkis</target>
-			</trans-unit>
-			<trans-unit id="content.variants.panel_amethyst" xml:space="preserve">
-				<source>Panel Amethyst</source>
-				<target>Paneel Violett</target>
 			</trans-unit>
 
 			<trans-unit id="content.variants.navigation_pills_green" xml:space="preserve">

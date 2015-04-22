@@ -31,10 +31,8 @@ themes {
 				tabs {
 					navigation-pills-color1 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_green
 					navigation-pills-color2 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_blue
-					navigation-pills-color3 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_dark
+					navigation-pills-color3 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_orange
 					navigation-pills-color4 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_red
-					navigation-pills-color5 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_turquoise
-					navigation-pills-color6 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_amethyst
 				}
 				container {
 					alert-dismissable = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.alert_dismissable
@@ -46,10 +44,8 @@ themes {
 				singleColumnHeaderFooter {
 					panel-color1 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_green
 					panel-color2 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_blue
-					panel-color3 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_dark
+					panel-color3 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_orange
 					panel-color4 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_red
-					panel-color5 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_turquoise
-					panel-color6 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_amethyst
 				}
 			}
 		}
