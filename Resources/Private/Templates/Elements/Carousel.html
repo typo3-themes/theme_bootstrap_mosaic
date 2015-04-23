@@ -1,17 +1,11 @@
 {namespace theme=KayStrobach\Themes\ViewHelpers}
-<div class="main-slideshow">
-<div id="main-slideshow carousel-{data.uid}" class="{current} carousel slide hp-slider" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <f:for each="{data.tx_gridelements_view_children}" as="slide-content" iteration="slide">
             <div class="item {f:if(condition:'{slide.isFirst}',then:' active')}">
-                <div class="jumbotron">
-                    <div class="container">
-                        <f:format.raw>{theme:arrayIndex(object: data, index:
-                            'tx_gridelements_view_child_{slide-content.uid}')}
-                        </f:format.raw>
-                    </div>
-                </div>
+                <f:format.raw>{theme:arrayIndex(object: data, index:
+                    'tx_gridelements_view_child_{slide-content.uid}')}
+                </f:format.raw>
             </div>
         </f:for>
     </div>

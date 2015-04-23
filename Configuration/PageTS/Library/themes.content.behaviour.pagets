@@ -8,12 +8,13 @@ themes {
 					navigation-pills = Pills navigation
 					navigation-tabs = Tabs navigation
                     services = Services
+                    jumbotron = Jumbotron
 				}
 				accordion {
 					accordion-first-open = Open first accordion panel
 				}
-				carousel {
-					
+				row{
+
 				}
 				tabs {
 					
