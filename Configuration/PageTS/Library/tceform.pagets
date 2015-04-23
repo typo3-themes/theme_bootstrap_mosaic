@@ -1,8 +1,10 @@
 ## Layout Typen umbenennen
 TCEFORM.tt_content.header_layout.altLabels {
-    1 = H1 Border Bottom
-    2 = H2 Border Bottom
-    3 = H3 Standard
-    4 = H3 Border Bottom
-    5 = H4 Standard
+    1 = H3 (primary font)
+    2 = H4 (primary font)
+    3 = H5 (primary font)
+	4 = H2 text-color, no border
+	5 = H3 border bottom
 }
+#TCEFORM.tt_content.header_layout.addItems {
+#}

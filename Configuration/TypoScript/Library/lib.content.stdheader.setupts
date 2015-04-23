@@ -1,5 +1,42 @@
-lib.stdheader.10.1.dataWrap = <h1 class="headline first-child text-color"><span class="border-color">|</span></h1>
-lib.stdheader.10.2.dataWrap = <h2 class="headline first-child text-color"><span class="border-color">|</span></h2>
-lib.stdheader.10.3.dataWrap = <h3 class="primary-font">|</h3>
-lib.stdheader.10.4.dataWrap = <h3 class="text-color"><span class="border-color">|</span></h3>
-lib.stdheader.10.5.dataWrap = <h4 class="primary-font">|</h4>
+lib.stdheader {
+    3.headerClass.cObject {
+        20.value = first-child
+        stdWrap {
+            noTrimWrap = |
+            required >
+        }
+    }
+    10 {
+        key.ifEmpty >
+        default = TEXT
+        default {
+            current = 1
+            dataWrap = <h2 class="headline text-color {register:headerClass}"><span class="border-color">|</span></h2>
+        }
+        1 = TEXT
+        1 {
+            current = 1
+            dataWrap = <h3 class="primary-font {register:headerClass}">|</h3>
+        }
+        2 = TEXT
+        2 {
+            current = 1
+            dataWrap = <h4 class="primary-font {register:headerClass}">|</h4>
+        }
+        3 = TEXT
+        3 {
+            current = 1
+            dataWrap = <h4 class="primary-font {register:headerClass}">|</h4>
+        }
+        4 = TEXT
+        4 {
+            current = 1
+            dataWrap = <h2 class="text-color {register:headerClass}">|</h2>
+        }
+        5 = TEXT
+        5 {
+            current = 1
+            dataWrap = <h3 class="headline text-color {register:headerClass}"><span class="border-color">|</span></h3>
+        }
+    }
+}
