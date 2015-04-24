@@ -12,3 +12,23 @@ config.compressCss = 0
 config.compressJs = 0
 config.concatenateCss = 0
 config.concatenateJs = 0
+
+lib.containerBackgroundImage >
+lib.containerBackgroundImage = COA
+lib.containerBackgroundImage {
+	if.isTrue.field = media
+	10 = FILES
+	10 {
+		references {
+			table = tt_content
+			fieldName = media
+			uid.field = uid
+		}
+		maxItems = 1
+		renderObj = TEXT
+		renderObj {
+			stdWrap.dataWrap = style="background:url({file:current:publicUrl}) no-repeat center center; background-size:cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{file:current:publicUrl}',sizingMethod='scale'); -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{file:current:publicUrl}', sizingMethod='scale')";"
+			noTrimWrap = | ||
+		}
+	}
+}
