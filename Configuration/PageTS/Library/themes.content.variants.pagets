@@ -29,10 +29,10 @@ themes {
 			# ctype: gridelements_pi1
 			gridelements_pi1 {
 				tabs {
-					navigation-pills-color1 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_green
-					navigation-pills-color2 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_blue
-					navigation-pills-color3 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_orange
-					navigation-pills-color4 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_red
+					navigation-pills-green = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_green
+					navigation-pills-blue = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_blue
+					navigation-pills-orange = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_orange
+					navigation-pills-red = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.navigation_pills_red
 				}
 				container {
 					alert-dismissable = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.alert_dismissable
@@ -42,10 +42,10 @@ themes {
 					infoboard-danger = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.infoboard_danger
 				}
 				singleColumnHeaderFooter {
-					panel-color1 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_green
-					panel-color2 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_blue
-					panel-color3 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_orange
-					panel-color4 = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_red
+					panel-green = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_green
+					panel-blue = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_blue
+					panel-orange = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_orange
+					panel-red = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.variants.panel_red
 				}
 			}
 		}
