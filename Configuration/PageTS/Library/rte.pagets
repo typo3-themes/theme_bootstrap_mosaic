@@ -1,0 +1,24 @@
+RTE {
+	default	 {
+		buttons {
+			link.properties.class {
+				allowedClasses := addToList(button-green,button-blue,button-dark,button-red,button-turquoise,button-amethyst)
+			}
+		}
+	}
+	classes {
+		button-green {
+			name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.buttons.green
+		}
+		button-blue {
+			name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.buttons.blue
+		}
+		button-orange {
+			name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.buttons.orange
+		}
+		button-red {
+			name = LLL:EXT:theme_bootstrap_mosaic/Resources/Private/Language/locallang.xlf:content.buttons.red
+		}
+	}
+}
+

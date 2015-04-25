@@ -1,0 +1,14 @@
+lib.parseFunc_RTE {
+	tags {
+		link {
+			typolink {
+				parameter.parseFunc.short {
+					button-green = "btn btn-green"
+					button-blue = "btn btn-blue"
+					button-orange = "btn btn-orange"
+					button-red = "btn btn-red"
+				}
+			}
+		}
+	}
+}

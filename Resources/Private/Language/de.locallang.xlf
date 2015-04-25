@@ -59,21 +59,30 @@
 				<source>Blue Pills</source>
 				<target>Blaue Schaltflächen</target>
 			</trans-unit>
-			<trans-unit id="content.variants.navigation_pills_dark" xml:space="preserve">
-				<source>Dark Pills</source>
-				<target>Dunkle Schaltflächen</target>
-			</trans-unit>
 			<trans-unit id="content.variants.navigation_pills_red" xml:space="preserve">
 				<source>Red Pills</source>
 				<target>Rote Schaltflächen</target>
 			</trans-unit>
-			<trans-unit id="content.variants.navigation_pills_turquoise" xml:space="preserve">
-				<source>Turquoise Pills</source>
-				<target>Türkise Schaltflächen</target>
+			<trans-unit id="content.variants.navigation_pills_orange" xml:space="preserve">
+				<source>Orange Pills</source>
+				<target>Orange Schaltflächen</target>
 			</trans-unit>
-			<trans-unit id="content.variants.navigation_pills_amethyst" xml:space="preserve">
-				<source>Amethyst Pills</source>
-				<target>Violette Schaltflächen</target>
+
+			<trans-unit id="content.buttons.green" xml:space="preserve">
+				<source>Green Button</source>
+				<target>Grüne Schaltfläche</target>
+			</trans-unit>
+			<trans-unit id="content.buttons.blue" xml:space="preserve">
+				<source>Blue Button</source>
+				<target>Blaue Schaltfläche</target>
+			</trans-unit>
+			<trans-unit id="content.buttons.red" xml:space="preserve">
+				<source>Red Button</source>
+				<target>Rote Schaltfläche</target>
+			</trans-unit>
+			<trans-unit id="content.buttons.orange" xml:space="preserve">
+				<source>Orange Button</source>
+				<target>Orange Schaltfläche</target>
 			</trans-unit>
 
 			<trans-unit id="content.behaviour.team_listing" xml:space="preserve">

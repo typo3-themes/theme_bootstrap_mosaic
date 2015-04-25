@@ -48,17 +48,24 @@
 			<trans-unit id="content.variants.navigation_pills_blue" xml:space="preserve">
 				<source>Blue Pills</source>
 			</trans-unit>
-			<trans-unit id="content.variants.navigation_pills_dark" xml:space="preserve">
-				<source>Dark Pills</source>
-			</trans-unit>
 			<trans-unit id="content.variants.navigation_pills_red" xml:space="preserve">
 				<source>Red Pills</source>
 			</trans-unit>
-			<trans-unit id="content.variants.navigation_pills_turquoise" xml:space="preserve">
-				<source>Turquoise Pills</source>
+			<trans-unit id="content.variants.navigation_pills_orange" xml:space="preserve">
+				<source>Orange Pills</source>
 			</trans-unit>
-			<trans-unit id="content.variants.navigation_pills_amethyst" xml:space="preserve">
-				<source>Amethyst Pills</source>
+
+			<trans-unit id="content.buttons.green" xml:space="preserve">
+				<source>Green Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.blue" xml:space="preserve">
+				<source>Blue Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.red" xml:space="preserve">
+				<source>Red Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.orange" xml:space="preserve">
+				<source>Orange Button</source>
 			</trans-unit>
 
 			<trans-unit id="content.behaviour.team_listing" xml:space="preserve">
