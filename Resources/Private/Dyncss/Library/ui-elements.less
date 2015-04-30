@@ -213,7 +213,9 @@ hr {
 
     }
     > .panel-footer {
-      background-color: @panel-green-color;
+      background-color: hsl(hue(@panel-green-color), 50%, 90%);
+
+      //background-color: #ff9900;
       border-top: 1px solid @panel-green-color;
 
       & + .panel-collapse .panel-body {
@@ -239,7 +241,7 @@ hr {
     }
 
     > .panel-footer {
-      background-color: @panel-blue-color;
+      background-color: hsl(hue(@panel-blue-color), 50%, 90%);
       border-top: 1px solid @panel-blue-color;
 
       & + .panel-collapse .panel-body {
@@ -261,9 +263,9 @@ hr {
         border-top-color: @panel-red-color;
       }
     }
-    > .panel-footer {
-      background-color: @panel-red-color;
-      border-top: 1px solid @panel-red-color;
+      > .panel-footer {
+        background-color: hsl(hue(@panel-red-color), 50%, 90%);
+        border-top: 1px solid @panel-red-color;
 
       & + .panel-collapse .panel-body {
         border-bottom-color: @panel-red-color;
@@ -287,7 +289,7 @@ hr {
     }
 
     > .panel-footer {
-      background-color: @panel-orange-color;
+      background-color: hsl(hue(@panel-orange-color), 50%, 90%);
       border-top: 1px solid @panel-orange-color;
 
       & + .panel-collapse .panel-body {
