@@ -41,6 +41,8 @@ Inherit from: theme_bootstrap
 			'themes' => '2.1.0-2.3.99',
 			'theme_bootstrap' => '0.1.0-0.0.0',
 			'themes_gridelements' => '0.1.0-1.0.0',
+            'dyncss' => '0.7.0 - 0.7.99',
+            'dyncss_less' => '0.7.0 - 0.7.99',
 		),
 		'conflicts' => array(
 		),
