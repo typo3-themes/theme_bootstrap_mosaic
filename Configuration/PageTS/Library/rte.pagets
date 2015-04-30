@@ -2,7 +2,7 @@ RTE {
 	default	 {
 		buttons {
 			link.properties.class {
-				allowedClasses := addToList(button-green,button-blue,button-dark,button-red,button-turquoise,button-amethyst)
+				allowedClasses := addToList(button-green,button-blue,button-orange,button-red)
 			}
 		}
 	}
