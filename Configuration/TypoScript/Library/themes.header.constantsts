@@ -9,3 +9,6 @@ themes.configuration.header.phone = +0 (000) 000-00-00
 
 # cat=header,basic/header_info/; type=string; label= Header: E-Mail address
 themes.configuration.header.email = contact@example.com
+
+# cat=header,basic/header_info/; type=string; label= Header: Brand name
+themes.configuration.brand.name =  The Mosaic <span class="hidden-sm">Business Template</span>

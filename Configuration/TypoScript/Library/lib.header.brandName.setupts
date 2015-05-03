@@ -1,0 +1,7 @@
+lib.header.brandName = COA
+lib.header.brandName {
+	10 = TEXT
+	10 {
+		value = {$themes.configuration.brand.name}
+	}
+}
