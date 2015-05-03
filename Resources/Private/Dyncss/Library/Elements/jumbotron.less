@@ -1,17 +1,15 @@
-
 /* ===== Jumbotron ===== */
 
 .main-slideshow {
   position: relative;
   margin-top: -20px;
 }
-.jumbotron.row {
-  margin-left: 0px;
-  margin-right: 0px;
-}
+
 .jumbotron {
   width: 100%;
   height: 470px;
+  margin-left: 0px;
+  margin-right:0px;
   margin-bottom: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -30,17 +28,17 @@
   margin: 50px auto 0;
 }
 .jumbotron.second img {
-  position: absolute;
+  /*position: absolute;
   bottom: -600px;
   left: 50%;
   margin-left: -300px;
-  cursor: pointer;
+  cursor: pointer;*/
   box-shadow: 0 0 15px rgba(0,0,0,0.8);
   transition: bottom 0.3s;
   -webkit-transition: bottom 0.3s;
 }
 .jumbotron.second img:hover {
-  bottom: -590px;
+  /*bottom: -590px;*/
 }
 .jumbotron.third .video {
   width: 80%;
@@ -48,12 +46,12 @@
 }
 .jumbotron.first h1,
 .jumbotron.third h1 {
-  margin-top: 50px;
+  margin-top: 50px!important;
 }
 @media (max-width: 767px) { /* Adjusting for mobile */
   .jumbotron.first h1,
   .jumbotron.third h1 {
-    margin-top: 20px;
+    margin-top: 20px!important;
   }
 }
 .jumbotron .lead {
@@ -65,3 +63,42 @@
   margin-top: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
+
+/* Slideshow controls */
+
+a.slideshow-arrow {
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 50px;
+  top: 50%;
+  margin-top: -60px;
+  background: transparent;
+  color: transparent;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 100px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: background 500ms, color 500ms;
+  transition: background 500ms, color 500ms;
+}
+.main-slideshow:hover a.slideshow-arrow {
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+}
+a.slideshow-arrow:hover,
+a.slideshow-arrow:active {
+  text-decoration: none;
+}
+a.slideshow-arrow-prev {
+  left: 0;
+  right: auto;
+  padding-right: 5px;
+}
+a.slideshow-arrow-next {
+  right: 0;
+  left: auto;
+  padding-left: 5px;
+}
+
