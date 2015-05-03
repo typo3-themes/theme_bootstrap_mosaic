@@ -1,0 +1,3 @@
+tx_gridelements.setup.2ColumnGrid {
+	flexformDS = FILE:EXT:theme_bootstrap_mosaic/Configuration/Elements/FlexForms/2ColumnGrid.xml
+}
