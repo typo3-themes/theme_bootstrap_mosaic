@@ -8,7 +8,11 @@ themes {
 					navigation-pills = Pills navigation
 					navigation-tabs = Tabs navigation
                     services = Services
+                    features = Features
                     jumbotron = Jumbotron
+                    first = BG Image 1
+                    second = BG Image 2
+                    third = BG Image 3
 				}
 				accordion {
 					accordion-first-open = Open first accordion panel

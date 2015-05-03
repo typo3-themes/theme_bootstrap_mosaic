@@ -6,5 +6,7 @@ TCEFORM.tt_content.header_layout.altLabels {
 	4 = H2 text-color, no border
 	5 = H3 border bottom
 }
-#TCEFORM.tt_content.header_layout.addItems {
-#}
+TCEFORM.tt_content.header_layout.addItems {
+    6 = H1 Carousel Title
+    #7 = H2 Block Header Row
+}

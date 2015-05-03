@@ -1,4 +1,8 @@
 lib.content.cssMap.behaviour {
 		services = services
+		features = features
 		jumbotron = jumbotron
+		first = first
+		second = second
+		third = third
 }
