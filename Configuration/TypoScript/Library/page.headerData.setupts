@@ -1,3 +1,16 @@
+lib.pageBgImg = IMG_RESOURCE
+lib.pageBgImg {
+    file {
+        import =  uploads/media/
+        import.data = levelmedia:-1, slide
+        treatIdAsReference = 1
+        import.listNum = 0
+    }
+}
+page.headerData.10 < lib.pageBgImg
+page.headerData.10.stdWrap.wrap = <style type="text/css">body{ background-image: url(|); background-repeat:no-repeat; background-attachment:fixed; background-position: center center; background-size:cover;  }</style>
+
+
 page.headerData.187 = TEXT
 page.headerData.187.value (
 	<!-- Developed with TYPO3 theme_bootstrap -->
