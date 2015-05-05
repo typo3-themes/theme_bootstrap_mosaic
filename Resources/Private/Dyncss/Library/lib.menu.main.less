@@ -10,7 +10,11 @@
 .navbar {
   min-height: 75px;
   margin-bottom: 0 !important;
+  > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0;
+  }
 }
+
 @media (min-width: 768px) {
     .navbar-nav > li > a {
         padding-top: 27.5px;
@@ -37,7 +41,6 @@
     }
   }
 }
-
 
 .navbar-btn {
   margin-top: 20.5px;
