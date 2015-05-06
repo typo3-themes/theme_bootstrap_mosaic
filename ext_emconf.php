@@ -17,7 +17,7 @@ Inherit from: theme_bootstrap
 ',
 	'category'         => 'templates',
 	'shy'              => 0,
-	'version'          => '0.0.1',
+	'version'          => '0.1.0',
 	'dependencies'     => '',
 	'conflicts'        => '',
 	'priority'         => 'bottom',
@@ -38,11 +38,7 @@ Inherit from: theme_bootstrap
 		'depends' => array(
 			'php' => '5.2.0-0.0.0',
 			'typo3' => '6.2.0-6.2.99',
-			'themes' => '2.1.0-2.3.99',
-			'theme_bootstrap' => '0.1.0-0.0.0',
-			'themes_gridelements' => '0.1.0-1.0.0',
-            'dyncss' => '0.7.0 - 0.7.99',
-            'dyncss_less' => '0.7.0 - 0.7.99',
+			'theme_bootstrap' => '1.3.0-1.3.99'
 		),
 		'conflicts' => array(
 		),
