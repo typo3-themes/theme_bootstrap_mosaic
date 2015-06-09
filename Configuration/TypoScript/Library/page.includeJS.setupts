@@ -10,13 +10,6 @@ page {
 		}
 	}
 	includeJS {
-		#bootstrap = http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
-		bootstrap = typo3conf/ext/theme_bootstrap_mosaic/Resources/Public/JavaScript/bootstrap.min.js
-			bootstrap {
-			external = 0
-			disableCompression = 1
-			excludeFromConcatenation = 1
-		}
 		theme = EXT:theme_bootstrap/Resources/Public/JavaScript/default.js
 		theme {
 			external = 0
