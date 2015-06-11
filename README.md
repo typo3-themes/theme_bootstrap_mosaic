@@ -1,5 +1,2 @@
 # theme_bootstrap_mosaic
-
-Theme based on the mosaic theme
-
-![Screenshot](Meta/Screenshots/screenshot-01.png)
+TYPO3 compatible adaption of the "Mocsaic - Responsive Professional Theme" by simpleqode

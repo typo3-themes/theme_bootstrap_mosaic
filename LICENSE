@@ -1,0 +1,155 @@
+The MIT License (MIT)
+
+Copyright (c) 2015 TYPO3 EXT:Themes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+SOURCES AND CREDITS
+===================
+
+We've used the following third party images, icons, and other files listed:
+
+=======
+CREDITS
+=======
+
+*** Bootstrap HTML Template ***
+URL: https://wrapbootstrap.com/theme/mosaic-responsive-professional-theme-WB0160788?l=e
+AUTHOR: YevSim
+License: Extended License, bought by the TYPO3-Themes-Team
+
+
+*** GENERAL FILES ***
+
+1. Twitter Bootstrap
+
+URL: http://getbootstrap.com/
+AUTHOR: @mdo and @fat
+LICENSE: MIT License
+
+2. Font Awesome
+
+URL: http://fontawesome.io/
+AUTHOR: Dave Gandy
+LICENSE: MIT license
+
+
+*** CSS FILES ***
+
+1. CSS Animation
+
+URL: https://daneden.me/animate/
+AUTHOR: Dan Eden
+LICENSE: MIT license
+
+
+*** JS FILES ***
+
+1. Scroll to top script
+
+URL: http://www.dynamicdrive.com/dynamicindex3/scrolltop.htm
+AUTHOR: Dynamic Drive
+LICENSE: http://www.dynamicdrive.com/notice.htm
+
+2. Isotope
+
+URL: http://isotope.metafizzy.co/
+AUTHOR: David DeSandro
+LICENSE: Commercial Developer Lisence (isotope/isotope_commercial_developer_license.pdf)
+
+3. Imagesloaded
+
+URL: http://imagesloaded.desandro.com/
+AUTHOR: https://github.com/desandro/imagesloaded/graphs/contributors
+LICENSE: MIT license
+
+4. Lightbox
+
+URL: http://lokeshdhakar.com/projects/lightbox2/
+AUTHOR: Lokesh Dhakar
+LICENSE: Creative Commons Attribution 2.5 License
+
+5. Sticky Plugin
+
+URL: http://labs.anthonygarand.com/sticky
+AUTHOR: Anthony Garand
+LICENSE: MIT
+
+6. Countdown Plugin
+
+URL: http://keith-wood.name/countdown.html
+AUTHOR: Keith Wood
+LICENSE: MIT
+
+
+*** IMAGES, .PSD & VIDEO FILES ***
+
+1. Responsive Showcase
+
+URL: http://www.pixeden.com/psd-web-elements/responsive-showcase-psd
+AUTHOR: Pixeden.com
+LICENSE: Royalty free for use in both personal and commercial projects
+
+2. Clients and General Pictures
+
+URL: http://www.flickr.com/photos/ter-burg/with/8969237159/
+AUTHOR: Sebastiaan ter Burg
+LICENSE: Creative Commons
+
+3. slide-1.jpg
+
+URL: http://www.flickr.com/photos/floffimedia/9312082134/sizes/l/
+AUTHOR: floffimedia
+LICENSE: Creative Commons
+
+4. Slider and Background images
+
+URL: http://unsplash.com/
+AUTHOR:  Diogo Tavares, Danka Peter, Chris Sardegna
+LICENSE: Creative Commons
+
+5. Browser Picture
+
+URL: http://www.premiumpixels.com/freebies/simple-browser-surround-psd/
+AUTHOR: http://www.premiumpixels.com/
+LICENSE: Free for use in both personal and commercial projects
+
+6. Product 1
+
+URL: http://www.flickr.com/photos/williamhook/4742869256/
+AUTHOR: William Hook
+LICENSE: Creative Commons
+
+7. Product 2
+
+URL: http://www.flickr.com/photos/liewcf/10086937594/in/photostream/
+AUTHOR: Cheon Fong Liew
+LICENSE: Creative Commons
+
+8. Product 3
+
+URL: http://www.flickr.com/photos/racum/4292779189/
+AUTHOR: Ronaldo Ferreira
+LICENSE: Attribution License
+
+9. Video File
+
+URL: http://vimeo.com/67449472
+AUTHOR: Joan LLopart
+LICENSE: Creative Commons
