@@ -1,9 +1,15 @@
-lib.footer.content = CONTENT
-lib.footer.content {
-	table = tt_content
-	select {
-		pidInList = 112
-		uidInList = {$themes.configuration.menu.footer.gridContainerUid}
-	}
+#lib.footer.content = CONTENT
+#lib.footer.content {
+#	table = tt_content
+#	select {
+#		pidInList = 112
+#		uidInList = {$themes.configuration.menu.footer.gridContainerUid}
+#	}
+#
+#}
 
+# Insert colPos 4 in extended content
+lib.content.extended {
+    wrap = <footer>|</footer>
+    50.slide = -1
 }
