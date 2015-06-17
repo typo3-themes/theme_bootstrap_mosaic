@@ -46,7 +46,7 @@ authors:
     name           : Andrea Moroni
     email          : info@web-to-date.com
     company        : webtodate
-    companyLogo    :EXT:theme_bootstrap_mosaic/Meta/Images/logo_webtodate.png
+    companyLogo    : EXT:theme_bootstrap_mosaic/Meta/Images/logo_webtodate.png
     companyWebsite : www.web-to-date.com
 
 # Possible license if applicable (optional)
