@@ -98,8 +98,8 @@ jQuery('.style-toggle-body .colors > .red').on('click', function() {
 
 /* ===== Our Services ===== */
 
-jQuery('.services-item').hover (function() {
-  jQuery(this).children("i").toggleClass("fa-rotate-90");
+jQuery('i').hover (function() {
+  jQuery(this).toggleClass("fa-rotate-90");
   return false;
 });
 
