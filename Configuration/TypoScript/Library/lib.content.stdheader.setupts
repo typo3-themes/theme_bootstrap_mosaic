@@ -8,7 +8,6 @@ lib.stdheader {
     }
     10 {
         key.ifEmpty >
-        setCurrent.prepend >
         default = TEXT
         default {
             current = 1
