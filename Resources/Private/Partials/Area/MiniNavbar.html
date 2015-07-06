@@ -21,16 +21,16 @@
 							<f:translate key="languageMenu_label"/>
 						</span>
                     </f:if>
-                    <f:if condition="{theme:constant(constant:'themes.configuration.pages.login')}">
+                    <f:if condition="{theme:constant(constant:'themes.configuration.pages.registration')}">
                         <f:then>
-                            <f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.login')}" class="pull-right">
+                            <f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.registration')}" class="pull-right">
                                 <i class="fa fa-arrow-circle-down"></i> Sign Up
                             </f:link.page>
                         </f:then>
                     </f:if>
-                    <f:if condition="{theme:constant(constant:'themes.configuration.pages.registration')}">
+                    <f:if condition="{theme:constant(constant:'themes.configuration.pages.login')}">
                         <f:then>
-                            <f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.registration')}" class="pull-right">
+                            <f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.login')}" class="pull-right">
                                 <i class="fa fa-sign-in"></i> Sign In
                             </f:link.page>
                         </f:then>
