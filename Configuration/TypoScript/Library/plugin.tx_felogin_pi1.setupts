@@ -1,0 +1,42 @@
+plugin.tx_felogin_pi1 {
+    templateFile = EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Felogin/Templates/template.html
+    welcomeMessage_stdWrap {
+        wrap = <div class="alert alert-info">|</div>
+    }
+    successMessage_stdWrap {
+        wrap = <div class="alert alert-success">|</div>
+    }
+    logoutMessage_stdWrap {
+        wrap = <div class="alert alert-success">|</div>
+    }
+    errorMessage_stdWrap {
+        wrap = <div class="alert alert-danger">|</div>
+    }
+    forgotMessage_stdWrap {
+        wrap = <div class="alert alert-warning">|</div>
+    }
+    forgotErrorMessage_stdWrap {
+        wrap = <div class="alert alert-danger">|</div>
+    }
+    forgotResetMessageEmailSentMessage_stdWrap {
+        wrap = <div class="alert alert-success">|</div>
+    }
+    changePasswordNotValidMessage_stdWrap {
+        wrap = <div class="alert alert-danger">|</div>
+    }
+    changePasswordTooShortMessage_stdWrap {
+        wrap = <div class="alert alert-danger">|</div>
+    }
+    changePasswordNotEqualMessage_stdWrap {
+        wrap = <div class="alert alert-danger">|</div>
+    }
+    changePasswordMessage_stdWrap {
+        wrap = <div class="alert alert-info">|</div>
+    }
+    changePasswordDoneMessage_stdWrap {
+        wrap = <div class="alert alert-success">|</div>
+    }
+    cookieWarning_stdWrap {
+        wrap = <div class="alert alert-warning">|</div>
+    }
+}
