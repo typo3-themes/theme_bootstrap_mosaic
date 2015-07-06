@@ -10,3 +10,17 @@ TCEFORM.tt_content.header_layout.addItems {
     6 = H1 Carousel Title
     #7 = H2 Block Header Row
 }
+
+TCEFORM.pages {
+    layout {
+        altLabels {
+            0 = Colorset Default
+            1 = Colorset Green
+            2 = Colorset Blue
+            3 = Colorset Orange
+        }
+        addItems {
+            4 = Colorset Red
+        }
+    }
+}
