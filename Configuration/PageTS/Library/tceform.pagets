@@ -7,8 +7,8 @@ TCEFORM.tt_content.header_layout.altLabels {
 	5 = H3 border bottom
 }
 TCEFORM.tt_content.header_layout.addItems {
-    6 = H1 Carousel Title
-    #7 = H2 Block Header Row
+    6 = H1 Carousel Title fadeInDown
+    7 = H1 Carousel Title slideInLeft
 }
 
 TCEFORM.pages {
