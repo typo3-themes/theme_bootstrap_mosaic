@@ -40,13 +40,13 @@ authors:
     name           : Kerstin Finke
     email          : info@kerstin-finke.de
     company        : Kerstin Finke Web-Entwicklung
-    companyLogo    : EXT:theme_bootstrap_mosaic/Meta/Images/logo_kerstin-finke.png
+    companyLogo    : /typo3conf/ext/theme_bootstrap_mosaic/Meta/Images/logo_kerstin-finke.png
     companyWebsite : www.kerstin-finke.de
   -
     name           : Andrea Moroni
     email          : info@web-to-date.com
     company        : webtodate
-    companyLogo    : EXT:theme_bootstrap_mosaic/Meta/Images/logo_webtodate.png
+    companyLogo    : /typo3conf/ext/theme_bootstrap_mosaic/Meta/Images/logo_webtodate.png
     companyWebsite : www.web-to-date.com
 
 # Possible license if applicable (optional)
