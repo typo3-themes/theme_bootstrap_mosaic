@@ -1,4 +1,4 @@
-## Layout Typen umbenennen
+## Rename Layout-types
 TCEFORM.tt_content.header_layout.altLabels {
     1 = H3 (primary font)
     2 = H4 (primary font)
