@@ -1,5 +1,8 @@
 plugin.tx_felogin_pi1 {
-    templateFile = EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Felogin/Templates/template.html
+    #templateFile = EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Felogin/Templates/template-basic.html
+    templateFile = EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/Felogin/Templates/template-advanced.html
+}
+plugin.tx_felogin_pi1 {
     welcomeMessage_stdWrap {
         wrap = <div class="alert alert-info">|</div>
     }

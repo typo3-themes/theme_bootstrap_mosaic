@@ -17,17 +17,7 @@ lib.stdheader {
         1 {
             current = 1
             dataWrap = <h3 class="primary-font {register:headerClass}">|</h3>
-        }
-        1.prepend = TEXT
-        1.prepend {
-            fieldRequired = tx_themes_icon
-            field = tx_themes_icon
-            stdWrap.postUserFunc = KayStrobach\Themes\Frontend\CssClassMapper->mapGenericToFramework
-            stdWrap.postUserFunc {
-                iconMapping =< lib.icons.cssMap
-            }
-            required = 1
-            noTrimWrap = |<i class="| fa-2x text-color" aria-hidden="true"></i>|
+
         }
         2 = TEXT
         2 {
@@ -47,12 +37,12 @@ lib.stdheader {
         5 = TEXT
         5 {
             current = 1
-            dataWrap = <h2 class="headline text-color {register:headerClass}"><span class="border-color">|</span></h3>
+            dataWrap = <h3 class="headline text-color {register:headerClass}"><span class="border-color">|</span></h3>
         }
         6 = TEXT
         6 {
             current = 1
-            dataWrap = <h3 class="headline text-color {register:headerClass}"><span class="border-color">|</span></h3>
+            dataWrap = <h1 class="animated fadeInDown {register:headerClass}">|</h1>
         }
 		7 = TEXT
 		7 {
@@ -69,13 +59,9 @@ lib.stdheader {
 					wrap = |
 				}
 			}
-			dataWrap = <h1 class="{register:headerClass}">|</h1>
+			dataWrap = <h1 class="animated slideInLeft {register:headerClass}">|</h1>
 		}
-
-		8 = TEXT
-		8 {
-			current = 1
-			dataWrap = <div class="row"><div class="col-md-12 block-header"><h2{register:headerClass}><span class="title">|</span><span class="decoration"></span><span class="decoration"></span><span class="decoration"></span></h2></div></div>
-		}
-    }
+	}
 }
+
+lib.stdheader.10.setCurrent.prepend.noTrimWrap = |<i class="| fa-2x text-color" aria-hidden="true"></i> |
