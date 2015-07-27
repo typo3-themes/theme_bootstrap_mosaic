@@ -8,27 +8,29 @@ jQuery(window).load(function(){
 });
 
 /* ====== Search box toggle ===== */
+jQuery(window).load(function() {
+    jQuery('#nav-search').on('click', function() {
+        jQuery(this).toggleClass('show hidden').removeClass('animated flipInX');
+        jQuery("#nav-search-close").toggleClass('show hidden');
+        jQuery("#nav-search-form").toggleClass('show hidden animated flipInX');
+        return false;
+    });
 
-jQuery('#nav-search').on('click', function() {
-    jQuery(this).toggleClass('show hidden').removeClass('animated flipInX');
-    jQuery("#nav-search-close").toggleClass('show hidden');
-    jQuery("#nav-search-form").toggleClass('show hidden animated flipInX');
-  return false;
-});
+    jQuery('#nav-search-close').on('click', function() {
+        jQuery(this).toggleClass('show hidden');
+        jQuery("#nav-search").toggleClass('show hidden animated flipInX');
+        jQuery("#nav-search-form").toggleClass('show hidden animated flipInX');
+        return false;
+    });
 
-jQuery('#nav-search-close').on('click', function() {
-    jQuery(this).toggleClass('show hidden');
-    jQuery("#nav-search").toggleClass('show hidden animated flipInX');
-    jQuery("#nav-search-form").toggleClass('show hidden animated flipInX');
-  return false;
-});
+    /* Navbar dropdown link bug fix */
 
-/* Navbar dropdown link bug fix */
+    jQuery('.navbar-nav > li > a').hover (function() {
+        jQuery(this).toggleClass("nav-hover-fix");
+        return false;
+    });
+})
 
-jQuery('.navbar-nav > li > a').hover (function() {
-    jQuery(this).toggleClass("nav-hover-fix");
-  return false;
-});
 
 // Style Toggle
 // ============

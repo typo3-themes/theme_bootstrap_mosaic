@@ -73,4 +73,6 @@ var scrolltotop={
 	}
 }
 
-scrolltotop.init()
+jQuery(window).load(function() {
+	scrolltotop.init();
+});

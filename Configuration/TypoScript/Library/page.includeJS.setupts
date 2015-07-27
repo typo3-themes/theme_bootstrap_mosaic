@@ -16,13 +16,20 @@ page {
 			disableCompression = 1
 			excludeFromConcatenation = 1
 		}
+	}
+	includeJSFooterlibs {
 		#JS Plugins
 		scrolltopcontrol = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/scrolltopcontrol.js
-        imagesloaded = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/imagesloaded.pkgd.min.js
-        isotope-pkgd = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/isotope.pkgd.min.js
+		imagesloaded = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/imagesloaded.pkgd.min.js
+		isotope-pkgd = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/isotope.pkgd.min.js
 		#JS Custom
 		isotope-custom = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/isotope-custom.js
-        sticky = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/jquery.sticky.js
-        custom = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/custom.js
+		sticky = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/jquery.sticky.js
+		custom = EXT:theme_bootstrap_mosaic/Resources/Public/JavaScript/custom.js
+		custom {
+			allWrap = |
+			excludeFromConcatenation = 1
+			disableCompression = 1
+		}
 	}
 }
