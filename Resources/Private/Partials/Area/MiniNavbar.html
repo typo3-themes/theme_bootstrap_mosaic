@@ -1,50 +1,57 @@
 {namespace theme=KayStrobach\Themes\ViewHelpers}
 <div xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns="http://www.w3.org/1999/xhtml"
      lang="en">
-    <f:section name="Default">
-        <!-- theme_bootstrap_mosaic: Partials/Area/MiniNavbar.html [begin] -->
+	<f:section name="Default">
+		<!-- theme_bootstrap_mosaic: Partials/Area/MiniNavbar.html [begin] -->
 
-    <div class="mini-navbar mini-navbar-dark hidden-xs">
-        <div class="container">
-            <div class="col-sm-12">
-                <f:cObject typoscriptObjectPath="lib.menu.miniNavbar"/>
-                <div class="menu-language-wrapper pull-right">
-                    <theme:widget.languageMenu
-                            availableLanguages="{theme:constant(constant: 'themes.languages.available')}"
-                            currentLanguageUid="{theme:constant(constant: 'themes.languages.current.uid')}"
-                            defaultLanguageIsoCodeShort="{theme:constant(constant: 'themes.languages.default.isoCodeShort')}"
-                            defaultLanguageLabel="{theme:constant(constant: 'themes.languages.default.label')}"
-                            defaultLanguageFlag="{theme:constant(constant: 'themes.languages.default.flag')}"
-                            />
-                    <f:if condition="{theme:constant(constant: 'themes.languages.available')}">
+		<div class="mini-navbar mini-navbar-dark hidden-xs">
+			<div class="container">
+				<div class="col-sm-12">
+					<f:cObject typoscriptObjectPath="lib.menu.miniNavbar"/>
+					<div class="menu-language-wrapper pull-right">
+						<theme:widget.languageMenu
+								availableLanguages="{theme:constant(constant: 'themes.languages.available')}"
+								currentLanguageUid="{theme:constant(constant: 'themes.languages.current.uid')}"
+								defaultLanguageIsoCodeShort="{theme:constant(constant: 'themes.languages.default.isoCodeShort')}"
+								defaultLanguageLabel="{theme:constant(constant: 'themes.languages.default.label')}"
+								defaultLanguageFlag="{theme:constant(constant: 'themes.languages.default.flag')}"
+								/>
+						<f:if condition="{theme:constant(constant: 'themes.languages.available')}">
 						<span>
 							<f:translate key="languageMenu_label"/>
 						</span>
-                    </f:if>
-                    <f:if condition="{theme:constant(constant:'themes.configuration.pages.registration')}">
-                        <f:then>
-                            <f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.registration')}" class="pull-right">
-                                <i class="fa fa-arrow-circle-down"></i> Sign Up
-                            </f:link.page>
-                        </f:then>
-                    </f:if>
-                    <f:if condition="{theme:constant(constant:'themes.configuration.pages.login')}">
-                        <f:then>
-                            <f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.login')}" class="pull-right">
-                                <i class="fa fa-sign-in"></i> Sign In
-                            </f:link.page>
-                        </f:then>
-                    </f:if>
-                    <f:if condition="{theme:constant(constant:'themes.configuration.pages.search')}">
-                        <f:then>
-                            <f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.search')}" class="pull-right" id="nav-search">
-                                <i class="fa fa-search"></i> Search
-                            </f:link.page>
-                        </f:then>
-                    </f:if>
-                </div>
-            </div>
-        </div>
-    </div>
-    </f:section>
+						</f:if>
+					</div>
+					<f:if condition="{theme:constant(constant:'themes.configuration.pages.registration')}">
+						<f:then>
+							<f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.registration')}" class="pull-right">
+								<i class="fa fa-arrow-circle-down"></i> Sign Up
+							</f:link.page>
+						</f:then>
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.pages.login')}">
+						<f:then>
+							<f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.login')}" class="pull-right">
+								<i class="fa fa-sign-in"></i> Sign In
+							</f:link.page>
+						</f:then>
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.pages.search')}">
+						<f:then>
+							<a href="#" class="pull-right" id="nav-search"><i class="fa fa-search"></i> Search</a>
+							<!-- Search Form -->
+							<form class="pull-right hidden" role="search" id="nav-search-form" action="{f:uri.page(pageUid:'{theme:constant(constant:\'themes.configuration.pages.search\')}')}">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search" name="tx_indexedsearch_pi2[search][sword]">
+									<span class="input-group-btn">
+										<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+									</span>
+								</div>
+							</form>
+						</f:then>
+					</f:if>
+				</div>
+			</div>
+		</div>
+	</f:section>
 </div>
