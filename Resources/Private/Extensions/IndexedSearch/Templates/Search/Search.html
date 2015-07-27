@@ -9,23 +9,15 @@
 		<h1 class="tx-indexedsearch-category">{result.categoryTitle}</h1>
 	</f:if>
 
-	<!-- show the info what was searched for -->
-	<f:for each="{searchWords}" as="searchWord" key="key">
-		<f:if condition="{key} > 0">
-			<f:then>
-				<f:translate key="searchFor.{searchWord.oper}" /> <strong>{searchWord.sword}</strong>
-			</f:then>
-			<f:else>
-				<f:translate key="searchFor" /> <strong>{searchWord.sword}</strong>
-			</f:else>
-		</f:if>
-	</f:for>
+	<f:render partial="SearchedFor" arguments="{_all}" />
+
+
 
 	<!-- show the info in which section was searched for -->
 	{result.searchedInSectionInfo}
 	<f:if condition="{result.count} > 0">
 		<f:then>
-			<div class="tx-indexedsearch-browsebox">
+			<div class="info-board info-board-green">
 				<p>
 					<is:pageBrowsingResults numberOfResults="{result.count}" currentPage="{searchParams.pointer}" resultsPerPage="{searchParams.numberOfResults}" />
 					{result.sectionText}
@@ -68,8 +60,5 @@
 				<is:pageBrowsing numberOfResults="{result.count}" maximumNumberOfResultPages="{settings.page_links}" currentPage="{searchParams.pointer}" resultsPerPage="{searchParams.numberOfResults}" />
 			</div>
 		</f:then>
-		<f:else>
-			<f:translate key="result.noResult" />
-		</f:else>
 	</f:if>
 </f:for>
