@@ -1,0 +1,55 @@
+<article>
+
+	<f:format.html><h3 class="tx-indexedsearch-title{row.CSSsuffix}">{row.title}</h3></f:format.html>
+	<div class="row">
+		<div class="col-sm-1">
+			<f:format.html><f:if condition="{settings.displayResultNumber}"><span class="tx-indexedsearch-result-number">{row.result_number}</span></f:if></f:format.html>
+			<f:format.html>{row.icon}</f:format.html>
+			<f:format.html><span class="tx-indexedsearch-percent">{row.rating}</span></f:format.html>
+		</div>
+		<div class="col-sm-5">
+			<p class="tx-indexedsearch-description">{row.description}</p>
+			<f:if condition="{row.headerOnly} == 0">
+				<p>
+					<f:format.html>{row.path}</f:format.html>
+				</p>
+			</f:if>
+		</div>
+
+		<f:if condition="{row.headerOnly} == 0">
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-3">
+						<f:translate key="result.size" />
+					</div>
+					<div class="col-sm-9">
+						{row.size}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<f:translate key="result.created" />
+					</div>
+					<div class="col-sm-9">
+						<f:format.date>@{row.created}</f:format.date>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<f:translate key="result.modified" />
+					</div>
+					<div class="col-sm-9">
+						<f:format.date>@{row.modified}</f:format.date>
+					</div>
+				</div>
+			</div>
+		</f:if>
+	</div>
+		<f:if condition="{row.subresults}">
+			<p class="tx-indexedsearch-list">
+				<f:for each="{row.subresults.items}" as="subrow">
+					<f:render partial="Searchresult" arguments="{row: subrow}" />
+				</f:for>
+			</p>
+		</f:if>
+</article>
