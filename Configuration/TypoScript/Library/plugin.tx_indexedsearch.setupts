@@ -1,0 +1,5 @@
+plugin.tx_indexedsearch.view {
+    templateRootPath = EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/IndexedSearch/Templates
+    partialRootPath = EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/IndexedSearch/Partials
+    layoutRootPath = EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/IndexedSearch/Layouts
+}
