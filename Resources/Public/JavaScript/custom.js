@@ -98,13 +98,6 @@ jQuery('.style-toggle-body .colors > .red').on('click', function() {
   return false;
 });
 
-/* ===== Our Services ===== */
-
-jQuery('i').hover (function() {
-  jQuery(this).toggleClass("fa-rotate-90");
-  return false;
-});
-
 /* ===== Sign Up popovers ===== */
 
 jQuery(function(){
