@@ -30,25 +30,68 @@
 
 /* ===== Link and Font Colors ===== */
 
-
+.colorsetFadeIn {
+  transition: all 0.5s ease-in 0.5s; /* explorer 10 */
+  -webkit-transition: all 0.5s ease-in 0.5s; /* chrome & safari */
+  -moz-transition: all 0.5s ease-in 0.5s; /* firefox */
+  -o-transition: all 0.5s ease-in 0.5s; /* opera */
+}
 
 .colorset-1 a,
 .colorset-1 .text-color {
   color: @link-font-colors-green;
+  .colorsetFadeIn
 }
 .colorset-2 a,
 .colorset-2 .text-color {
   color: @link-font-colors-blue;
+  .colorsetFadeIn
 }
 .colorset-3 a,
 .colorset-3 .text-color {
   color: @link-font-colors-orange;
+  .colorsetFadeIn
 }
 .colorset-4 a,
 .colorset-4 .text-color {
   color: @link-font-colors-red;
+  .colorsetFadeIn
 }
 
+
+#areaFooter.footer-dark a,
+#areaFooter.footer-dark .text-color.fa{
+  color: @mini-navbar-dark-link-color;
+  .colorsetFadeIn
+}
+
+#areaFooter.footer-light a,
+#areaFooter.footer-light .text-color.fa{
+  color: @mini-navbar-white-link-color;
+  .colorsetFadeIn
+}
+
+
+.colorset-1 #areaFooter:hover a,
+.colorset-1 #areaFooter .text-color {
+  color: @link-font-colors-green;
+  .colorsetFadeIn
+}
+.colorset-2 #areaFooter:hover a,
+.colorset-2 #areaFooter .text-color {
+  color: @link-font-colors-blue;
+  .colorsetFadeIn
+}
+.colorset-3 #areaFooter:hover a,
+.colorset-3 #areaFooter .text-color {
+  color: @link-font-colors-orange;
+  .colorsetFadeIn
+}
+.colorset-4 #areaFooter:hover a,
+.colorset-4 #areaFooter .text-color {
+  color: @link-font-colors-red;
+  .colorsetFadeIn
+}
 
 /* ===== Border Colors ===== */
 
