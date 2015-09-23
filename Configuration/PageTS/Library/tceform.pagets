@@ -1,14 +1,24 @@
 ## Rename Layout-types
-TCEFORM.tt_content.header_layout.altLabels {
-    1 = H3 (primary font)
-    2 = H4 (primary font)
-    3 = H5 (primary font)
-	4 = H2 text-color, no border
-	5 = H3 border bottom
-}
+//TCEFORM.tt_content.header_layout.altLabels {
+//    1 = H1 (primary font)
+//    2 = H2 (primary font)
+//    3 = H3 (primary font)
+//	  4 = H4 (primary font)
+//	  5 = H5 (primary font)
+//}
 TCEFORM.tt_content.header_layout.addItems {
-    6 = H1 Carousel Title fadeInDown
-    7 = H1 Carousel Title slideInLeft
+    6 = H2 Block Header
+    7 = H2 Block Header Row
+    8 = Horizontal Line - No Header Text
+    1000 = ---
+    1001 = H1 Title fadeInDown
+    1002 = H1 Title fadeInUp
+    1003 = H1 Title slideInLeft
+    1004 = H1 Title slideInRight
+    2000 = ---
+    2001 = H2 Block Header
+    2002 = H2 Block Header Row
+
 }
 
 TCEFORM.pages {
