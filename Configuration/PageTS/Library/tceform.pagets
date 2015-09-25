@@ -1,23 +1,238 @@
-## Rename Layout-types
-//TCEFORM.tt_content.header_layout.altLabels {
-//    1 = H1 (primary font)
-//    2 = H2 (primary font)
-//    3 = H3 (primary font)
-//	  4 = H4 (primary font)
-//	  5 = H5 (primary font)
-//}
 TCEFORM.tt_content.header_layout.addItems {
-    6 = H2 Block Header
-    7 = H2 Block Header Row
-    8 = Horizontal Line - No Header Text
-    1000 = ---
-    1001 = H1 Title fadeInDown
-    1002 = H1 Title fadeInUp
-    1003 = H1 Title slideInLeft
-    1004 = H1 Title slideInRight
-    2000 = ---
-    2001 = H2 Block Header
-    2002 = H2 Block Header Row
+
+    h1a-AttentionSeekers = -- Attention Seekers --
+
+    h1a-bounce = H1 Title bounce
+    h1a-flash = H1 Title flash
+    h1a-pulse = H1 Title pulse
+    h1a-rubberBand = H1 Title rubberBand
+    h1a-shake = H1 Title shake
+    h1a-swing = H1 Title swing
+    h1a-tada = H1 Title tada
+    h1a-wobble = H1 Title wobble
+    h1a-jello = H1 Title jello
+
+    h1a-BouncingEntrances = -- Bouncing Entrances --
+
+    h1a-bounceIn = H1 Title bounceIn
+    h1a-bounceInDown = H1 Title bounceInDown
+	h1a-bounceInLeft = H1 Title bounceInLeft
+	h1a-bounceInRight = H1 Title bounceInRight
+	h1a-bounceInUp = H1 Title bounceInUp
+
+	h1a-BouncingExits = -- Bouncing Exits
+
+	h1a-bounceOut = H1 Title bounceOut
+	h1a-bounceOutDown = H1 Title bounceOutDown
+	h1a-bounceOutLeft = H1 Title bounceOutLeft
+	h1a-bounceOutRight = H1 Title bounceOutRight
+	h1a-bounceOutUp = H1 Title bounceOutUp
+
+	h1a-FadingEntrances = -- Fading Entrances --
+
+	h1a-fadeIn = H1 Title fadeIn
+	h1a-fadeInDown = H1 Title fadeInDown
+	h1a-fadeInDownBig = H1 Title fadeInDownBig
+	h1a-fadeInLeft = H1 Title fadeInLeft
+	h1a-fadeInLeftBig = H1 Title fadeInLeftBig
+	h1a-fadeInRight = H1 Title fadeInRight
+	h1a-fadeInRightBig = H1 Title fadeInRightBig
+	h1a-fadeInUp = H1 Title fadeInUp
+	h1a-fadeInUpBig = H1 Title fadeInUpBig
+
+	h1a-FadingExits = -- Fading Exits --
+
+	h1a-fadeOut = H1 Title fadeOut
+	h1a-fadeOutDown = H1 Title fadeOutDown
+	h1a-fadeOutDownBig = H1 Title fadeOutDownBig
+	h1a-fadeOutLeft = H1 Title fadeOutLeft
+	h1a-fadeOutLeftBig = H1 Title fadeOutLeftBig
+	h1a-fadeOutRight = H1 Title fadeOutRight
+	h1a-fadeOutRightBig = H1 Title fadeOutRightBig
+	h1a-fadeOutUp = H1 Title fadeOutUp
+	h1a-fadeOutUpBig = H1 Title fadeOutUpBig
+
+	h1a-Flippers = -- Flippers --
+
+	h1a-flip = H1 Title flip
+	h1a-flipInX = H1 Title flipInX
+	h1a-flipInY = H1 Title flipInY
+	h1a-flipOutX = H1 Title flipOutX
+	h1a-flipOutY = H1 Title flipOutY
+
+	h1a-Lightspeed = -- Lightspeed --
+
+	h1a-lightSpeedIn = H1 Title lightSpeedIn
+	h1a-lightSpeedOut = H1 Title lightSpeedOut
+
+	h1a-RotatingEntrances = -- Rotating Entrances --
+
+	h1a-rotateIn = H1 Title rotateIn
+	h1a-rotateInDownLeft = H1 Title rotateInDownLeft
+	h1a-rotateInDownRight = H1 Title rotateInDownRight
+	h1a-rotateInUpLeft = H1 Title rotateInUpLeft
+	h1a-rotateInUpRight = H1 Title rotateInUpRight
+
+	h1a-RotatingExits = -- Rotating Exits --
+
+	h1a-rotateOut = H1 Title rotateOut
+	h1a-rotateOutDownLeft = H1 Title rotateOutDownLeft
+	h1a-rotateOutDownRight = H1 Title rotateOutDownRight
+	h1a-rotateOutUpLeft = H1 Title rotateOutUpLeft
+	h1a-rotateOutUpRight = H1 Title rotateOutUpRight
+
+	h1a-SlidingEntrances = -- Sliding Entrances --
+
+	h1a-slideInDown = H1 Title slideInDown
+	h1a-slideInLeft = H1 Title slideInLeft
+	h1a-slideInRight = H1 Title slideInRight
+	h1a-slideInUp = H1 Title slideInUp
+
+	h1a-SlidingExits = -- Sliding Exits --
+
+	h1a-slideOutDown = H1 Title slideOutDown
+	h1a-slideOutLeft = H1 Title slideOutLeft
+	h1a-slideOutRight = H1 Title slideOutRight
+	h1a-slideOutUp = H1 Title slideOutUp
+
+	h1a-ZoomEntrances = -- Zoom Entrances --
+
+	h1a-zoomIn = H1 Title zoomIn
+	h1a-zoomInDown = H1 Title zoomInDown
+	h1a-zoomInLeft = H1 Title zoomInLeft
+	h1a-zoomInRight = H1 Title zoomInRight
+	h1a-zoomInUp = H1 Title zoomInUp
+
+	h1a-ZoomExits = -- Zoom Exits --
+
+	h1a-zoomOut = H1 Title zoomOut
+	h1a-zoomOutDown = H1 Title zoomOutDown
+	h1a-zoomOutLeft = H1 Title zoomOutLeft
+	h1a-zoomOutRight = H1 Title zoomOutRight
+	h1a-zoomOutUp = H1 Title zoomOutUp
+
+	h1a-Specials = -- Specials --
+
+	h1a-hinge = H1 Title hinge
+	h1a-rollIn = H1 Title rollIn
+	h1a-rollOut = H1 Title rollOut
+
+    h2a-AttentionSeekers = -- Attention Seekers --
+
+    h2a-bounce = H2 Title bounce
+    h2a-flash = H2 Title flash
+    h2a-pulse = H2 Title pulse
+    h2a-rubberBand = H2 Title rubberBand
+    h2a-shake = H2 Title shake
+    h2a-swing = H2 Title swing
+    h2a-tada = H2 Title tada
+    h2a-wobble = H2 Title wobble
+    h2a-jello = H2 Title jello
+
+    h2a-BouncingEntrances = -- Bouncing Entrances --
+
+    h2a-bounceIn = H2 Title bounceIn
+    h2a-bounceInDown = H2 Title bounceInDown
+	h2a-bounceInLeft = H2 Title bounceInLeft
+	h2a-bounceInRight = H2 Title bounceInRight
+	h2a-bounceInUp = H2 Title bounceInUp
+
+	h2a-BouncingExits = -- Bouncing Exits
+
+	h2a-bounceOut = H2 Title bounceOut
+	h2a-bounceOutDown = H2 Title bounceOutDown
+	h2a-bounceOutLeft = H2 Title bounceOutLeft
+	h2a-bounceOutRight = H2 Title bounceOutRight
+	h2a-bounceOutUp = H2 Title bounceOutUp
+
+	h2a-FadingEntrances = -- Fading Entrances --
+
+	h2a-fadeIn = H2 Title fadeIn
+	h2a-fadeInDown = H2 Title fadeInDown
+	h2a-fadeInDownBig = H2 Title fadeInDownBig
+	h2a-fadeInLeft = H2 Title fadeInLeft
+	h2a-fadeInLeftBig = H2 Title fadeInLeftBig
+	h2a-fadeInRight = H2 Title fadeInRight
+	h2a-fadeInRightBig = H2 Title fadeInRightBig
+	h2a-fadeInUp = H2 Title fadeInUp
+	h2a-fadeInUpBig = H2 Title fadeInUpBig
+
+	h2a-FadingExits = -- Fading Exits --
+
+	h2a-fadeOut = H2 Title fadeOut
+	h2a-fadeOutDown = H2 Title fadeOutDown
+	h2a-fadeOutDownBig = H2 Title fadeOutDownBig
+	h2a-fadeOutLeft = H2 Title fadeOutLeft
+	h2a-fadeOutLeftBig = H2 Title fadeOutLeftBig
+	h2a-fadeOutRight = H2 Title fadeOutRight
+	h2a-fadeOutRightBig = H2 Title fadeOutRightBig
+	h2a-fadeOutUp = H2 Title fadeOutUp
+	h2a-fadeOutUpBig = H2 Title fadeOutUpBig
+
+	h2a-Flippers = -- Flippers --
+
+	h2a-flip = H2 Title flip
+	h2a-flipInX = H2 Title flipInX
+	h2a-flipInY = H2 Title flipInY
+	h2a-flipOutX = H2 Title flipOutX
+	h2a-flipOutY = H2 Title flipOutY
+
+	h2a-Lightspeed = -- Lightspeed --
+
+	h2a-lightSpeedIn = H2 Title lightSpeedIn
+	h2a-lightSpeedOut = H2 Title lightSpeedOut
+
+	h2a-RotatingEntrances = -- Rotating Entrances --
+
+	h2a-rotateIn = H2 Title rotateIn
+	h2a-rotateInDownLeft = H2 Title rotateInDownLeft
+	h2a-rotateInDownRight = H2 Title rotateInDownRight
+	h2a-rotateInUpLeft = H2 Title rotateInUpLeft
+	h2a-rotateInUpRight = H2 Title rotateInUpRight
+
+	h2a-RotatingExits = -- Rotating Exits --
+
+	h2a-rotateOut = H2 Title rotateOut
+	h2a-rotateOutDownLeft = H2 Title rotateOutDownLeft
+	h2a-rotateOutDownRight = H2 Title rotateOutDownRight
+	h2a-rotateOutUpLeft = H2 Title rotateOutUpLeft
+	h2a-rotateOutUpRight = H2 Title rotateOutUpRight
+
+	h2a-SlidingEntrances = -- Sliding Entrances --
+
+	h2a-slideInDown = H2 Title slideInDown
+	h2a-slideInLeft = H2 Title slideInLeft
+	h2a-slideInRight = H2 Title slideInRight
+	h2a-slideInUp = H2 Title slideInUp
+
+	h2a-SlidingExits = -- Sliding Exits --
+
+	h2a-slideOutDown = H2 Title slideOutDown
+	h2a-slideOutLeft = H2 Title slideOutLeft
+	h2a-slideOutRight = H2 Title slideOutRight
+	h2a-slideOutUp = H2 Title slideOutUp
+
+	h2a-ZoomEntrances = -- Zoom Entrances --
+
+	h2a-zoomIn = H2 Title zoomIn
+	h2a-zoomInDown = H2 Title zoomInDown
+	h2a-zoomInLeft = H2 Title zoomInLeft
+	h2a-zoomInRight = H2 Title zoomInRight
+	h2a-zoomInUp = H2 Title zoomInUp
+
+	h2a-ZoomExits = -- Zoom Exits --
+
+	h2a-zoomOut = H2 Title zoomOut
+	h2a-zoomOutDown = H2 Title zoomOutDown
+	h2a-zoomOutLeft = H2 Title zoomOutLeft
+	h2a-zoomOutRight = H2 Title zoomOutRight
+	h2a-zoomOutUp = H2 Title zoomOutUp
+
+	h2a-Specials = -- Specials --
+
+	h2a-hinge = H2 Title hinge
+	h2a-rollIn = H2 Title rollIn
+	h2a-rollOut = H2 Title rollOut
 
 }
 
