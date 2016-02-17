@@ -11,7 +11,9 @@
 @headline-border-bottom: 1px solid #eee;
 @headline-margin-bottom: 30px;
 @headline-line-height: 50px;
-@headline-h3-padding-bottom: 20px;
+@headline-h3-padding-bottom: 10px;
+@headline-h3-border-bottom: 1px solid #eee;
+@headline-h3-margin-bottom: 20px;
 
 /*info board settings*/
 @info-board-margin: 20px 0;
@@ -138,10 +140,17 @@ hr {
     }
   }
 
-  h3.headline span {
+  .underline {
     padding-bottom: @headline-h3-padding-bottom;
-  }
+    border-bottom: @headline-h3-border-bottom;
+    margin-bottom: @headline-h3-margin-bottom;
 
+    span {
+      padding-bottom: 5px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
+  }
   /* ===== Breadcrumbs ===== */
 
 
