@@ -23,87 +23,87 @@
 
 /* ===== Link and Font Colors ===== */
 
-.body-green a,
-.body-green .text-color {
+.colorset-1 a,
+.colorset-1 .text-color {
   color: #94BA65;
 }
-.body-blue a,
-.body-blue .text-color {
+.colorset-2 a,
+.colorset-2 .text-color {
   color: #2790B0;
 }
-.body-orange a,
-.body-orange .text-color {
+.colorset-3 a,
+.colorset-3 .text-color {
   color: #D26C22;
 }
-.body-red a,
-.body-red .text-color {
+.colorset-4 a,
+.colorset-4 .text-color {
   color: #E35E54;
 }
 
 
 /* ===== Border Colors ===== */
 
-.body-green .border-color {
+.colorset-1 .border-color {
   border-color: #94BA65;
 }
-.body-blue .border-color {
+.colorset-2 .border-color {
   border-color: #2790B0;
 }
-.body-orange .border-color {
+.colorset-3 .border-color {
   border-color: #D26C22;
 }
-.body-red .border-color {
+.colorset-4 .border-color {
   border-color: #E35E54;
 }
 
 /* ===== Background Colors ===== */
 
-.body-green .bg-color {
+.colorset-1 .bg-color {
   background-color: #94BA65;
 }
-.body-blue .bg-color {
+.colorset-2 .bg-color {
   background-color: #2790B0;
 }
-.body-orange .bg-color {
+.colorset-3 .bg-color {
   background-color: #D26C22;
 }
-.body-red .bg-color {
+.colorset-4 .bg-color {
   background-color: #E35E54;
 }
-.body-green .bg-hover-color:hover,
-.body-green .open > .bg-hover-color {
+.colorset-1 .bg-hover-color:hover,
+.colorset-1 .open > .bg-hover-color {
   background-color: #94BA65 !important;
 }
-.body-blue .bg-hover-color:hover,
-.body-blue .open > .bg-hover-color {
+.colorset-2 .bg-hover-color:hover,
+.colorset-2 .open > .bg-hover-color {
   background-color: #2790B0 !important;
 }
-.body-orange .bg-hover-color:hover,
-.body-orange .open > .bg-hover-color {
+.colorset-3 .bg-hover-color:hover,
+.colorset-3 .open > .bg-hover-color {
   background-color: #D26C22 !important;
 }
-.body-red .bg-hover-color:hover,
-.body-red .open > .bg-hover-color {
+.colorset-4 .bg-hover-color:hover,
+.colorset-4 .open > .bg-hover-color {
   background-color: #E35E54 !important;
 }
-.body-green .dropdown-menu > .active > a,
-.body-green .dropdown-menu > .active > a:hover,
-.body-green .dropdown-menu > .active > a:focus {
+.colorset-1 .dropdown-menu > .active > a,
+.colorset-1 .dropdown-menu > .active > a:hover,
+.colorset-1 .dropdown-menu > .active > a:focus {
   background-color: #94BA65;
 }
-.body-blue .dropdown-menu > .active > a,
-.body-blue .dropdown-menu > .active > a:hover,
-.body-blue .dropdown-menu > .active > a:focus {
+.colorset-2 .dropdown-menu > .active > a,
+.colorset-2 .dropdown-menu > .active > a:hover,
+.colorset-2 .dropdown-menu > .active > a:focus {
   background-color: #2790B0;
 }
-.body-orange .dropdown-menu > .active > a,
-.body-orange .dropdown-menu > .active > a:hover,
-.body-orange .dropdown-menu > .active > a:focus {
+.colorset-3 .dropdown-menu > .active > a,
+.colorset-3 .dropdown-menu > .active > a:hover,
+.colorset-3 .dropdown-menu > .active > a:focus {
   background-color: #D26C22;
 }
-.body-red .dropdown-menu > .active > a,
-.body-red .dropdown-menu > .active > a:hover,
-.body-red .dropdown-menu > .active > a:focus {
+.colorset-4 .dropdown-menu > .active > a,
+.colorset-4 .dropdown-menu > .active > a:hover,
+.colorset-4 .dropdown-menu > .active > a:focus {
   background-color: #E35E54;
 }
 
@@ -126,14 +126,14 @@
 
 /* Button Green */
 
-.body-green .btn-color,
+.colorset-1 .btn-color,
 .btn-green {
   background-color: #94BA65;
   border-color: #749B46;
 }
-.body-green .btn-color:hover,
-.body-green .btn-color:focus,
-.body-green .btn-color:active,
+.colorset-1 .btn-color:hover,
+.colorset-1 .btn-color:focus,
+.colorset-1 .btn-color:active,
 .btn-green:hover,
 .btn-green:focus,
 .btn-green:active{
@@ -143,14 +143,14 @@
 
 /* Button Blue */
 
-.body-blue .btn-color,
+.colorset-2 .btn-color,
 .btn-blue {
   background-color: #2790B0;
   border-color: #217B97;
 }
-.body-blue .btn-color:hover,
-.body-blue .btn-color:focus,
-.body-blue .btn-color:active,
+.colorset-2 .btn-color:hover,
+.colorset-2 .btn-color:focus,
+.colorset-2 .btn-color:active,
 .btn-blue:hover,
 .btn-blue:focus,
 .btn-blue:active {
@@ -160,14 +160,14 @@
 
 /* Button Orange */
 
-.body-orange .btn-color,
+.colorset-3 .btn-color,
 .btn-orange {
   background-color: #D26C22;
   border-color: #C1631F;
 }
-.body-orange .btn-color:hover,
-.body-orange .btn-color:focus,
-.body-orange .btn-color:active,
+.colorset-3 .btn-color:hover,
+.colorset-3 .btn-color:focus,
+.colorset-3 .btn-color:active,
 .btn-orange:hover,
 .btn-orange:focus,
 .btn-orange:active {
@@ -177,14 +177,14 @@
 
 /* Button Orange */
 
-.body-red .btn-color,
+.colorset-4 .btn-color,
 .btn-red {
   background-color: #E35E54;
   border-color: #E0493E;
 }
-.body-red .btn-color:hover,
-.body-red .btn-color:focus,
-.body-red .btn-color:active,
+.colorset-4 .btn-color:hover,
+.colorset-4 .btn-color:focus,
+.colorset-4 .btn-color:active,
 .btn-red:hover,
 .btn-red:focus,
 .btn-red:active {
@@ -194,27 +194,27 @@
 
 /* ===== Page Not Found ===== */
 
-.body-green .not-found-p,
-.body-green .alt-p,
-.body-green .color-jumbotron{
+.colorset-1 .not-found-p,
+.colorset-1 .alt-p,
+.colorset-1 .color-jumbotron{
   background: #94BA65;
   background-image: radial-gradient(#A6C680, #749B46);
 }
-.body-blue .not-found-p,
-.body-blue .alt-p,
-.body-blue .color-jumbotron {
+.colorset-2 .not-found-p,
+.colorset-2 .alt-p,
+.colorset-2 .color-jumbotron {
   background: #2790B0;
   background-image: radial-gradient(#79C9E2, #2790B0);
 }
-.body-orange .not-found-p,
-.body-orange .alt-p,
-.body-orange .color-jumbotron {
+.colorset-3 .not-found-p,
+.colorset-3 .alt-p,
+.colorset-3 .color-jumbotron {
   background: #D26C22;
   background-image: radial-gradient(#E28D50, #D26C22);
 }
-.body-red .not-found-p,
-.body-red .alt-p,
-.body-red .color-jumbotron {
+.colorset-4 .not-found-p,
+.colorset-4 .alt-p,
+.colorset-4 .color-jumbotron {
   background: #E35E54;
   background-image: radial-gradient(#EE9C96, #E35E54);
 }

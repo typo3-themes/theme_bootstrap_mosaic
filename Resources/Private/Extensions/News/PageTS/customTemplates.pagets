@@ -5,4 +5,12 @@ tx_news.templateLayouts {
     #2 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf:portfolioIsotope
     3 = Portfolio Isotope Menu
     #3 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf.xlf:portfolioIsotope-menu
+    3 = Portfolio Isotope Menu
+    #3 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf.xlf:portfolioIsotope-menu
+    4 = Teaser
+    #4 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf:teasers
+    5 = Blog-Liste
+    #5 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf:blog-list
+    6 = Blog-Detail
+    #6 = LLL:EXT:theme_bootstrap_mosaic\Resources\Private\Extensions\News\Language\locallang.xlf.xlf:blog-detail
 }

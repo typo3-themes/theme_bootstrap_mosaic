@@ -11,6 +11,32 @@ plugin.tx_news.settings.startingpoint = {$themes.configuration.container.news}
 # depth of sub container
 plugin.tx_news.settings.recursive = 5
 
+plugin.tx_news.settings.cropMaxCharacters = 256
+
+plugin.tx_news.settings.blogList < plugin.tx_news.settings.list
+plugin.tx_news.settings.blogList {
+	media.image {
+		width = 720
+		height = 405c-100
+	}
+	paginate {
+		itemsPerPage = 5
+		insertAbove = 0
+		insertBelow = 1
+		templatePath = EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/News/Templates/ViewHelpers/Widget/Paginate/Index.html
+		prevNextHeaderTags = 0
+		maximumNumberOfLinks = 10
+	}
+}
+plugin.tx_news.settings.teaser < plugin.tx_news.settings.list
+plugin.tx_news.settings.teaser {
+	cropMaxCharacters = 256
+	media.image {
+		width = 720
+		height = 405c-100
+	}
+}
+
 plugin.tx_news {
 	view {
 		templateRootPaths {
@@ -40,10 +66,10 @@ plugin.tx_news {
 
 	_LOCAL_LANG {
 		default {
-			more-link = more >>
+			more-link = Read More ...
 		}
 		de {
-			more-link = mehr >>
+			more-link = Mehr lesen ...
 		}
 	}
 }

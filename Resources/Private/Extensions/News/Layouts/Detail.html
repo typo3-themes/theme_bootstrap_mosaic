@@ -15,10 +15,19 @@
         </div>
     </f:then>
     <f:else>
-        <div class="news news-single">
-            <div class="article">
-                <f:render section="content" />
-            </div>
-        </div>
+        <f:if condition="{settings.templateLayout} == 6">
+            <f:then>
+                <div class="row blog-p">
+                    <f:render section="blogdetail" />
+                </div>
+            </f:then>
+            <f:else>
+                <div class="news news-single">
+                    <div class="article">
+                        <f:render section="content" />
+                    </div>
+                </div>
+            </f:else>
+        </f:if>
     </f:else>
 </f:if>

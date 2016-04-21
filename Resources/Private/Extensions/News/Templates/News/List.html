@@ -24,6 +24,20 @@
                             </f:for>
                         </div>
                     </f:if>
+                    <f:if condition="{settings.templateLayout} == 4">
+                        <div class="row portfolio">
+                            <f:for each="{news}" as="newsItem">
+                                <f:render partial="List/Teasers" arguments="{newsItem: newsItem, settings:settings}"/>
+                            </f:for>
+                        </div>
+                    </f:if>
+                    <f:if condition="{settings.templateLayout} == 5">
+                        <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.blogList.paginate}">
+                            <f:for each="{paginatedNews}" as="newsItem">
+                                <f:render partial="List/BlogList" arguments="{newsItem: newsItem, settings:settings}"/>
+                            </f:for>
+                        </n:widget.paginate>
+                    </f:if>
                 </f:then>
                 <f:else>
                     <div class="news news-list-view">

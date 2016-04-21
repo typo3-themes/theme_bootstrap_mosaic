@@ -79,22 +79,22 @@ jQuery('#opt-footer-white').on('change', function() {
 // =================
 
 jQuery('.style-toggle-body .colors > .green').on('click', function() {
-    jQuery("body").addClass("body-green").removeClass("body-blue body-orange body-red");
+    jQuery("body").addClass("colorset-1").removeClass("colorset-2 colorset-3 colorset-4");
     return false;
 });
 
 jQuery('.style-toggle-body .colors > .blue').on('click', function() {
-  jQuery("body").addClass("body-blue").removeClass("body-green body-orange body-red");
+  jQuery("body").addClass("colorset-2").removeClass("colorset-1 colorset-3 colorset-4");
   return false;
 });
 
 jQuery('.style-toggle-body .colors > .orange').on('click', function() {
-  jQuery("body").addClass("body-orange").removeClass("body-green body-blue body-red");
+  jQuery("body").addClass("colorset-3").removeClass("colorset-1 colorset-2 colorset-4");
   return false;
 });
 
 jQuery('.style-toggle-body .colors > .red').on('click', function() {
-  jQuery("body").addClass("body-red").removeClass("body-green body-blue body-orange");
+  jQuery("body").addClass("colorset-4").removeClass("colorset-1 colorset-2 colorset-3");
   return false;
 });
 
@@ -131,4 +131,9 @@ jQuery(document).ready(function(){
     e.preventDefault();
   });
    return false;
+});
+
+jQuery('.blog-p-search .input-group-btn input').click(function(){
+    jQuery(this).closest('form').submit();
+    return false;
 });
