@@ -36,16 +36,16 @@
 
 /*Button Colors*/
 @button-green-color: @green;
-@button-green-border-color: #749B46;
-@button-green-action-color: #749B46;
-@button-green-action-border-color: #5F7F39;
+@button-green-border-color: darken(@green, 22%);
+@button-green-action-color: darken(@green, 22%);
+@button-green-action-border-color: darken(darken(@green, 22%), 22%);
 
 /*Not Found Colors*/
 @not-found-green-bg: @green;
-@not-found-green-bg-image: radial-gradient(#A6C680, #749B46);
+@not-found-green-bg-image: radial-gradient(lighten(@green, 25%), @green);
 @not-found-blue-bg: @blue;
-@not-found-blue-bg-image: radial-gradient(#79C9E2, #2790B0);
+@not-found-blue-bg-image: radial-gradient(lighten(@blue, 25%), @blue);
 @not-found-orange-bg: @orange;
-@not-found-orange-bg-image: radial-gradient(#E28D50, #D26C22);
+@not-found-orange-bg-image: radial-gradient(lighten(@orange, 25%), @orange);
 @not-found-red-bg: @red;
-@not-found-red-bg-image: radial-gradient(#EE9C96, #E35E54);
+@not-found-red-bg-image: radial-gradient(lighten(@red, 25%), @red);

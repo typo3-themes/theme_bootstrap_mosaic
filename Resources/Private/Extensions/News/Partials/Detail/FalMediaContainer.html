@@ -28,18 +28,46 @@
         </f:then>
         <f:else>
             <!-- fal media files -->
-            <div class="news-img-wrap">
-                <f:for each="{media}" as="mediaElement">
-                    <div class="outer">
-                        <f:if condition="{mediaElement.originalResource.type} == 2">
-                            <f:render partial="Detail/FalMediaImage" arguments="{mediaElement: mediaElement, settings:settings}"/>
-                        </f:if>
-                        <f:if condition="{mediaElement.originalResource.type} == 4">
-                            <f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement, settings:settings}"/>
-                        </f:if>
+            <f:if condition="{settings.templateLayout} == 6">
+                <f:then>
+                    <div class="port-slideshow-p">
+                        <!-- Image Carousel -->
+                        <div data-ride="carousel" class="carousel slide" id="port-slideshow-p">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <f:for each="{media}" as="mediaElement" iteration="iterator">
+                                    <f:if condition="{mediaElement.originalResource.type} == 2">
+                                        <f:render partial="Detail/FalMediaImage" arguments="{mediaElement: mediaElement, settings:settings, iterator:iterator}"/>
+                                    </f:if>
+                                </f:for>
+                            </div>
+                            <!-- Controls -->
+                            <f:if condition="{media.1}">
+                                <a class="port-arrow-p port-arrow-prev bg-hover-color" href="#port-slideshow-p" data-slide="prev">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                <a class="port-arrow-p port-arrow-next bg-hover-color" href="#port-slideshow-p" data-slide="next">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </f:if>
+                        </div>
                     </div>
-                </f:for>
-            </div>
+                </f:then>
+                <f:else>
+                    <div class="news-img-wrap">
+                        <f:for each="{media}" as="mediaElement">
+                            <div class="outer">
+                                <f:if condition="{mediaElement.originalResource.type} == 2">
+                                    <f:render partial="Detail/FalMediaImage" arguments="{mediaElement: mediaElement, settings:settings}"/>
+                                </f:if>
+                                <f:if condition="{mediaElement.originalResource.type} == 4">
+                                    <f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement, settings:settings}"/>
+                                </f:if>
+                            </div>
+                        </f:for>
+                    </div>
+                </f:else>
+            </f:if>
         </f:else>
     </f:if>
 </f:if>

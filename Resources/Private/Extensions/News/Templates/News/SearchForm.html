@@ -1,0 +1,19 @@
+{namespace n=GeorgRinger\News\ViewHelpers}
+<f:layout name="General" />
+<!--
+	=====================
+		Templates/News/SearchForm.html
+-->
+
+<f:section name="content">
+	<div class="blog-p-search">
+		<f:form object="{search}" name="search" pageUid="{settings.listPid}" class="form" >
+			<div class="input-group">
+				<f:form.textfield id="news-subject" property="subject" class="form-control" placeholder="Search our blog"/>
+				<span class="input-group-btn">
+					<f:form.submit value="Go!" class="btn btn-color"/>
+				</span>
+			</div>
+		</f:form>
+	</div>
+</f:section>

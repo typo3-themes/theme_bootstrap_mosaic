@@ -1,0 +1,60 @@
+{namespace n=Tx_News_ViewHelpers}<!--
+	=====================
+		Partials/List/Item.html
+-->
+<div class="blog-p-body {f:if(condition: newsItem.istopnews, then: ' topnews')}">
+    <n:excludeDisplayedNews newsItem="{newsItem}"/>
+    <hr />
+    <h2 class="primary-font first-child">
+        <n:link newsItem="{newsItem}" settings="{settings}">{newsItem.title}</n:link>
+    </h2>
+    <f:if condition="{newsItem.author}">
+        <hr />
+        <p class="text-muted">
+            <f:translate key="author" arguments="{0:newsItem.author}"/><f:if condition="{newsItem.datetime}">, <time datetime="{f:format.date(date:newsItem.datetime,format:'Y-m-d')}"><n:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</n:format.date></time></f:if>
+        </p>
+    </f:if>
+    <f:if condition="{newsItem.teaser}">
+        <f:then>
+            <p>{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</p>
+        </f:then>
+        <f:else>
+            <p>{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</p>
+        </f:else>
+    </f:if>
+    <n:link newsItem="{newsItem}" settings="{settings}" class="btn btn-color"><f:translate key="more-link"/></n:link>
+    <f:if condition="{newsItem.falMedia}">
+        <!-- fal media preview element -->
+        <f:then>
+            <f:if condition="{newsItem.falMediaPreviews}">
+                <f:then>
+                    <n:link newsItem="{newsItem}" settings="{settings}">
+                        <f:alias map="{mediaElement: newsItem.falMediaPreviews.0}">
+                            <f:if condition="{mediaElement.originalResource.type} == 2">
+                                <f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{settings.blogList.media.image.width}" height="{settings.blogList.media.image.height}" class="img-responsive"/>
+                            </f:if>
+                        </f:alias>
+                    </n:link>
+                </f:then>
+            </f:if>
+        </f:then>
+        <f:else>
+            <f:if condition="{newsItem.media}">
+                <!-- media preview element -->
+                <f:then>
+                    <f:if condition="{newsItem.mediaPreviews}">
+                        <f:then>
+                            <n:link newsItem="{newsItem}" settings="{settings}">
+                                <f:alias map="{mediaElement: newsItem.mediaPreviews.0}">
+                                    <f:if condition="{mediaElement.type} == 0">
+                                        <f:image src="uploads/tx_news/{mediaElement.image}" title="{mediaElement.title}" alt="{mediaElement.alt}" width="{settings.blogList.media.image.width}" height="{settings.blogList.media.image.height}" class="img-responsive"/>
+                                    </f:if>
+                                </f:alias>
+                            </n:link>
+                        </f:then>
+                    </f:if>
+                </f:then>
+            </f:if>
+        </f:else>
+    </f:if>
+</div>

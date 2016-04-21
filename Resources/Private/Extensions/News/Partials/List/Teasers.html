@@ -1,0 +1,57 @@
+{namespace n=Tx_News_ViewHelpers}<!--
+	=====================
+		Partials/List/Item.html
+-->
+<div class="col-sm-4">
+    <div class="portfolio-item">
+        <n:link newsItem="{newsItem}" settings="{settings}">
+            <f:if condition="{newsItem.falMedia}">
+                <!-- fal media preview element -->
+                <f:then>
+                    <f:if condition="{newsItem.falMediaPreviews}">
+                        <f:then>
+                            <f:alias map="{mediaElement: newsItem.falMediaPreviews.0}">
+                                <f:if condition="{mediaElement.originalResource.type} == 2">
+                                    <f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{settings.teaser.media.image.width}" height="{settings.teaser.media.image.height}" class="img-responsive"/>
+                                </f:if>
+                            </f:alias>
+                        </f:then>
+                    </f:if>
+                </f:then>
+                <f:else>
+                    <f:if condition="{newsItem.media}">
+                        <!-- media preview element -->
+                        <f:then>
+                            <f:if condition="{newsItem.mediaPreviews}">
+                                <f:then>
+                                    <f:alias map="{mediaElement: newsItem.mediaPreviews.0}">
+                                        <f:if condition="{mediaElement.type} == 0">
+                                            <f:image src="uploads/tx_news/{mediaElement.image}" title="{mediaElement.title}" alt="{mediaElement.alt}" width="{settings.teaser.media.image.width}" height="{settings.teaser.media.image.height}" class="img-responsive"/>
+                                        </f:if>
+                                    </f:alias>
+                                </f:then>
+                            </f:if>
+                        </f:then>
+                    </f:if>
+                </f:else>
+            </f:if>
+            <div class="mask">
+                <f:translate key="author" arguments="{0:newsItem.author}"/>
+            </div>
+        </n:link>
+        <div class="portfolio-desc">
+            <h3 class="primary-font">{newsItem.title}</h3>
+            <p class="text-muted">
+                <f:if condition="{newsItem.teaser}">
+                    <f:then>
+                        {newsItem.teaser -> f:format.crop(maxCharacters: '{settings.teaser.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+                    </f:then>
+                    <f:else>
+                        {newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.teaser.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+                    </f:else>
+                </f:if>
+                <n:link newsItem="{newsItem}" settings="{settings}" class="btn btn-color"><f:translate key="more-link"/></n:link>
+            </p>
+        </div>
+    </div>
+</div>

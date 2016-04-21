@@ -94,39 +94,39 @@ h3.headline span {
 
 /* ===== Pagination ===== */
 
-.body-green .pagination > .active > a,
-.body-green .pagination > .active > span,
-.body-green .pagination > .active > a:hover,
-.body-green .pagination > .active > span:hover,
-.body-green .pagination > .active > a:focus,
-.body-green .pagination > .active > span:focus {
+.colorset-1 .pagination > .active > a,
+.colorset-1 .pagination > .active > span,
+.colorset-1 .pagination > .active > a:hover,
+.colorset-1 .pagination > .active > span:hover,
+.colorset-1 .pagination > .active > a:focus,
+.colorset-1 .pagination > .active > span:focus {
   background-color: #94BA65;
   border-color: #94BA65;
 }
-.body-blue .pagination > .active > a,
-.body-blue .pagination > .active > span,
-.body-blue .pagination > .active > a:hover,
-.body-blue .pagination > .active > span:hover,
-.body-blue .pagination > .active > a:focus,
-.body-blue .pagination > .active > span:focus {
+.colorset-2 .pagination > .active > a,
+.colorset-2 .pagination > .active > span,
+.colorset-2 .pagination > .active > a:hover,
+.colorset-2 .pagination > .active > span:hover,
+.colorset-2 .pagination > .active > a:focus,
+.colorset-2 .pagination > .active > span:focus {
   background-color: #2790B0;
   border-color: #2790B0;
 }
-.body-red .pagination > .active > a,
-.body-red .pagination > .active > span,
-.body-red .pagination > .active > a:hover,
-.body-red .pagination > .active > span:hover,
-.body-red .pagination > .active > a:focus,
-.body-red .pagination > .active > span:focus {
+.colorset-4 .pagination > .active > a,
+.colorset-4 .pagination > .active > span,
+.colorset-4 .pagination > .active > a:hover,
+.colorset-4 .pagination > .active > span:hover,
+.colorset-4 .pagination > .active > a:focus,
+.colorset-4 .pagination > .active > span:focus {
   background-color: #E35E54;
   border-color: #E35E54;
 }
-.body-orange .pagination > .active > a,
-.body-orange .pagination > .active > span,
-.body-orange .pagination > .active > a:hover,
-.body-orange .pagination > .active > span:hover,
-.body-orange .pagination > .active > a:focus,
-.body-orange .pagination > .active > span:focus {
+.colorset-3 .pagination > .active > a,
+.colorset-3 .pagination > .active > span,
+.colorset-3 .pagination > .active > a:hover,
+.colorset-3 .pagination > .active > span:hover,
+.colorset-3 .pagination > .active > a:focus,
+.colorset-3 .pagination > .active > span:focus {
   background-color: #D26C22;
   border-color: #D26C22;
 }
@@ -299,24 +299,24 @@ h3.headline span {
   background-color: #fff;
   border: 1px solid transparent;
 }
-.body-green .nav-tabs > li.active > a,
-.body-green .nav-tabs > li.active > a:hover,
-.body-green .nav-tabs > li.active > a:focus {
+.colorset-1 .nav-tabs > li.active > a,
+.colorset-1 .nav-tabs > li.active > a:hover,
+.colorset-1 .nav-tabs > li.active > a:focus {
   border-bottom-color: #94BA65;
 }
-.body-blue .nav-tabs > li.active > a,
-.body-blue .nav-tabs > li.active > a:hover,
-.body-blue .nav-tabs > li.active > a:focus {
+.colorset-2 .nav-tabs > li.active > a,
+.colorset-2 .nav-tabs > li.active > a:hover,
+.colorset-2 .nav-tabs > li.active > a:focus {
   border-bottom-color: #2790B0;
 }
-.body-orange .nav-tabs > li.active > a,
-.body-orange .nav-tabs > li.active > a:hover,
-.body-orange .nav-tabs > li.active > a:focus {
+.colorset-3 .nav-tabs > li.active > a,
+.colorset-3 .nav-tabs > li.active > a:hover,
+.colorset-3 .nav-tabs > li.active > a:focus {
   border-bottom-color: #D26C22;
 }
-.body-red .nav-tabs > li.active > a,
-.body-red .nav-tabs > li.active > a:hover,
-.body-red .nav-tabs > li.active > a:focus {
+.colorset-4 .nav-tabs > li.active > a,
+.colorset-4 .nav-tabs > li.active > a:hover,
+.colorset-4 .nav-tabs > li.active > a:focus {
   border-bottom-color: #E35E54;
 }
 .nav-tabs.nav-justified > li > a {
@@ -343,24 +343,24 @@ h3.headline span {
 .nav-pills > li > a {
   background-color: #f5f5f5;
 }
-.body-green .nav-pills > li.active > a, 
-.body-green .nav-pills > li.active > a:hover,
-.body-green .nav-pills > li.active > a:focus {
+.colorset-1 .nav-pills > li.active > a,
+.colorset-1 .nav-pills > li.active > a:hover,
+.colorset-1 .nav-pills > li.active > a:focus {
   background-color: #94BA65;
 }
-.body-blue .nav-pills > li.active > a, 
-.body-blue .nav-pills > li.active > a:hover,
-.body-blue .nav-pills > li.active > a:focus {
+.colorset-2 .nav-pills > li.active > a,
+.colorset-2 .nav-pills > li.active > a:hover,
+.colorset-2 .nav-pills > li.active > a:focus {
   background-color: #2790B0;
 }
-.body-orange .nav-pills > li.active > a, 
-.body-orange .nav-pills > li.active > a:hover,
-.body-orange .nav-pills > li.active > a:focus {
+.colorset-3 .nav-pills > li.active > a,
+.colorset-3 .nav-pills > li.active > a:hover,
+.colorset-3 .nav-pills > li.active > a:focus {
   background-color: #D26C22;
 }
-.body-red .nav-pills > li.active > a, 
-.body-red .nav-pills > li.active > a:hover,
-.body-red .nav-pills > li.active > a:focus {
+.colorset-4 .nav-pills > li.active > a,
+.colorset-4 .nav-pills > li.active > a:hover,
+.colorset-4 .nav-pills > li.active > a:focus {
   background-color: #E35E54;
 }
 .nav.nav-pills > li > a:hover, .nav > li > a:focus {
@@ -375,7 +375,7 @@ h3.headline span {
 .nav-pills-blue > li.active > a,
 .nav-pills-blue > li.active > a:hover,
 .nav-pills-blue > li.active > a:focus {
-  background-color: #2790B0 !important; 
+  background-color: #2790B0 !important;
 }
 .nav-pills-red > li.active > a,
 .nav-pills-red > li.active > a:hover,
