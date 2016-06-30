@@ -207,7 +207,6 @@ hr {
 
   /* 1. Panel Green */
 
-
   .panel-green {
     border-color: @panel-green-color;
 
@@ -234,7 +233,6 @@ hr {
   }
 
   /* 2. Panel Blue */
-
 
   .panel-blue {
     border-color: @panel-blue-color;
@@ -308,7 +306,6 @@ hr {
   }
 
   /* ===== Info Boards ==== */
-
 
   .info-board {
     margin: 20px 0;
@@ -448,16 +445,44 @@ hr {
 
 
   .colorset-1 {
-    .nav-pills(@nav-pills-green-color)
+    .nav-pills(@nav-pills-green-color);
+    .nav-pills {
+      > li.active {
+        > a, a:hover, a:focus {
+          background-color: @nav-pills-green-color !important;
+        }
+      }
+    }
   }
   .colorset-2 {
     .nav-pills(@nav-pills-blue-color);
+    .nav-pills{
+      > li.active {
+        > a, a:hover, a:focus {
+          background-color: @nav-pills-blue-color !important;
+        }
+      }
+    }
   }
   .colorset-3 {
     .nav-pills(@nav-pills-orange-color);
+    .nav-pills {
+      > li.active {
+        > a, a:hover, a:focus {
+          background-color: @nav-pills-orange-color !important;
+        }
+      }
+    }
   }
   .colorset-4 {
     .nav-pills(@nav-pills-red-color);
+    .nav-pills {
+      > li.active {
+        > a, a:hover, a:focus {
+          background-color: @nav-pills-red-color !important;
+        }
+      }
+    }
   }
 
   .nav.nav-pills > li > a:hover, .nav > li > a:focus {
