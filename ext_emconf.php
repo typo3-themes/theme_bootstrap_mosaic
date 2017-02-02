@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
     'description'      => 'TYPO3 compatible adaption of the \"Mosaic - Responsive Professional Theme\" by simpleqode',
     'category'         => 'templates',
     'shy'              => 0,
-    'version'          => '0.1.4',
+    'version'          => '7.0.0',
     'dependencies'     => '',
     'conflicts'        => '',
     'priority'         => 'bottom',
@@ -34,8 +34,8 @@ $EM_CONF[$_EXTKEY] = array(
     'CGLcompliance_note' => '',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '6.2.21-7.6.99',
-            'theme_bootstrap' => '1.4.8-7.99.99'
+            'typo3' => '7.6.0-7.6.99',
+            'theme_bootstrap' => '7.0.0-7.99.99'
         ),
         'conflicts' => array(
         ),
