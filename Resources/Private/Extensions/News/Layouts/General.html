@@ -1,10 +1,11 @@
-{namespace n=Tx_News_ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
 
 <f:if condition="{settings.cssFile}">
 	<n:includeFile path="{settings.cssFile}" />
 </f:if>
-
 <div class="news">
-	<f:flashMessages class="tx-news-flash-message" />
 	<f:render section="content" />
 </div>
+</html>

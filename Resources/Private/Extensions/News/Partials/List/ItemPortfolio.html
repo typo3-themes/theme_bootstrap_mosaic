@@ -1,87 +1,50 @@
-{namespace n=Tx_News_ViewHelpers}<!--
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<!--
 	=====================
 		Partials/List/Item.html
 -->
-<f:if condition="{settings.templateLayout} == 2">
-    <f:then>
+    <f:if condition="{settings.templateLayout} == 2">
+        <f:then>
         <div class="isotope-item col-sm-4 col-md-3 <f:for each='{newsItem.categories}' as='category'> cat-{category.uid}</f:for>">
     </f:then>
     <f:else>
         <div class="col-sm-4">
     </f:else>
-</f:if>
-
-<div class="portfolio-item {f:if(condition: newsItem.istopnews, then: ' topnews')}">
-        <n:excludeDisplayedNews newsItem="{newsItem}"/>
-            <n:link newsItem="{newsItem}" settings="{settings}">
+    </f:if>
+        <div class="portfolio-item {f:if(condition: newsItem.istopnews, then: ' topnews')}">
+            <n:excludeDisplayedNews newsItem="{newsItem}"/>
+            <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
                 <f:if condition="{newsItem.falMedia}">
                     <!-- fal media preview element -->
-                    <f:then>
-                            <f:if condition="{newsItem.falMediaPreviews}">
-                                <f:then>
-                                        <f:alias map="{mediaElement: newsItem.falMediaPreviews.0}">
-                                            <f:if condition="{mediaElement.originalResource.type} == 2">
-                                                <f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" class="img-responsive"/>
-                                            </f:if>
-                                            <f:if condition="{mediaElement.originalResource.type} == 4">
-                                                <f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement}"/>
-                                            </f:if>
-                                        </f:alias>
-                                </f:then>
-                                <f:else>
-                                    <f:if condition="{settings.displayDummyIfNoMedia}">
-							            <span class="no-media-element">
-                                            <f:image src="{settings.list.media.dummyImage}" title="" alt="" class="img-responsive"/>
-							            </span>
-                                    </f:if>
-                                </f:else>
-                            </f:if>
-                    </f:then>
-                    <f:else>
-                        <f:if condition="{newsItem.media}">
-                            <!-- media preview element -->
+                        <f:if condition="{newsItem.falMediaPreviews}">
                             <f:then>
-                                <f:if condition="{newsItem.mediaPreviews}">
-                                    <f:then>
-
-                                            <f:alias map="{mediaElement: newsItem.mediaPreviews.0}">
-                                                <f:if condition="{mediaElement.type} == 0">
-                                                    <f:image src="uploads/tx_news/{mediaElement.image}" title="{mediaElement.title}" alt="{mediaElement.alt}" class="img-responsive"/>
-                                                </f:if>
-                                                <f:if condition="{mediaElement.type} == 1">
-                                                    <f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement}"/>
-                                                </f:if>
-                                                <f:if condition="{mediaElement.type} == 2">
-                                                    <f:render partial="Detail/MediaHtml" arguments="{mediaElement: mediaElement}"/>
-                                                </f:if>
-                                            </f:alias>
-                                    </f:then>
-                                    <f:else>
-                                        <f:if condition="{settings.displayDummyIfNoMedia}">
-                                            <span class="no-media-element">
-                                                <f:image src="{settings.list.media.dummyImage}" title="" alt="" class="img-responsive"/>
-                                            </span>
+                                    <f:alias map="{mediaElement: '{newsItem.falMediaPreviews.0}'}">
+                                        <f:if condition="{mediaElement.originalResource.type} == 2">
+                                            <f:image image="{mediaElement}" class="img-responsive" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}"/>
                                         </f:if>
-                                    </f:else>
-                                </f:if>
+                                        <f:if condition="{mediaElement.originalResource.type} == 4">
+                                            <f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement}"/>
+                                        </f:if>
+                                        <f:if condition="{mediaElement.originalResource.type} == 5">
+                                            <f:image image="{mediaElement}" class="img-responsive" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}"/>
+                                        </f:if>
+                                    </f:alias>
                             </f:then>
                             <f:else>
                                 <f:if condition="{settings.displayDummyIfNoMedia}">
-                                    <f:then>
-    									<span class="no-media-element">
-	    									<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}"/>
-    									</span>
-                                    </f:then>
+                                <span class="no-media-element">
+                                    <f:image src="{settings.list.media.dummyImage}" class="img-responsive" title="" alt=""/>
+                                </span>
                                 </f:if>
                             </f:else>
                         </f:if>
-                    </f:else>
                 </f:if>
                 <div class="mask">
                     {newsItem.title} <span class="pull-right"><i class="fa fa-heart"></i> 12 <i class="fa fa-comments-o"></i> 24</span>
                 </div>
             </n:link>
+        </div>
     </div>
-
-
-</div>
+</html>
