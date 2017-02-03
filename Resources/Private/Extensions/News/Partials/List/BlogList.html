@@ -3,7 +3,7 @@
 	  data-namespace-typo3-fluid="true">
 <!--
 	=====================
-		Partials/List/Item.html
+		Partials/List/BlogList.html
 -->
 <div class="blog-p-body articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}" itemscope="itemscope" itemtype="http://schema.org/Article">
     <n:excludeDisplayedNews newsItem="{newsItem}"/>
@@ -40,13 +40,13 @@
                     <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
                         <f:alias map="{mediaElement: '{newsItem.falMediaPreviews.0}'}">
                             <f:if condition="{mediaElement.originalResource.type} == 2">
-                                <f:image image="{mediaElement}" class="img-responsive" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" />
+                                <f:image image="{mediaElement}" class="img-responsive" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.blogList.media.image.maxWidth}" maxHeight="{settings.blogList.media.image.maxHeight}"/>
                             </f:if>
                             <f:if condition="{mediaElement.originalResource.type} == 4">
                                 <f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement}"/>
                             </f:if>
                             <f:if condition="{mediaElement.originalResource.type} == 5">
-                                <f:image image="{mediaElement}" class="img-responsive" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" />
+                                <f:image image="{mediaElement}" class="img-responsive" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.blogList.media.image.maxWidth}" maxHeight="{settings.blogList.media.image.maxHeight}"/>
                             </f:if>
                         </f:alias>
                     </n:link>
@@ -55,7 +55,7 @@
                     <f:if condition="{settings.displayDummyIfNoMedia}">
 						<span class="no-media-element">
 							<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
-								<f:image src="{settings.list.media.dummyImage}" class="img-responsive" title="" alt="" />
+								<f:image src="{settings.list.media.dummyImage}" class="img-responsive" title="" alt="" maxWidth="{settings.blogList.media.image.maxWidth}" maxHeight="{settings.blogList.media.image.maxHeight}"/>
 							</n:link>
 						</span>
                     </f:if>
