@@ -42,7 +42,7 @@
                                 </f:for>
                             </f:then>
                             <f:else>
-                                <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
+                                <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.blogList.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
                                     <f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
                                         <f:render partial="List/BlogList" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
                                     </f:for>

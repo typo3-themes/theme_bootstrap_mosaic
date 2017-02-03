@@ -16,11 +16,11 @@ plugin.tx_news.settings.cropMaxCharacters = 256
 plugin.tx_news.settings.blogList < plugin.tx_news.settings.list
 plugin.tx_news.settings.blogList {
 	media.image {
-		width = 720
-		height = 405c-100
+		maxWidth = 720
+		maxHeight = 405c-100
 	}
 	paginate {
-		itemsPerPage = 5
+		itemsPerPage = 2
 		insertAbove = 0
 		insertBelow = 1
 		templatePath = EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/News/Templates/ViewHelpers/Widget/Paginate/Index.html
@@ -30,10 +30,10 @@ plugin.tx_news.settings.blogList {
 }
 plugin.tx_news.settings.teaser < plugin.tx_news.settings.list
 plugin.tx_news.settings.teaser {
-	cropMaxCharacters = 256
+	cropMaxCharacters = 156
 	media.image {
-		width = 720
-		height = 405c-100
+        maxWidth = 720
+        maxHeight = 405c-100
 	}
 }
 
@@ -54,6 +54,7 @@ plugin.tx_news {
 			300 = EXT:theme_bootstrap/Resources/Private/Extensions/News/Layouts/
 			500 = {$themes.resourcesPrivatePath}Extensions/News/Layouts/
 		}
+        widget.GeorgRinger\News\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = {$themes.resourcesPrivatePath}Extensions/News/Templates/
 	}
 	settings {
 		list {
@@ -67,9 +68,11 @@ plugin.tx_news {
 	_LOCAL_LANG {
 		default {
 			more-link = Read More...
+            author = by %s
 		}
 		de {
 			more-link = Mehr lesen...
+            author = von %s
 		}
 	}
 }
