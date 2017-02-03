@@ -39,6 +39,10 @@
 @pagination-blue: @blue;
 @pagination-red: @red;
 @pagination-orange: @orange;
+@pagination-green-hover: @button-green-action-color;
+@pagination-blue-hover: @button-blue-action-color;
+@pagination-red-hover: @button-red-action-color;
+@pagination-orange-hover: @button-orange-action-color;
 
 /*pageination general settings*/
 @pagination-general-link-color: #999;
@@ -177,21 +181,56 @@ hr {
 
   /* ===== Pagination ===== */
 
+.colorset-1 {
+  .pagination .active {
+    > a {
+      background-color: @pagination-green;
+      border-color: @pagination-green;
+    }
+    > a:hover, a:focus {
+      background-color: @pagination-green-hover;
+      border-color: @pagination-green-hover;
+    }
+  }
+}
+.colorset-2 {
+  .pagination .active {
+    > a {
+      background-color: @pagination-blue;
+      border-color: @pagination-blue;
+    }
+    > a:hover, a:focus {
+      background-color: @pagination-blue-hover;
+      border-color: @pagination-blue-hover;
+    }
+  }
+}
+.colorset-3 {
+  .pagination .active {
+    > a {
+      background-color: @pagination-orange;
+      border-color: @pagination-orange;
+    }
+    > a:hover, a:focus {
+      background-color: @pagination-orange-hover;
+      border-color: @pagination-orange-hover;
+    }
+  }
+}
+.colorset-4 {
+  .pagination .active {
+    > a {
+      background-color: @pagination-red;
+      border-color: @pagination-red;
+    }
+    > a:hover, a:focus {
+      background-color: @pagination-red-hover;
+      border-color: @pagination-red-hover;
+    }
+  }
+}
 
-  .colorset-1 {
-    .pagination(@pagination-green, @pagination-green);
-  }
-  .colorset-2 {
-    .pagination(@pagination-blue, @pagination-blue);
-  }
-  .colorset-3 {
-    .pagination(@pagination-red, @pagination-red);
-  }
-  .colorset-4 {
-    .pagination(@pagination-orange, @pagination-orange);
-  }
-
-  .pagination {
+.pagination {
     > li {
       > a, span {
         color: @pagination-general-link-color;
