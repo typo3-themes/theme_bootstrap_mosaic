@@ -1,5 +1,5 @@
 # theme_bootstrap_mosaic
-TYPO3 compatible adaptation of the "Mocsaic - Responsive Professional Theme" by simpleqode
+TYPO3 compatible adaptation of the "Mosaic - Responsive Professional Theme" by simpleqode
 
 ![Mosaic](Meta/Screenshots/screenshot.png)
 
@@ -8,6 +8,7 @@ TYPO3 compatible adaptation of the "Mocsaic - Responsive Professional Theme" by 
 * Isotope Effekt for EXT:news via sys_categories
 * Drop Down Menus
 * fullscreen width carousel
+* Blog Layout with EXT:news
 
 # License
 Extended Wrap Bootstrap license for this theme has been bought by Cybercraft Media Manufactory, Clausthal-Zellerfeld, Germany.
@@ -48,5 +49,16 @@ The extension is able to render news items as isotope. To create an isotope just
 |------------------|-----------|----------------------------------------|
 | Category Menu    | *Isotope* | Displays the Isotope category selector |
 | List View        | *Isotope* | Displays the Isotop items              |
+
+You can select the category to display in the category menu view.
+
+## blog effect
+
+The extension is able to render news items as blog entries. To create an blog just add 2 news plugins:
+
+| What to display  | Template      | Result                             |
+|------------------|---------------|------------------------------------|
+| List View        | *Blog-List*   | Displays the Blog items            |
+| Detailed View    | *Blog-Detail* | Displays a Blog item               |
 
 You can select the category to display in the category menu view.
