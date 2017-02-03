@@ -28,9 +28,16 @@ plugin.tx_news.settings.blogList {
 		maximumNumberOfLinks = 10
 	}
 }
+plugin.tx_news.settings.portfolio < plugin.tx_news.settings.list
+plugin.tx_news.settings.portfolio {
+    media.image {
+        maxWidth = 720
+        maxHeight = 405c-100
+    }
+}
 plugin.tx_news.settings.teaser < plugin.tx_news.settings.list
 plugin.tx_news.settings.teaser {
-	cropMaxCharacters = 156
+	cropMaxCharacters = 150
 	media.image {
         maxWidth = 720
         maxHeight = 405c-100

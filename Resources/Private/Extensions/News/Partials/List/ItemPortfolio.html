@@ -22,20 +22,20 @@
                             <f:then>
                                     <f:alias map="{mediaElement: '{newsItem.falMediaPreviews.0}'}">
                                         <f:if condition="{mediaElement.originalResource.type} == 2">
-                                            <f:image image="{mediaElement}" class="img-responsive" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}"/>
+                                            <f:image image="{mediaElement}" class="img-responsive" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.portfolio.media.image.maxWidth}" maxHeight="{settings.portfolio.media.image.maxHeight}"/>
                                         </f:if>
                                         <f:if condition="{mediaElement.originalResource.type} == 4">
                                             <f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement}"/>
                                         </f:if>
                                         <f:if condition="{mediaElement.originalResource.type} == 5">
-                                            <f:image image="{mediaElement}" class="img-responsive" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}"/>
+                                            <f:image image="{mediaElement}" class="img-responsive" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.portfolio.media.image.maxWidth}" maxHeight="{settings.portfolio.media.image.maxHeight}"/>
                                         </f:if>
                                     </f:alias>
                             </f:then>
                             <f:else>
                                 <f:if condition="{settings.displayDummyIfNoMedia}">
                                 <span class="no-media-element">
-                                    <f:image src="{settings.list.media.dummyImage}" class="img-responsive" title="" alt=""/>
+                                    <f:image src="{settings.list.media.dummyImage}" class="img-responsive" title="" alt="" maxWidth="{settings.portfolio.media.image.maxWidth}" maxHeight="{settings.portfolio.media.image.maxHeight}"/>
                                 </span>
                                 </f:if>
                             </f:else>
