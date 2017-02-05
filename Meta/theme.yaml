@@ -1,6 +1,6 @@
 # Name and description of the theme (required)
 title            : Theme-Bootstrap-Mosaic
-version          : 0.1.0
+version          : 0.1.4
 description      : |
   Theme-Bootstrap-Mosaic - TYPO3 compatible adaption of the \"Mosaic - Responsive Professional Theme\" by simpleqode
   Perfect for business and personal use
@@ -8,7 +8,7 @@ description      : |
   Isotope gallery included
 parentTheme:
   name: theme_bootstrap
-  version: 1.4.3-1.4.99
+  version: 1.4.8-1.4.99
 
 #Whether a documentation page is available (optional)
 #documentation:
@@ -67,7 +67,7 @@ licenses:
 # Supported Extensions
 supportedExtensions:
   news:
-    version        : 3.1.0
+    version        : 3.2.6
     description    : News-Extension
   #felogin:
   #  version        : 6.2.0
