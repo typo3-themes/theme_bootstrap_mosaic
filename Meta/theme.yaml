@@ -19,7 +19,7 @@ parentTheme:
 # Whether a live demo is available (optional)
 demoLocation:
   -
-    uri            : http://theme-mosaic.web-to-date.com
+    uri            : http://theme-mosaic-6.web-to-date.com
     title          : Theme-Bootstrap-Mosaic Demo
 
 # Keywords (optional)
