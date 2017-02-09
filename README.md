@@ -62,3 +62,28 @@ The extension is able to render news items as blog entries. To create an blog ju
 | Detailed View    | *Blog-Detail* | Displays a Blog item               |
 
 You can select the category to display in the category menu view.
+
+
+## Howto build a carousel like in demo site
+
+1. Layout Page Appearence: ContentStartsite
+2. Gridelements structure in section FEATURE
+
+* Carousel
+    * row bg_img
+        * container
+            * Column/Panel (Horizontal)
+                 * Text (H1 Carousel Title fadeInDown)
+                 * Images
+    * row bg_img
+        * container
+            * Column/Panel (Vertical)
+                * Text (H1 Carousel Title slideInLeft)
+                * Images
+    * row bg_img
+        * container
+            * Column/Panel (Horizontal)
+                * Text (H1 Carousel Title slideInLeft)
+                * Video
+ No newline at end of file
+
