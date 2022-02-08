@@ -16,10 +16,15 @@
                     <div class="col-sm-12">
                         <p class="inline-block">
                             <f:cObject typoscriptObjectPath="lib.footer.copyright" />
-                            {theme:constant(constant: 'themes.configuration.menu.footer.divider')}
-                            <span class="ftext"><f:format.htmlentitiesDecode>{theme:constant(constant: 'themes.configuration.footer.address')}</f:format.htmlentitiesDecode></span>
-                            {theme:constant(constant: 'themes.configuration.menu.footer.divider')}
-                            <span class="ftext"><f:link.email email="{theme:constant(constant: 'themes.configuration.footer.email')}">{theme:constant(constant: 'themes.configuration.footer.email')}</f:link.email></span>
+                            <f:if condition="{theme:constant(constant: 'themes.configuration.footer.address')}">
+                                {theme:constant(constant: 'themes.configuration.menu.footer.divider') -> f:format.raw()}
+                                <span class="ftext"><f:format.htmlentitiesDecode>{theme:constant(constant: 'themes.configuration.footer.address')}</f:format.htmlentitiesDecode></span>
+                            </f:if>
+                            <f:if condition="{theme:constant(constant: 'themes.configuration.footer.email')}">
+                                {theme:constant(constant: 'themes.configuration.menu.footer.divider') -> f:format.raw()}
+                                <span class="ftext"><f:link.email email="{theme:constant(constant: 'themes.configuration.footer.email')}">{theme:constant(constant: 'themes.configuration.footer.email')}</f:link.email></span>
+                            </f:if>
+
                         </p>
                         <f:cObject typoscriptObjectPath="lib.menu.footer" />
                     </div>
