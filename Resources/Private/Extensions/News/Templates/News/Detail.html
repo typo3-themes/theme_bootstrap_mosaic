@@ -136,40 +136,7 @@
                             </f:link.page>
                         </div>
                     </f:if>
-
-                    <f:if condition="{settings.detail.showSocialShareButtons}">
-                        <f:comment>
-                            Care about the privacy of your readers?
-                            Checkout https://typo3.org/extensions/repository/view/rx_shariff
-                            and it will be used automatically!
-                        </f:comment>
-                        <n:extensionLoaded extensionKey="rx_shariff">
-                            <f:then>
-                                <f:render partial="Detail/Shariff" />
-                            </f:then>
-                            <f:else>
-                                <div class="social">
-                                    <div class="like">
-                                        <n:social.facebook.like />
-                                    </div>
-                                    <div class="share">
-                                        <n:social.facebook.share />
-                                    </div>
-                                    <div class="twitter">
-                                        <n:social.twitter>Twitter</n:social.twitter>
-                                    </div>
-                                </div>
-                            </f:else>
-                        </n:extensionLoaded>
-                    </f:if>
-
-                    <f:if condition="{settings.detail.disqusShortname}">
-                        <div id="disqus_thread"></div>
-                        <n:social.disqus newsItem="{newsItem}"
-                                         shortName="{settings.detail.disqusShortname}"
-                                         link="{n:link(newsItem:newsItem, settings:settings, uriOnly:1, configuration:'{forceAbsoluteUrl:1}')}" />
-                    </f:if>
-
+                    
                     <!-- related things -->
                     <div class="news-related-wrap">
 
