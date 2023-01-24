@@ -5,7 +5,7 @@
   "license": "GPL-2.0+",
   "require": {
     "typo3/cms-core": "^8.7 || ^9.5 || ^10",
-    "typo3-themes/theme-bootstrap": "*"
+    "typo3-themes/theme-bootstrap": "^9"
   },
   "replace": {
     "theme_bootstrap_mosaic": "self.version"
