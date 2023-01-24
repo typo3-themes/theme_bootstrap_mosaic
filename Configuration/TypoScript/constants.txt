@@ -3,3 +3,6 @@
 
 # Extensions
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/News/TypoScript/constants.txt">
+
+# cat=hidden/notsupported;
+themes.configuration.siteSlogan = 
