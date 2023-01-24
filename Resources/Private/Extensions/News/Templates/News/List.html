@@ -35,38 +35,16 @@
                         </div>
                     </f:if>
                     <f:if condition="{settings.templateLayout} == 5">
-                        <f:if condition="{settings.hidePagination}">
-                            <f:then>
-                                <f:for each="{news}" as="newsItem" iteration="iterator">
-                                    <f:render partial="List/BlogList" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-                                </f:for>
-                            </f:then>
-                            <f:else>
-                                <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.blogList.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
-                                    <f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
-                                        <f:render partial="List/BlogList" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-                                    </f:for>
-                                </n:widget.paginate>
-                            </f:else>
-                        </f:if>
+                        <f:alias map="{partial:'List/BlogList'}">
+                            <f:render section="pagination" arguments="{_all}" />
+                        </f:alias>
                     </f:if>
                 </f:then>
                 <f:else>
                     <div class="news-list-view">
-                        <f:if condition="{settings.hidePagination}">
-                            <f:then>
-                                <f:for each="{news}" as="newsItem" iteration="iterator">
-                                    <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-                                </f:for>
-                            </f:then>
-                            <f:else>
-                                <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
-                                    <f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
-                                        <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-                                    </f:for>
-                                </n:widget.paginate>
-                            </f:else>
-                        </f:if>
+                        <f:alias map="{partial:'List/Item'}">
+                            <f:render section="pagination" arguments="{_all}" />
+                        </f:alias>
                     </div>
                 </f:else>
             </f:if>
@@ -79,4 +57,26 @@
     </f:if>
     <!--TYPO3SEARCH_begin-->
 </f:section>
+
+<f:section name="pagination">
+    <f:if condition="{settings.hidePagination}">
+        <f:then>
+            <f:for each="{news}" as="newsItem" iteration="iterator">
+                <f:render partial="{partial}" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+            </f:for>
+        </f:then>
+        <f:else>
+            <f:if condition="{settings.list.paginate.insertAbove}">
+                <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+            </f:if>
+            <f:for each="{pagination.paginator.paginatedItems}" as="newsItem" iteration="iterator">
+                <f:render partial="{partial}" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+            </f:for>
+            <f:if condition="{settings.list.paginate.insertBelow}">
+                <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+            </f:if>
+        </f:else>
+    </f:if>
+</f:section>
 </html>
+
