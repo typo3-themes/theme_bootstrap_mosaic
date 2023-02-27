@@ -5,4 +5,46 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/News/TypoScript/constants.txt">
 
 # cat=hidden/notsupported;
-themes.configuration.siteSlogan = 
+themes.configuration.siteSlogan =
+
+# cat=hidden/notsupported;
+themes.configuration.colors.primary = #ff8700
+
+# cat=hidden/notsupported;
+themes.configuration.colors.secondary = #26a345
+
+# cat=hidden/notsupported;
+themes.configuration.colors.link = #ff8700
+
+# cat=hidden/notsupported;
+themes.configuration.colors.linkHover = #26a345
+
+# cat=hidden/notsupported;
+themes.configuration.colors.text = #000
+
+# cat=hidden/notsupported;
+themes.configuration.colors.gray = #555
+
+# cat=hidden/notsupported;
+themes.configuration.colors.grayDark = #333
+
+# cat=hidden/notsupported;
+themes.configuration.colors.grayDarker = #222
+
+# cat=hidden/notsupported;
+themes.configuration.colors.grayLight = #999
+
+# cat=hidden/notsupported;
+themes.configuration.colors.grayLighter = #eee
+
+# cat=hidden/notsupported;
+themes.configuration.colors.success = #5cb85c
+
+# cat=hidden/notsupported;
+themes.configuration.colors.information = #5bc0de
+
+# cat=hidden/notsupported;
+themes.configuration.colors.warning = #f0ad4e
+
+# cat=hidden/notsupported;
+themes.configuration.colors.error = #d9534f
