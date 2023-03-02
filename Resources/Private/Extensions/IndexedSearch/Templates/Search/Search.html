@@ -48,7 +48,7 @@
 				<f:if condition="{row.isSectionHeader}">
 					<f:then>
 					<div id="anchor_{row.sectionId}" class="tx-indexedsearch-sectionhead">
-						<h2 class="tx-indexedsearch-title"><f:format.html>{row.sectionTitle}</f:format.html> <span class="tx-indexedsearch-result-count">{row.numResultRows} <f:translate key="{f:if(condition: '{row.numResultRows} > 1', then: 'result.pages', else: 'result.page')}" /></span></h2>
+						<h2 class="tx-indexedsearch-title"><f:format.html parseFuncTSPath="">{row.sectionTitle}</f:format.html> <span class="tx-indexedsearch-result-count">{row.numResultRows} <f:translate key="{f:if(condition: '{row.numResultRows} > 1', then: 'result.pages', else: 'result.page')}" /></span></h2>
 					</div>
 					</f:then>
 					<f:else>

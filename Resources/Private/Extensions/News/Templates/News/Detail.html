@@ -31,7 +31,7 @@
                         </div>
                         <!-- main text -->
                         <div class="news-text-wrap">
-                            <f:format.html>{newsItem.bodytext}</f:format.html>
+                            <f:format.html parseFuncTSPath="">{newsItem.bodytext}</f:format.html>
                         </div>
                     </div>
                 </f:then>
@@ -112,7 +112,7 @@
                     <f:if condition="{newsItem.teaser}">
                         <!-- teaser -->
                         <div class="teaser-text" itemprop="description">
-                            <f:format.html>{newsItem.teaser}</f:format.html>
+                            <f:format.html parseFuncTSPath="">{newsItem.teaser}</f:format.html>
                         </div>
                     </f:if>
 
@@ -125,7 +125,7 @@
 
                     <!-- main text -->
                     <div class="news-text-wrap" itemprop="articleBody">
-                        <f:format.html>{newsItem.bodytext}</f:format.html>
+                        <f:format.html parseFuncTSPath="">{newsItem.bodytext}</f:format.html>
                     </div>
 
                     <f:if condition="{settings.backPid}">
@@ -136,7 +136,7 @@
                             </f:link.page>
                         </div>
                     </f:if>
-                    
+
                     <!-- related things -->
                     <div class="news-related-wrap">
 
@@ -228,7 +228,7 @@
     </f:if>
     <f:if condition="{newsItem.teaser}">
         <f:then>
-            <p itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</p>
+            <p itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html(parseFuncTSPath: '')}</p>
         </f:then>
     </f:if>
     <f:if condition="{newsItem.falMedia}">
@@ -264,7 +264,7 @@
     </f:if>
     <!-- main text -->
     <p itemprop="articleBody">
-        <f:format.html>{newsItem.bodytext}</f:format.html>
+        <f:format.html parseFuncTSPath="">{newsItem.bodytext}</f:format.html>
     </p>
     <f:if condition="{settings.backPid}">
         <!-- Link Back -->

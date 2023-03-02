@@ -25,10 +25,10 @@
     </f:if>
     <f:if condition="{newsItem.teaser}">
         <f:then>
-            <p itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</p>
+            <p itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html(parseFuncTSPath: '')}</p>
         </f:then>
         <f:else>
-            <p itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</p>
+            <p itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html(parseFuncTSPath: '')}</p>
         </f:else>
     </f:if>
     <n:link newsItem="{newsItem}" settings="{settings}" class="btn btn-lg btn-color"><f:translate key="more-link"/></n:link>

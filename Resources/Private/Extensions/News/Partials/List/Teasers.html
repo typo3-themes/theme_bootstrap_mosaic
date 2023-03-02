@@ -43,10 +43,10 @@
             <p class="text-muted">
                 <f:if condition="{newsItem.teaser}">
                     <f:then>
-                        <div itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.teaser.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</div>
+                        <div itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.teaser.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html(parseFuncTSPath: '')}</div>
                     </f:then>
                     <f:else>
-                        <div itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.teaser.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</div>
+                        <div itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.teaser.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html(parseFuncTSPath: '')}</div>
                     </f:else>
                 </f:if>
                 <n:link newsItem="{newsItem}" settings="{settings}" class="btn btn-color"><f:translate key="more-link"/></n:link>
