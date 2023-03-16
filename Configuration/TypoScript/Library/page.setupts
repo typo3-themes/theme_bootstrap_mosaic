@@ -5,7 +5,7 @@ page {
 		20 >
 		20 = TEXT
 		20 {
-			value = class="colorset-{levelfield:-1,layout,slide} language-{$themes.languages.current.isoCodeShort}" data-spy="scroll" data-target="{$themes.configuration.bootstrap.javascript.scrollspy.target}" data-offset="{$themes.configuration.bootstrap.javascript.scrollspy.offset}"
+			value = class="colorset-{$skinStylesheet} language-{$themes.languages.current.isoCodeShort}" data-spy="scroll" data-target="{$themes.configuration.bootstrap.javascript.scrollspy.target}" data-offset="{$themes.configuration.bootstrap.javascript.scrollspy.offset}"
 			insertData = 1
 		}
 	}
