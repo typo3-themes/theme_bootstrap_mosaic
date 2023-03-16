@@ -49,5 +49,5 @@ themes.configuration.colors.warning = #f0ad4e
 # cat=hidden/notsupported;
 themes.configuration.colors.error = #d9534f
 
-# cat = colors,basic/colors_general/; type=options[1,2,3,4]; label=Vorkonfigurierte Stylesheets, folglich werden einige Optionen ignoriert!
-skinStylesheet = 1
+# cat = colors,basic/colors_general/; type=options[0,1,2,3,4]; label=Vorkonfigurierte Stylesheets, folglich werden einige Optionen ignoriert!
+skinStylesheet = 0
