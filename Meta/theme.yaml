@@ -34,10 +34,10 @@ constants:
 # Screenshots for the preview gallery (optional, multiple possible)
 screenshots:
   -
-    file           : EXT:theme_bootstrap_mosaic/Meta/Screenshots/screenshot.png
+    file           : EXT:theme_bootstrap_mosaic/Resources/Public/Screenshots/screenshot.png
     caption        : Screenshot Startseite
   -
-    file           : EXT:theme_bootstrap_mosaic/Meta/Screenshots/screenshot-01.png
+    file           : EXT:theme_bootstrap_mosaic/Resources/Public/Screenshots/screenshot-01.png
     caption        : Screenshot Startseite
 
 
