@@ -72,3 +72,96 @@ supportedExtensions:
   #felogin:
   #  version        : 6.2.0
   #  description    : Frontend-User login
+
+
+editor:
+  ignoreAllowedConstants: false
+  allowedConstants:
+    themes.configuration.colors.link:
+        allowed: true
+    themes.configuration.colors.linkHover:
+        allowed: true
+    themes.configuration.colors.primary:
+        allowed: true
+    themes.configuration.colors.secondary:
+        allowed: true
+    themes.configuration.footer.email:
+        allowed: true
+    themes.configuration.footer.address:
+        allowed: true
+    themes.configuration.header.email:
+        allowed: true
+    themes.configuration.header.phone:
+        allowed: true
+    themes.configuration.brand.name:
+        allowed: true
+    themes.configuration.meta.applicationName:
+        allowed: true
+    themes.configuration.colors.text:
+        allowed: true
+    themes.configuration.meta.defaults.abstract:
+        allowed: true
+    themes.configuration.meta.defaults.author:
+        allowed: true
+    themes.configuration.meta.defaults.authorEmail:
+        allowed: true
+    themes.configuration.meta.defaults.description:
+        allowed: true
+    themes.configuration.meta.defaults.keywords:
+        allowed: true
+    themes.configuration.footer.copyright.rightLabel:
+        allowed: true
+    themes.configuration.footer.copyright.leftLabel:
+        allowed: true
+    themes.configuration.spamProtectEmailAddresses.lastDotSubst:
+        allowed: true
+    themes.configuration.spamProtectEmailAddresses.atSubst:
+        allowed: true
+    themes.configuration.meta.copyright:
+        allowed: true
+    themes.configuration.pages.startsite:
+        allowed: true
+    themes.configuration.pages.newsList:
+        allowed: true
+    themes.configuration.pages.newsDetails:
+        allowed: true
+    themes.configuration.pages.search:
+        allowed: true
+    themes.configuration.pages.registration:
+        allowed: true
+    themes.configuration.pages.login:
+        allowed: true
+    themes.configuration.colors.grayLighter:
+        allowed: true
+    themes.configuration.colors.error:
+        allowed: true
+    themes.configuration.colors.information:
+        allowed: true
+    themes.configuration.colors.success:
+        allowed: true
+    themes.configuration.colors.warning:
+        allowed: true
+    skinStylesheet:
+        allowed: true
+    themes.configuration.container.news:
+        allowed: true
+    themes.configuration.header.logo.main.file:
+        allowed: true
+    themes.configuration.header.logo.main.width:
+        allowed: true
+    themes.configuration.header.logo.main.height:
+        allowed: true
+    themes.configuration.menu.breadcrumb.includeNotInMenu:
+        allowed: true
+    themes.configuration.menu.breadcrumb.excludeUidList:
+        allowed: true
+    themes.configuration.menu.footer.divider:
+        allowed: true
+    themes.configuration.menu.main.excludeUidList:
+        allowed: true
+    themes.configuration.siteSlogan:
+        allowed: true
+    themes.configuration.header.logo.special.linkUid:
+        allowed: true
+    themes.configuration.header.logo.special.height:
+        allowed: true
