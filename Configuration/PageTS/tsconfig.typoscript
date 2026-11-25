@@ -1,0 +1,4 @@
+@import 'EXT:theme_bootstrap/Configuration/PageTS/tsconfig.typoscript'
+@import 'EXT:theme_bootstrap_mosaic/Configuration/PageTS/Library/*.tsconfig'
+@import 'EXT:theme_bootstrap_mosaic/Configuration/Elements/PageTS/*.tsconfig'
+@import 'EXT:theme_bootstrap_mosaic/Resources/Private/Extensions/News/PageTS/*.tsconfig'
